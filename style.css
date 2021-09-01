@@ -1,0 +1,34 @@
+/*
+ Theme Name:   GeneratePress Child
+ Theme URI:    https://generatepress.com
+ Description:  Default GeneratePress child theme
+ Author:       Tom Usborne
+ Author URI:   https://tomusborne.com
+ Template:     generatepress
+ Version:      0.1
+*/
+
+/* slider home section */
+.modal-wrapper{
+	visibility: hidden;
+	cursor: default;
+	display: flex;
+	align-items: center;
+}
+
+.slider-home-item:hover 
+.modal-wrapper{
+	visibility: visible;
+}
+.slider-home-item{
+	cursor: pointer;
+}
+.link-portfolio-slider:hover{
+	text-decoration-line:underline !important;
+}
+
+@media (max-width:800px){
+	.modal-wrapper{
+		display: none;
+	}	
+}
