@@ -51,4 +51,13 @@
 	.slider-home .kt-blocks-post-grid-item-inner{
 		left: 35vw;
 	}
+/* nav hover active */
+.main-navigation .main-nav ul li a:hover {
+	border-bottom: solid 2px #fff;
+    line-height: 25px;
+}
+
+.main-navigation .main-nav ul li[class*="current-menu-"] > a{
+	border-bottom: solid 2px #fff;
+    line-height: 25px;
 }
