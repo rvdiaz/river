@@ -54,10 +54,14 @@
 /* nav hover active */
 .main-navigation .main-nav ul li a:hover {
 	border-bottom: solid 2px #fff;
-    line-height: 25px;
 }
 
-.main-navigation .main-nav ul li[class*="current-menu-"] > a{
-	border-bottom: solid 2px #fff;
-    line-height: 25px;
+.main-navigation .main-nav ul li a{
+	padding:0 !important;
+	margin:0 35px;
+}
+.main-navigation{
+	height: 60px;
+    display: flex;
+    justify-content: center;
 }
