@@ -11,5 +11,7 @@ add_filter('generate_typography_default_fonts',function($fonts){
     $fonts[]='Avenir';
     $fonts[]='Avenir-Book';
     $fonts[]='Avenir-Black';
+    $fonts[]='Avenir-Heavy';
+    $fonts[]='Avenir-Light';
     return $fonts;
 });

@@ -12,8 +12,8 @@
 .slider-home .kt-blocks-post-grid-item-inner{
 	cursor: default;
 	position: absolute;
-    top: 30%;
-    left: 25%;
+    top: 18vw;
+    left: 30vw;
     width: 445px;
     height: 197px;
     display: flex;
@@ -21,24 +21,34 @@
     justify-content: center;
 	flex-direction: column;
 	visibility: hidden;
+	background-size: contain;
+}
+.slider-home .entry-title{
+	font-family: 'Avenir-Heavy' !important;
+}
+.slider-home .kt-blocks-post-readmore{
+	font-family: 'Avenir-Light' !important;
+}
+.slider-home .kt-blocks-post-readmore:hover{
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color:#ffffff !important;
 }
 .slider-home .slick-slide{
 	position:relative;
+	padding: 0 !important;
 }
 .slider-home:hover .kt-blocks-post-grid-item-inner{
 	visibility: visible;
 }
-.slider-home .slick-slide{
-	padding: 0 !important;
-}
-.link-portfolio-slider:hover{
-	border-bottom-style: solid;
-	border-bottom-width: 1px;
-	border-bottom-color:#ffffff;
-}
 
-@media (max-width:800px){
-	.modal-wrapper{
+@media (max-width:1000px){
+	.slider-home .kt-blocks-post-grid-item-inner{
 		display: none;
 	}	
+}
+@media (min-width:1400px){
+	.slider-home .kt-blocks-post-grid-item-inner{
+		left: 35vw;
+	}
 }
