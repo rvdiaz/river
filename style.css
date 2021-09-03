@@ -276,6 +276,16 @@
     height: 40px !important;
 	margin:0 !important;
 }
+.kt-post-grid-layout-masonry-wrap, 
+.kt-post-grid-layout-carousel-wrap{
+	margin:0 !important;
+}
+.slider-shop-wrapper .gb-inside-container{
+	padding: 0 0 40px 0 !important;
+}
+.btn-shop-slider{
+	margin-top: 18px;
+}
 }
 
 
