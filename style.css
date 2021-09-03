@@ -9,18 +9,22 @@
 */
 
 /* slider home section */
-.slider-home 
+.slider-home
 .kt-blocks-post-grid-item-inner{
 	cursor: default;
+	position: absolute;
+    top: 18vw;
+    left: 30vw;
     width: 445px;
     height: 197px;
     display: none;
     align-items: center;
     justify-content: center;
 	flex-direction: column;
+	visibility: hidden;
 	background-size: contain;
 }
-.slider-home 
+.slider-home
 .kt-feat-image-align-top{
 	position: sticky;
 	height:80vh;
@@ -28,58 +32,60 @@
 	justify-content: center;
 	align-items: center;
 }
-.slider-home 
+.slider-home
 .kadence-post-image{
 	position: absolute;
-    top: 0;	
+    top: 0;
     width: 100%;
     z-index: -1;
 }
-.slider-home 
+.slider-home
 .kadence-post-image-inner-intrisic{
 	height:80vh;
 }
-.slider-home 
+.slider-home
 .entry-title{
 	font-family: 'Avenir-Heavy' !important;
 }
-.slider-home 
+.slider-home
 .kt-blocks-post-readmore{
 	font-family: 'Avenir-Light' !important;
 }
-.slider-home 
+.slider-home
 .kt-blocks-post-readmore:hover{
 	border-bottom: solid 1px #ffffff !important;
 }
-.slider-home 
+.slider-home
 .slick-slide{
 	position:relative;
 	padding: 0 !important;
 }
-.slider-home:hover 
+.slider-home:hover
 .kt-blocks-post-grid-item-inner{
 	display: flex;
 }
 
 @media (max-width:1000px){
-	.slider-home 
+	.slider-home
 	.kt-blocks-post-grid-item-inner{
 		display: none !important;
 	}	
 }
 @media (min-width:1400px){
-	.slider-home 
+	.slider-home
 	.kt-blocks-post-grid-item-inner{
+@media (min-width:1400px) {
+	.slider-home .kt-blocks-post-grid-item-inner {
 		left: 35vw;
 	}
 }
 /* nav hover active */
-.main-navigation 
+.main-navigation
 .main-nav ul li a:hover {
 	border-bottom: solid 2px #fff;
 }
 
-.main-navigation 
+.main-navigation
 .main-nav ul li a{
 	padding:0 !important;
 	margin:0 35px;
@@ -139,11 +145,11 @@
 
 
 /* slider shop product */
-.slider-shop-product 
+.slider-shop-product
 .entry-title{
 	font-family: 'Avenir-Black' !important;
 }
-.slider-shop-product 
+.slider-shop-product
 .entry-content{
 	font-family: 'Avenir-Book' !important;
 }
@@ -169,33 +175,33 @@
 {
 	border:none !important;
 }
-.slider-shop-product 
+.slider-shop-product
 .slick-list{
 	margin:0 100px !important;
 	height:484px;
 	display:flex !important;
 	align-items: center;
 }
-.slider-shop-product 
+.slider-shop-product
 .slick-track{
 	display:flex !important;
 }
-.slider-shop-product 
+.slider-shop-product
 .kt-blocks-post-grid-item{
 	position: relative;
-} 
-.slider-shop-product 
+}
+.slider-shop-product
 .kt-blocks-post-grid-item-inner{
 	display: none;
 	flex-direction: column;
 	align-items: center;
 }
-.slider-shop-product 
-.kt-blocks-post-grid-item-inner-wrap:hover 
+.slider-shop-product
+.kt-blocks-post-grid-item-inner-wrap:hover
 .kt-blocks-post-grid-item-inner{
 	display: flex;
 }
-.slider-shop-product 
+.slider-shop-product
 .kt-blocks-post-grid-item-inner-wrap:hover{
 	border: 1px solid #ADD6CC;
 	background:white;
@@ -210,28 +216,28 @@
 	justify-content: center;
 }
 @media (min-width:1400px){
-.slider-shop-product 
+.slider-shop-product
 .kt-blocks-post-grid-item-inner-wrap:hover{
 	width: 404px;
 	height:484px;
 }
-.slider-shop-product 
+.slider-shop-product
 .slick-list{
 	height:554px;
 }
 }
 @media (min-width:992px) and (max-width:1300px){
-.slider-shop-product 
+.slider-shop-product
 .kt-blocks-post-grid-item-inner-wrap:hover{
 	width: 284px;
 }
 }
 @media (min-width:768px) and (max-width:992px){
-.slider-shop-product 
+.slider-shop-product
 .slick-list{
 	height:354px;
 }
-.slider-shop-product 
+.slider-shop-product
 .kt-blocks-post-grid-item-inner-wrap:hover{
 	width: 204px;
 	top: -60px;
@@ -240,16 +246,16 @@
 }
 }
 @media (max-width:768px){
-.slider-shop-product 
+.slider-shop-product
 .kt-blocks-post-grid-item-inner{
 	display:flex;
 }
-.slider-shop-product 
+.slider-shop-product
 .slick-list{
 	height:fit-content;
 	margin:0 40px !important;
 }
-.slider-shop-product 
+.slider-shop-product
 .kt-blocks-post-grid-item-inner-wrap:hover{
 	border: none;
 	background:none;
@@ -273,3 +279,48 @@
 }
 
 
+
+
+	/* nav hover active */
+	.main-navigation {
+		height: 60px;
+		display: flex;
+		justify-content: center;
+	}
+
+	.main-navigation .main-nav ul li a {
+		padding: 0 !important;
+		margin: 0 35px;
+	}
+
+	.main-navigation .main-nav ul li a:hover {
+		border-bottom: solid 2px #fff;
+	}
+
+	.main-navigation .main-nav ul li[class*="current-menu-"] > a:active {
+		border-bottom: solid 2px #fff;
+	}
+
+	/*aqui*/
+.grid-blog .kt-blocks-post-grid-item {
+	position: relative;
+}
+
+.grid-blog .kt-blocks-post-grid-item-inner {
+	display: none;
+	position: absolute;
+	left: 35%;
+	top: 35%;
+	background: red;
+}
+
+.kt-blocks-post-grid-item:hover
+.kt-blocks-post-grid-item-inner {
+	visibility: visible;
+    display: flex;
+    align-items: center;
+}
+    /* footer block */
+    .social-footer, .copyright-footer {
+        justify-content: center;
+    }
