@@ -89,6 +89,9 @@
     display: flex;
     justify-content: center;
 }
+.main-navigation .main-nav ul li[class*="current-menu-"] > a:active {
+	border-bottom: solid 2px #fff;
+}
 
 /* slider shop product */
 .slider-shop-product 
@@ -222,3 +225,5 @@
     height: 40px !important;
 }
 }
+
+
