@@ -38,6 +38,9 @@ if ( ! defined( 'ABSPATH' ) ) {
         .slider-home .kt-blocks-post-grid-item-inner{
             background-image:url('<?php echo get_site_url(); ?>/wp-content/themes/generatepress_child/img/popup-slider-home.png');
         }
+		.carousel-services .kt-post-slider-item {
+			background-image:url('<?php echo get_site_url(); ?>/wp-content/themes/generatepress_child/img/popup-slider-home.png');
+		}
     </style>
 	<?php wp_head(); ?>
 </head>
