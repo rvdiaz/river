@@ -73,7 +73,7 @@
 }
 @media (min-width:1400px){
 	.slider-home
-	.kt-blocks-post-grid-item-inner{
+	.kt-blocks-post-grid-item-inner}
 @media (min-width:1400px) {
 	.slider-home .kt-blocks-post-grid-item-inner {
 		left: 35vw;
@@ -311,26 +311,32 @@
 		border-bottom: solid 2px #fff;
 	}
 
-	/*aqui*/
-.grid-blog .kt-blocks-post-grid-item {
-	position: relative;
+/*footer block, to center items*/
+.social-footer, .copyright-footer  {
+	place-content: center;
 }
-
-.grid-blog .kt-blocks-post-grid-item-inner {
-	display: none;
-	position: absolute;
-	left: 35%;
-	top: 35%;
-	background: red;
+/*MEET RIVERS-section from home-page*/
+.meet-rivers {
+	display: flex;
+	align-items: center;
+	height: 560px;
+	text-align: -webkit-center !important;
 }
-
-.kt-blocks-post-grid-item:hover
-.kt-blocks-post-grid-item-inner {
-	visibility: visible;
-    display: flex;
-    align-items: center;
+.green-box-river {
+	display: flex;
+	align-items: center;
+	width: 445px;
+	height: 197px;
 }
-    /* footer block */
-    .social-footer, .copyright-footer {
-        justify-content: center;
-    }
+.button-meet-river:hover {
+	text-decoration: underline !important;
+	cursor: pointer;
+}
+@media (max-width:800px){
+	.green-box-river{
+		display: none;
+	}
+	.meet-rivers {
+		height: 320px;
+	}
+}
