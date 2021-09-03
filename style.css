@@ -128,7 +128,8 @@
 	.carousel-services .kt-post-slider-item{
 		height: 105px !important;
 	}
-	.carousel-services .kt-blocks-carousel .slick-prev, .kt-blocks-carousel .slick-next {
+	.carousel-services .kt-blocks-carousel .slick-prev, 
+	.carousel-services .kt-blocks-carousel .slick-next {
 		margin: 0 -35px;
 	}
 	.carousel-services .kt-gutter-default:not(.kt-mobile-layout-row)>.wp-block-kadence-column {
