@@ -382,7 +382,51 @@
 		display: none;
 	}
 	.meet-rivers {
-		height: 320px;
+		height: 60vh;
 	}
 }
-
+/*Grid-blog-river*/
+.grid-blog-desktop
+.kt-blocks-post-grid-item {
+	position: relative;
+}
+.grid-blog-desktop
+.kt-blocks-post-grid-item {
+	width: 326.858px !important;
+	height: 326.858px;
+}
+.grid-blog-desktop, .carousel-blog-responsive
+.entry-title{
+	font-family: 'Avenir LT Std' !important;
+}
+.grid-blog-desktop
+.kt-blocks-post-grid-item-inner {
+	visibility: hidden;
+	position: absolute;
+	left: 15%;
+	top: 18%;
+	width: 232px;
+	height: 232px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	display: flex !important;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.kt-blocks-post-grid-item:hover
+.kt-blocks-post-grid-item-inner {
+	visibility: visible;
+	display: flex;
+	align-items: center;
+}
+@media (max-width: 800px) {
+	.grid-blog-desktop {
+		display: none;
+	}
+}
+@media (min-width: 800px) {
+	.carousel-blog-responsive {
+		display: none;
+	}
+}
