@@ -352,11 +352,19 @@
 .social-footer, .copyright-footer  {
 	place-content: center;
 }
+/*footer block, to center items*/
+.social-footer, .copyright-footer  {
+	place-content: center;
+}
+.copyright-footer
+.gb-button-wrapper-0a9f32c8 {
+	cursor: pointer;
+}
 /*MEET RIVERS-section from home-page*/
 .meet-rivers {
 	display: flex;
 	align-items: center;
-	height: 560px;
+	height: 80vh;
 	text-align: -webkit-center !important;
 }
 .green-box-river {
@@ -366,7 +374,7 @@
 	height: 197px;
 }
 .button-meet-river:hover {
-	text-decoration: underline !important;
+	border-bottom: solid 1px #ffffff !important;
 	cursor: pointer;
 }
 @media (max-width:800px){
@@ -377,3 +385,4 @@
 		height: 320px;
 	}
 }
+
