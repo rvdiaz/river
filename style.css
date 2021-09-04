@@ -89,6 +89,7 @@
 .main-nav ul li a{
 	padding:0 !important;
 	margin:0 35px;
+	letter-spacing: 2px;
 }
 .main-navigation{
 	height: 60px;
@@ -98,6 +99,19 @@
 .main-navigation .main-nav ul li[class*="current-menu-"] > a {
 	border-bottom: solid 2px #fff;
 }
+@media (max-width:900px) {
+	#masthead span{
+		font-size: 10px;
+	}	
+	#site-navigation {
+		background-color: #fff;
+	}
+	#site-navigation .gp-icon svg {
+		height: 4em;
+    	width: 3em;
+		fill: #add6cc;
+	}
+}
 /* spacer-divider */
 @media (max-width:900px) {
 	.spacer-divider .kt-gutter-default:not(.kt-mobile-layout-row)>.wp-block-kadence-column {
@@ -106,25 +120,23 @@
 }
 
 /* two-typography */
-.two-typography {
-	max-width: 500px;
-}
-.two-typography .kt-row-column-wrap .kt-has-2-columns .kt-gutter-default .kt-v-gutter-default .kt-row-valign-top .kt-row-layout-equal .kt-tab-layout-inherit .kt-m-colapse-left-to-right .kt-mobile-layout-row  .kt-custom-first-width-20  .kt-custom-second-width-80 {
-	padding: 0;
-}
-.two-typography .kt-row-column-wrap {
+.two-typography .kt-row-column-wrap .kt-has-1-columns .kt-gutter-default .kt-v-gutter-none .kt-row-valign-top .kt-row-layout-equal .kt-tab-layout-inherit .kt-m-colapse-left-to-right .kt-mobile-layout-row {
 	padding: 0 !important;
 }
 
-.two-typography .wp-block-kadence-column .inner-column-1 .kadence-column_8a1f5e-c2 {
-	margin: 0;
+.two-typography span{
+	font-family: 'Avenir';
+    color: #add6cc;
+    font-size: 35px;
+	margin-left: 5px;
+}
+@media (max-width:1190px) {
+	.two-typography h2 {
+		display: flex;
+		flex-direction: column;
+	} 
 }
 
-@media (max-width:900px) {
-	.two-typography .wp-block-kadence-column .inner-column-1 .kadence-column_8a1f5e-c2 {
-		margin: 0;
-	}
-}
 /* carousel-services */
 .carousel-services .slick-track {
 	display: flex !important;
@@ -155,7 +167,7 @@
 	display: unset;
 }
 
-@media (max-width:900px) {
+@media (max-width:976px) {
 	.carousel-services .kt-post-slider-item{
 		height: 105px !important;
 	}
@@ -326,10 +338,6 @@
 	margin-top: 18px;
 }
 }
-
-
-
-
 	/* nav hover active */
 	.main-navigation {
 		height: 60px;
