@@ -396,7 +396,10 @@
 	width: 326.858px !important;
 	height: 326.858px;
 }
-.grid-blog-desktop, 
+.grid-blog-desktop
+.entry-title{
+	font-family: 'AvenirLTStd-Book' !important;
+}
 .carousel-blog-responsive
 .entry-title{
 	font-family: 'AvenirLTStd-Book' !important;
@@ -412,10 +415,6 @@
     .gb-headline-text {
         font-size:55px;
     }
-	.curated-life-title
-	.gb-headline-0f8fc3b3 {
-		font-size: 12px;
-	}
 }
 .grid-blog-desktop
 .kt-blocks-post-grid-item-inner {
