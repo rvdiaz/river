@@ -46,6 +46,9 @@ if ( ! defined( 'ABSPATH' ) ) {
         .slider-home .kt-blocks-post-grid-item-inner{
             background-image:url('<?php echo get_site_url(); ?>/wp-content/themes/generatepress_child/img/popup-slider-home.png');
         }
+        .grid-blog-desktop .kt-blocks-post-grid-item-inner {
+            background-image:url('<?php echo get_site_url(); ?>/wp-content/themes/generatepress_child/img/poupup-grid-home.png');
+        }
         .carousel-services .kt-post-slider-item {
             background-image:url('<?php echo get_site_url(); ?>/wp-content/themes/generatepress_child/img/popup-slider-home.png');
         }

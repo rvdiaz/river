@@ -60,7 +60,34 @@ do_action( 'generate_after_footer' );
 
 wp_footer();
 ?>
-
 <script src="<?php echo get_site_url(); ?>/wp-content/themes/generatepress_child/js/main.js"></script>
+<script>
+if(document.getElementsByClassName("slider-shop-product")[0]){
+	let currentItem="";
+	let productTitle="";
+	let currentItemUrl="";
+	const itemSliderShop=document.getElementsByClassName("slider-shop-product")[0].children[0].children;
+	<?php 
+	$args=array(
+		'post_type'=>'product_post_type',
+		'order'    =>'ASC'
+	);
+	$the_query=new WP_Query($args); 
+	if($the_query->have_posts()){
+	while($the_query->have_posts()){
+		$the_query->the_post();
+		?>
+		productTitle="<?php echo get_the_title(); ?>"
+		currentItem=findItemByTitle(productTitle,itemSliderShop);
+		currentItemUrl="<?php echo get_post_meta(get_the_ID(),'link',true) ?>";
+		if(currentItem){
+			if(currentItemUrl)
+				currentItem.setAttribute("href",currentItemUrl);
+			else
+				currentItem.setAttribute("href","#");
+		} 
+	 <?php }}
+	 ?>}
+</script>
 </body>
 </html>

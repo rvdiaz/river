@@ -12,16 +12,12 @@
 .slider-home
 .kt-blocks-post-grid-item-inner{
 	cursor: default;
-	position: absolute;
-    top: 18vw;
-    left: 30vw;
     width: 445px;
     height: 197px;
     display: none;
     align-items: center;
     justify-content: center;
 	flex-direction: column;
-	visibility: hidden;
 	background-size: contain;
 }
 .slider-home
@@ -70,14 +66,6 @@
 	.kt-blocks-post-grid-item-inner{
 		display: none !important;
 	}	
-}
-@media (min-width:1400px){
-	.slider-home
-	.kt-blocks-post-grid-item-inner}
-@media (min-width:1400px) {
-	.slider-home .kt-blocks-post-grid-item-inner {
-		left: 35vw;
-	}
 }
 /* nav hover active */
 .main-navigation
@@ -362,11 +350,19 @@
 .social-footer, .copyright-footer  {
 	place-content: center;
 }
+/*footer block, to center items*/
+.social-footer, .copyright-footer  {
+	place-content: center;
+}
+.copyright-footer
+.gb-button-wrapper-0a9f32c8 {
+	cursor: pointer;
+}
 /*MEET RIVERS-section from home-page*/
 .meet-rivers {
 	display: flex;
 	align-items: center;
-	height: 560px;
+	height: 80vh;
 	text-align: -webkit-center !important;
 }
 .green-box-river {
@@ -376,7 +372,7 @@
 	height: 197px;
 }
 .button-meet-river:hover {
-	text-decoration: underline !important;
+	border-bottom: solid 1px #ffffff !important;
 	cursor: pointer;
 }
 @media (max-width:800px){
@@ -384,6 +380,58 @@
 		display: none;
 	}
 	.meet-rivers {
-		height: 320px;
+		height: 60vh;
 	}
+}
+/*Grid-blog-river*/
+.grid-blog-desktop
+.kt-blocks-post-grid-item {
+	position: relative;
+}
+.grid-blog-desktop
+.kt-blocks-post-grid-item {
+	width: 326.858px !important;
+	height: 326.858px;
+}
+.grid-blog-desktop, .carousel-blog-responsive
+.entry-title{
+	font-family: 'Avenir LT Std' !important;
+}
+.grid-blog-desktop
+.kt-blocks-post-grid-item-inner {
+	visibility: hidden;
+	position: absolute;
+	left: 15%;
+	top: 18%;
+	width: 232px;
+	height: 232px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	display: flex !important;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.kt-blocks-post-grid-item:hover
+.kt-blocks-post-grid-item-inner {
+	visibility: visible;
+	display: flex;
+	align-items: center;
+}
+@media (max-width: 800px) {
+	.grid-blog-desktop {
+		display: none;
+	}
+}
+@media (min-width: 800px) {
+	.carousel-blog-responsive {
+		display: none;
+	}
+}
+
+/* title page blog */
+@media (min-width:1400px){
+.title-page-blog{
+	font-size: 120px !important;
+}
 }
