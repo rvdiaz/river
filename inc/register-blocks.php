@@ -6,7 +6,7 @@ acf_register_block_type(array(
     'description'       => __('services'),
     'render_template'   => 'template-parts/blocks/services-post/index.php',
     'icon'              => 'admin-comments',
-    'keywords'          => array('noticias', 'seccion'),
+    'keywords'          => array('service'),
     'category' => 'widgets'
 
 ));
