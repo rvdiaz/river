@@ -431,16 +431,6 @@
 		display: none;
 	}
 }
-/*MAGAZINE-GALERY*/
-.magazine-galery
-.gb-grid-wrapper-e044e38c {
-	align-items: center;
-}
-@media (max-width: 770px) {
-	.magazine-galery {
-		display: none;
-	}
-}
 
 /* title page blog */
 @media (min-width:1400px){
