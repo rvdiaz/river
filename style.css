@@ -67,8 +67,6 @@
 		display: none !important;
 	}	
 }
-
-
 /* nav hover active */
 .main-navigation
 .main-nav ul li a:hover {
@@ -376,4 +374,11 @@
 	.meet-rivers {
 		height: 320px;
 	}
+}
+
+/* title page blog */
+@media (min-width:1400px){
+.title-page-blog{
+	font-size: 120px !important;
+}
 }
