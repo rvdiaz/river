@@ -365,6 +365,9 @@
 	height: 80vh;
 	text-align: -webkit-center !important;
 }
+.meet-rivers:hover {
+	cursor: pointer;
+}
 .green-box-river {
 	display: flex;
 	align-items: center;
@@ -395,7 +398,7 @@
 }
 .grid-blog-desktop, .carousel-blog-responsive
 .entry-title{
-	font-family: 'Avenir LT Std' !important;
+	font-family: 'AvenirLTStd-Book' !important;
 }
 .grid-blog-desktop
 .kt-blocks-post-grid-item-inner {
@@ -412,7 +415,7 @@
 	justify-content: center;
 	flex-direction: column;
 }
-.kt-blocks-post-grid-item:hover
+.grid-blog-desktop:hover
 .kt-blocks-post-grid-item-inner {
 	visibility: visible;
 	display: flex;
