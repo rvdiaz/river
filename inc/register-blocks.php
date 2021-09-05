@@ -1,3 +1,4 @@
+<?php
 acf_register_block_type(array(
     'name'              => 'services-post',
     'title'             => __('services post),
@@ -8,3 +9,4 @@ acf_register_block_type(array(
     'category' => 'widgets'
 
 ));
+
