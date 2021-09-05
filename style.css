@@ -401,6 +401,22 @@
 .entry-title{
 	font-family: 'AvenirLTStd-Book' !important;
 }
+@media (min-width: 500px) and (max-width: 700px) {
+    .curated-life-title
+    .gb-headline-text {
+        font-size:85px;
+    }
+}
+@media (max-width: 500px) {
+    .curated-life-title
+    .gb-headline-text {
+        font-size:55px;
+    }
+	.curated-life-title
+	.gb-headline-0f8fc3b3 {
+		font-size: 12px;
+	}
+}
 .grid-blog-desktop
 .kt-blocks-post-grid-item-inner {
 	visibility: hidden;
