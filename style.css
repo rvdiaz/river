@@ -393,7 +393,8 @@
 	width: 326.858px !important;
 	height: 326.858px;
 }
-.grid-blog-desktop, .carousel-blog-responsive
+.grid-blog-desktop, 
+.carousel-blog-responsive
 .entry-title{
 	font-family: 'Avenir LT Std' !important;
 }
@@ -412,6 +413,7 @@
 	justify-content: center;
 	flex-direction: column;
 }
+.grid-blog-desktop
 .kt-blocks-post-grid-item:hover
 .kt-blocks-post-grid-item-inner {
 	visibility: visible;

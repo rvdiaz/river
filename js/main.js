@@ -8,5 +8,5 @@ function findItemByTitle(title,array){
         if(array[i].children[0].children[0].children[1].children[0].children[0].children[0].innerHTML==title)
     return array[i].children[0].children[0].children[1].children[0].children[0].children[0];
     }
-    return null;
+return null;
 }
