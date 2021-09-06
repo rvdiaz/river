@@ -49,9 +49,11 @@ function getPostService() {
    separator.appendChild(line2);
    return separator;
 }
-let last = forPost.length - 1;
-if (forPost) {    
- for (let i = 0; i < last; i++) {   
-    forPost[i].appendChild(getPostService()); 
- }
-}
+if(forPost){
+    let last = forPost.length - 1;
+        if (forPost) {    
+        for (let i = 0; i < last; i++) {   
+            forPost[i].appendChild(getPostService()); 
+            }
+        }
+    }
