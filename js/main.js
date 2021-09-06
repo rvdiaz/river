@@ -32,3 +32,26 @@ function changeGridContentView(gridObject){
     gridObject.children[0].children[1].removeChild(contentInfo);
 }
 
+// Service Post
+const forPost = document.getElementsByClassName("service-post-separator")[0].children[0].children[0].children[0].children;
+
+function getPostService() {
+   let separator = document.createElement('div');
+   separator.classList.add("separator");
+   let line1 =  document.createElement('div');
+   line1.classList.add("line");
+   let logo = document.createElement('div');
+   logo.classList.add("logo");
+   let line2 =  document.createElement('div');
+   line2.classList.add("line");
+   separator.appendChild(line1);
+   separator.appendChild(logo);
+   separator.appendChild(line2);
+   return separator;
+}
+let last = forPost.length - 1;
+if (forPost) {    
+ for (let i = 0; i < last; i++) {   
+    forPost[i].appendChild(getPostService()); 
+ }
+}

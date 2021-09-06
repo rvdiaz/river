@@ -70,6 +70,12 @@ if ( ! defined( 'ABSPATH' ) ) {
         .slider-shop-product .slick-next{
             background-image:url('<?php echo get_site_url(); ?>/wp-content/themes/generatepress_child/img/arrow-right.png') !important;
         }
+        .service-post-separator .kt-blocks-post-grid-item-inner {
+            background-image:url('<?php echo get_site_url(); ?>/wp-content/themes/generatepress_child/img/popup-slider-home.png');
+        }
+        .service-post-separator .separator .logo {
+            background-image:url('<?php echo get_site_url(); ?>/wp-content/themes/generatepress_child/img/logo_mark.png');
+        }
         @media (max-width:768px){
             .slider-shop-product .slick-prev{
                 background-image:url('<?php echo get_site_url(); ?>/wp-content/themes/generatepress_child/img/arrow-left-mobile.png') !important;
