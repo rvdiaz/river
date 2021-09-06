@@ -43,6 +43,18 @@ if ( ! defined( 'ABSPATH' ) ) {
             font-family:'AvenirNextW06Bold';
             src:url('<?php echo get_site_url();?>/wp-content/uploads/fonts/AvenirNextW06Bold.otf') format('truetype');
         }
+        @font-face{
+            font-family:'Gotham-Black';
+            src:url('<?php echo get_site_url();?>/wp-content/uploads/fonts/Gotham-Black.otf') format('truetype');
+        }
+        @font-face{
+            font-family:'Gotham-Book';
+            src:url('<?php echo get_site_url();?>/wp-content/uploads/fonts/Gotham-Book.otf') format('truetype');
+        }
+        @font-face{
+            font-family:'Gotham-Medium';
+            src:url('<?php echo get_site_url();?>/wp-content/uploads/fonts/Gotham-Medium.otf') format('truetype');
+        }
         .slider-home .kt-blocks-post-grid-item-inner{
             background-image:url('<?php echo get_site_url(); ?>/wp-content/themes/generatepress_child/img/popup-slider-home.png');
         }
@@ -66,6 +78,13 @@ if ( ! defined( 'ABSPATH' ) ) {
                 background-image:url('<?php echo get_site_url(); ?>/wp-content/themes/generatepress_child/img/arrow-right-mobile.png') !important;
             }
         }
+        .first-blog-grid
+        .kt-blocks-post-readmore,
+        .second-blog-grid
+        .kt-blocks-post-readmore
+        {
+            background-image:url('<?php echo get_site_url(); ?>/wp-content/themes/generatepress_child/img/background-readMore.png');
+        }    
     </style>
     <?php wp_head(); ?>
 </head>

@@ -81,8 +81,10 @@ if(document.getElementsByClassName("slider-shop-product")[0]){
 		currentItem=findItemByTitle(productTitle,itemSliderShop);
 		currentItemUrl="<?php echo get_post_meta(get_the_ID(),'link',true) ?>";
 		if(currentItem){
-			if(currentItemUrl)
+			if(currentItemUrl){
 				currentItem.setAttribute("href",currentItemUrl);
+				currentItem.setAttribute("target","_blank");
+			}
 			else
 				currentItem.setAttribute("href","#");
 		} 
