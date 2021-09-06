@@ -515,3 +515,27 @@
 	align-items: center;
 	flex-direction: column;
 }
+
+@media (max-width: 768px){
+.first-blog-grid
+.kt-blocks-post-grid-item{
+	background-color:transparent !important;
+}
+}
+
+/* form blog page */
+.form-blog-wrapper{
+	display:flex;
+	align-items: center;
+	justify-content: center;
+}
+.form-blog
+.kadence-blocks-form-field
+{
+	margin-bottom:0 !important;
+}
+.form-blog
+.kb-submit-field
+{
+	display:none !important;
+}
