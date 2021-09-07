@@ -13,6 +13,7 @@ add_filter('generate_typography_default_fonts',function($fonts){
     $fonts[]='Avenir-Black';
     $fonts[]='Avenir-Heavy';
     $fonts[]='Avenir-Light';
+    $fonts[]='AvenirNextW06Bold';
     return $fonts;
 });
 
