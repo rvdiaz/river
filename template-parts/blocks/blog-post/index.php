@@ -1,9 +1,25 @@
 <?php
+    $arrayCategoriesBlog=array();
     $args=array(
         'post_type'=>'blog_post',
         'order'=>'ASC'
     );
     $the_query=new WP_Query($args);
+    $categories = get_categories( array(
+        'orderby' => 'name',
+        'order'   => 'DESC'
+        ) );
+    foreach( $categories as $category ) {
+    $argsPost = array(
+		'post_type'=> 'blog_post',
+		'order'    => 'ASC',
+		'category_name'=> $category->name
+		);
+    $the_query_post = new WP_Query( $argsPost );
+	if($the_query_post->have_posts()){ 
+        array_push($arrayCategoriesBlog,$category);
+    }
+    }
 ?>
 <div class="wrapper-menu">
     <nav class="topnav">
@@ -20,8 +36,8 @@
             </p>
         </div>
         <div class="container-search">
-            <input type="search" class="searchBlog" placeholder="SEARCH"/>
-            <button class="buttonSearchBlog">
+            <input type="search" oninput="filterByCharacter()" class="searchBlog" placeholder="SEARCH"/>
+            <button onclick="filterByCharacter()" class="buttonSearchBlog">
             </button >
 		</div>
 	</nav>
@@ -29,12 +45,14 @@
 <div class="container-filter-blog">
     <div id="sideNavigation" class="sidenav">
 	    <div class="sidenavContainer">
-		    <a>Categoria 1</a>
-            <a>Categoria 1</a>
-            <a>Categoria 1</a>
+            <?php for($i=0;$i<count($arrayCategoriesBlog);$i++){ ?>
+		    <button class="buttonCategoriesMenu" onclick="filterByCategory(event)"><?php echo $arrayCategoriesBlog[$i]->name ?>
+    
+            </button>
+            <?php } ?>
 	    </div>	
     </div>
-    <div class="gridBlogs">
+    <div id="gridBlogs">
         <?php 
             if($the_query->have_posts())
             while($the_query->have_posts()){
@@ -45,7 +63,9 @@
                     <?php echo the_post_thumbnail();?>
                 </div>
                 <div class="title-blog-wrap">
-                    <h1><?php echo get_the_title(); ?></h1>
+                    <div>
+                    <a href="<?php echo the_permalink(); ?>"><?php echo get_the_title(); ?></a>
+                    </div>
                 </div>       
             </div>
         <?php } ?>

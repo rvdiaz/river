@@ -688,6 +688,7 @@
 	font-family:"Gotham-Book";
 	margin-right: 24.3px;
 	border-radius: 3px !important;
+	border-color: #8fc6b9 !important;
 }
 .searchBlog::placeholder{
 	text-align: right;
@@ -718,22 +719,37 @@
 	overflow: hidden;
     top: 0;
     left: 0;
-    background-color: #E6E6E6;
-    padding-top: 20px; 
+    background-color: #E6E6E6; 
     transition: 0.5s; 
 }
-.gridBlogs{
+.sidenavContainer{
+	display:flex;
+	flex-direction: column;
+	width:fit-content;
+	height:100%;
+	border-left:3px solid #8fc6b9;
+	margin-left: 100px;
+}
+.sidenavContainer button{
+	margin-bottom: 10px;
+	background-color: transparent !important;
+	color:#666666;
+}
+.sidenavContainer button:first-child{
+	margin-top: 30px;
+}
+#gridBlogs{
 	padding:73px 73px;
 	display: grid;
 	grid-auto-rows: 300px;
 	grid-auto-flow: row dense;
 	grid-gap:73px;
 }
-.gridBlogs div:nth-child(6n+1){
+#gridBlogs div:nth-child(6n+1){
 	grid-column-end: 1;
 	grid-row: span 2;
 }
-.gridBlogs div:nth-child(6n-1){
+#gridBlogs div:nth-child(6n-1){
 	grid-column-start: 1;
 	grid-row: span 2;
 }
@@ -745,4 +761,13 @@
 	width:inherit;
 	height:inherit;
 	object-fit: cover;
+}
+.title-blog-wrap{
+	margin-top: -15px;
+	text-align:center;
+}
+.title-blog-wrap a{
+	font-size: 24px;
+	font-family: "Avenir-Black";
+	color:black;
 }
