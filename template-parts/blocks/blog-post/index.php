@@ -1,7 +1,7 @@
 <?php
     $arrayCategoriesBlog=array();
     $args=array(
-        'post_type'=>'blog',
+        'post_type'=>'blog_post',
         'order'=>'ASC'
     );
     $the_query=new WP_Query($args);
@@ -11,7 +11,7 @@
         ) );
     foreach( $categories as $category ) {
     $argsPost = array(
-		'post_type'=> 'blog',
+		'post_type'=> 'blog_post',
 		'order'    => 'ASC',
 		'category_name'=> $category->name
 		);
@@ -22,7 +22,7 @@
     }
 ?>
 <div class="wrapper-menu">
-    <nav class="topnav">
+    <div class="topnav">
         <div class="container-icon">
   		    <a class="openNavButton" onclick="toggleNav()">
     	        <svg width="55" height="23" id="icoOpen">
@@ -40,8 +40,8 @@
             <button onclick="filterByCharacter()" class="buttonSearchBlog">
             </button >
 		</div>
-	</nav>
-</div>    
+    </div>
+</div>   
 <div class="container-filter-blog">
     <div id="sideNavigation" class="sidenav">
 	    <div class="sidenavContainer">
