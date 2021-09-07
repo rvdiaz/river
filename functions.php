@@ -46,7 +46,9 @@ function getBlogByCategory(){
                 '.get_the_post_thumbnail(get_the_ID(),'thumbnail',$attr='').'
             </div>
             <div class="title-blog-wrap">
-                <a href="'.get_the_permalink().'">'.get_the_title().'</a>
+                <div class="title-background">
+                    <a href="'.get_the_permalink().'">'.get_the_title().'</a>
+                </div>
             </div>
         </div>';
     }
@@ -69,7 +71,9 @@ function getBlogBySearch(){
                 '.get_the_post_thumbnail($blog->ID,'thumbnail',$attr='').'
             </div>
             <div class="title-blog-wrap">
-                <a href="'.get_the_permalink($blog->ID).'">'.get_the_title($blog->ID).'</a>
+                <div class="title-background">
+                    <a href="'.get_the_permalink($blog->ID).'">'.get_the_title($blog->ID).'</a>
+                </div>
             </div>
         </div>';
     }}else

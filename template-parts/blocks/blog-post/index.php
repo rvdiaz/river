@@ -1,7 +1,7 @@
 <?php
     $arrayCategoriesBlog=array();
     $args=array(
-        'post_type'=>'blog_post',
+        'post_type'=>'blog',
         'order'=>'ASC'
     );
     $the_query=new WP_Query($args);
@@ -11,7 +11,7 @@
         ) );
     foreach( $categories as $category ) {
     $argsPost = array(
-		'post_type'=> 'blog_post',
+		'post_type'=> 'blog',
 		'order'    => 'ASC',
 		'category_name'=> $category->name
 		);
