@@ -11,7 +11,7 @@
         ) );
     foreach( $categories as $category ) {
     $argsPost = array(
-		'post_type'=> 'blog',
+		'post_type'=> 'blog_post',
 		'order'    => 'ASC',
 		'category_name'=> $category->name
 		);
