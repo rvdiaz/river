@@ -33,8 +33,16 @@ function changeGridContentView(gridObject){
 }
 
 // Service Post
+if(document.getElementsByClassName("service-post-separator")[0]){
 const forPost = document.getElementsByClassName("service-post-separator")[0].children[0].children[0].children[0].children;
 
+let last = forPost.length - 1;
+    if (forPost) {    
+    for (let i = 0; i < last; i++) {   
+        forPost[i].appendChild(getPostService()); 
+        }
+    }
+}
 function getPostService() {
    let separator = document.createElement('div');
    separator.classList.add("separator");
@@ -49,11 +57,14 @@ function getPostService() {
    separator.appendChild(line2);
    return separator;
 }
-if(forPost){
-    let last = forPost.length - 1;
-        if (forPost) {    
-        for (let i = 0; i < last; i++) {   
-            forPost[i].appendChild(getPostService()); 
-            }
-        }
-    }
+/* menu filter blogs */
+function toggleNav() {
+    const sideMenu= document.getElementById("sideNavigation");
+    if(sideMenu.style.width=="")
+    sideMenu.style.width="40%";
+    else 
+    sideMenu.style.width="";
+}
+ 
+
+    

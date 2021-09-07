@@ -91,6 +91,9 @@ if ( ! defined( 'ABSPATH' ) ) {
         {
             background-image:url('<?php echo get_site_url(); ?>/wp-content/themes/generatepress_child/img/background-readMore.png');
         }    
+        .buttonSearchBlog{
+            background-image:url('<?php echo get_site_url(); ?>/wp-content/themes/generatepress_child/img/searchIcon.png');
+        }
     </style>
     <?php wp_head(); ?>
 </head>
