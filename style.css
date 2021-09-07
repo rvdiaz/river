@@ -721,6 +721,7 @@
     left: 0;
     background-color: #E6E6E6; 
     transition: 0.5s; 
+	z-index: 99;
 }
 .sidenavContainer{
 	display:flex;
@@ -753,6 +754,9 @@
 	grid-column-start: 1;
 	grid-row: span 2;
 }
+.gridBlogItem{
+	position:relative;
+}
 .image-blog-wrap{
 	width:100%;
 	height:100%;
@@ -764,10 +768,18 @@
 }
 .title-blog-wrap{
 	margin-top: -15px;
-	text-align:center;
+	position: absolute;
+	width:100%;
+	display:flex;
+	justify-content: center;
 }
-.title-blog-wrap a{
+.title-background{
+	width:412px;
+	text-align:center;
+	background-size: cover;
+}
+.title-background a{
 	font-size: 24px;
 	font-family: "Avenir-Black";
-	color:black;
+	color:white;
 }

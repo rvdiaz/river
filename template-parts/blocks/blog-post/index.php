@@ -11,7 +11,7 @@
         ) );
     foreach( $categories as $category ) {
     $argsPost = array(
-		'post_type'=> 'blog_post',
+		'post_type'=> 'blog',
 		'order'    => 'ASC',
 		'category_name'=> $category->name
 		);
@@ -63,8 +63,8 @@
                     <?php echo the_post_thumbnail();?>
                 </div>
                 <div class="title-blog-wrap">
-                    <div>
-                    <a href="<?php echo the_permalink(); ?>"><?php echo get_the_title(); ?></a>
+                    <div class="title-background">
+                        <a href="<?php echo the_permalink(); ?>"><?php echo get_the_title(); ?></a>
                     </div>
                 </div>       
             </div>
