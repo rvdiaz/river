@@ -1,6 +1,6 @@
 /* change link slider shop title */
+if(document.getElementsByClassName("slider-shop-product")[0]){
 const slider=document.getElementsByClassName("slider-shop-product")[0];
-if(slider){
 slider.children[0].setAttribute("data-columns-xs",1);
 slider.children[0].setAttribute("data-columns-ss",1);
 }
@@ -33,8 +33,16 @@ function changeGridContentView(gridObject){
 }
 
 // Service Post
+if(document.getElementsByClassName("service-post-separator")[0]){
 const forPost = document.getElementsByClassName("service-post-separator")[0].children[0].children[0].children[0].children;
 
+let last = forPost.length - 1;
+    if (forPost) {    
+    for (let i = 0; i < last; i++) {   
+        forPost[i].appendChild(getPostService()); 
+        }
+    }
+}
 function getPostService() {
    let separator = document.createElement('div');
    separator.classList.add("separator");
@@ -49,9 +57,48 @@ function getPostService() {
    separator.appendChild(line2);
    return separator;
 }
-let last = forPost.length - 1;
-if (forPost) {    
- for (let i = 0; i < last; i++) {   
-    forPost[i].appendChild(getPostService()); 
- }
+/* menu filter blogs */
+function toggleNav() {
+    const sideMenu= document.getElementById("sideNavigation");
+    if(sideMenu.style.width=="")
+    sideMenu.style.width="40%";
+    else 
+    sideMenu.style.width="";
 }
+ 
+/* methods blog filters */
+function filterByCategory(event){
+    toggleNav();
+    const category_name=event.currentTarget.innerHTML;
+    jQuery.ajax({
+        type:"post",
+        url:ajax_var.url,
+        data:{
+            action:"blog-list-byCategory",
+            category_name:category_name
+        },
+        beforeSend:function(){
+            jQuery("#gridBlogs").html("<h1>Searching...</h1>");
+        },
+        success:function(result){
+            jQuery("#gridBlogs").html(result);
+        }
+    });
+}
+function filterByCharacter(){
+    const searchName=document.getElementsByClassName("searchBlog")[0].value;
+    jQuery.ajax({
+        type:"post",
+        url:ajax_var.url,
+        data:{
+            action:"blog-list-bySearch",
+            search_name:searchName
+        },
+        beforeSend:function(){
+            jQuery("#gridBlogs").html("<h1>Searching...</h1>");
+        },
+        success:function(result){
+            jQuery("#gridBlogs").html(result);
+        }
+    });
+}    
