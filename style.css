@@ -147,7 +147,9 @@
 	flex-direction: column;
 }
 
-.carousel-services .entry-content:not(:first-child), .entry-summary:not(:first-child), .page-content:not(:first-child) {
+.carousel-services .entry-content:not(:first-child), 
+.entry-summary:not(:first-child), 
+.page-content:not(:first-child) {
 	margin-top: 0 !important;
 }
 
@@ -167,33 +169,22 @@
 	.carousel-services .kt-post-slider-item {
 		height: 143px !important;
 	}
-	.carousel-services .kt-blocks-carousel .slick-prev, 
-	.carousel-services .kt-blocks-carousel .slick-next {
-		margin: 0 -35px;
-	}
-	.carousel-services .kt-blocks-carousel .kt-carousel-arrowstyle-outlineblack .slick-prev, 
-	.carousel-services .kt-blocks-carousel .kt-carousel-arrowstyle-outlineblack .slick-next {
-		border: none;
-		color: #add6cc;
-	}
-	.carousel-services .kt-blocks-carousel .slick-next:before,
-	.carousel-services .kt-blocks-carousel .slick-prev:before {
-		border-width: 3px 3px 0 0 !important;
-		width: 30px !important;
-		height: 30px !important;
+	.carousel-services .slick-prev {
+		margin: 0 -20px;
 	} 
-	/* 
-	.carousel-services .kt-blocks-carousel .slick-prev, 
-	.carousel-services .kt-blocks-carousel .slick-next {
-		margin: 0 -35px;
+	.carousel-services .slick-next {
+		margin: 0 -77px;
 	}
-	.carousel-services .kt-gutter-default:not(.kt-mobile-layout-row)>.wp-block-kadence-column {
-		margin: 0 !important;
+	.carousel-services .slick-next,
+	.carousel-services .slick-prev {
+		width: 70px !important;
+		background-size: contain !important;
+		background-color: transparent !important;
+		height: 40px !important;
+		background-repeat: no-repeat !important;
+		border: none !important;
+		color: transparent !important;
 	}
-	.carousel-services #kt-layout-id_8e7a12-02 > .kt-row-column-wrap {
-		padding: 0 73px !important;
-	}
-	 */
 }
 
 
@@ -703,7 +694,9 @@
 	border-bottom: solid 2px #fff;
 	margin: 0 !important;
 }
-.service-post-separator .entry-content:not(:first-child), .entry-summary:not(:first-child), .page-content:not(:first-child) {
+.service-post-separator .entry-content:not(:first-child), 
+.entry-summary:not(:first-child), 
+.page-content:not(:first-child) {
 	margin: 0;
 }
 
