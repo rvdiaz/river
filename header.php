@@ -84,13 +84,22 @@ if ( ! defined( 'ABSPATH' ) ) {
                 background-image:url('<?php echo get_site_url(); ?>/wp-content/themes/generatepress_child/img/arrow-right-mobile.png') !important;
             }
         }
+        @media (max-width:992px) {
+            .carousel-magazine-home .slick-prev {
+                background-image: url('<?php echo get_site_url(); ?>/wp-content/themes/generatepress_child/img/arrow-left-mobile.png') !important;
+            }
+
+            .carousel-magazine-home .slick-next {
+                background-image: url('<?php echo get_site_url(); ?>/wp-content/themes/generatepress_child/img/arrow-right-mobile.png') !important;
+            }
+        }
         .first-blog-grid
         .kt-blocks-post-readmore,
         .second-blog-grid
         .kt-blocks-post-readmore
         {
             background-image:url('<?php echo get_site_url(); ?>/wp-content/themes/generatepress_child/img/background-readMore.png');
-        }    
+        }
         .buttonSearchBlog{
             background-image:url('<?php echo get_site_url(); ?>/wp-content/themes/generatepress_child/img/searchIcon.png');
         }
