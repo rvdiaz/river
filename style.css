@@ -432,7 +432,12 @@
     .gb-headline-text {
         font-size:55px;
     }
+	.carousel-blog-responsive
+	.kadence-post-image-inner-intrisic img {
+		height: 60vh !important;
+	}
 }
+
 .grid-blog-desktop
 .kt-blocks-post-grid-item-inner {
 	visibility: hidden;
@@ -472,6 +477,57 @@
 	font-size: 120px !important;
 }
 }
+/*MAGAZINE BRAND CAROUSEL*/
+.carousel-magazine-home
+.kadence-blocks-gallery-intrinsic img {
+	height: auto !important;
+	top: auto !important;
+}
+.carousel-magazine-home
+.kb-gallery-image-contain {
+	display: flex !important;
+	align-content: center;
+	align-items: center;
+	padding-top: 55px !important;
+	padding-bottom: 55px !important;
+}
+.carousel-magazine-home
+.kt-blocks-carousel {
+	padding: 0 !important;
+}
+.carousel-magazine-home
+.kb-gallery-filter-none {
+	padding: 40px !important;
+}
+
+@media (max-width: 543px) {
+    .carousel-magazine-home
+    .kb-gallery-image-contain {
+        padding-top: 85px !important;
+        padding-bottom: 85px !important;
+    }
+}
+
+.carousel-magazine-home .slick-next,
+.carousel-magazine-home .slick-prev{
+	width: 70px !important;
+	background-size: contain !important;
+	background-color: transparent !important;
+	height: 40px !important;
+	background-repeat: no-repeat !important;
+}
+.carousel-magazine-home .slick-next::before,
+.carousel-magazine-home .slick-prev::before {
+	border:none !important;
+}
+.carousel-magazine-home .slick-next {
+	right: -47px !important;
+}
+.carousel-magazine-home .slick-prev {
+	left: 2px !important;
+}
+
+
 
 /* blog page first and second grid*/
 .first-blog-grid
@@ -641,11 +697,11 @@
 	margin: 0;
 }
 
-@media (max-width: 768px) {	
+@media (max-width: 768px) {
 	.service-post-separator {
 		padding-bottom: 70px;
 	}
-	
+
 	.service-post-separator .kadence-post-image {
 		z-index: 1;
 	}
@@ -655,7 +711,7 @@
 		width: 100% !important;
 		z-index: 999;
 		height: auto;
-	} 
+	}
 	.service-post-separator .kt-blocks-post-grid-item-inner h3 {
 		color: #000 !important;
 		text-align: center;
@@ -769,13 +825,13 @@
 }
 .sidenav {
 	position: absolute;
-    height: 100%; 
-    width: 0; 
+    height: 100%;
+    width: 0;
 	overflow: hidden;
     top: 0;
     left: 0;
-    background-color: #E6E6E6; 
-    transition: 0.5s; 
+    background-color: #E6E6E6;
+    transition: 0.5s;
 	z-index: 99;
 }
 .sidenavContainer{
