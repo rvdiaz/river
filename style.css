@@ -374,12 +374,10 @@
 		border-bottom: solid 2px #fff;
 	}
 
+
 /*footer block, to center items*/
-.social-footer, .copyright-footer  {
-	place-content: center;
-}
-/*footer block, to center items*/
-.social-footer, .copyright-footer  {
+.social-footer,
+.copyright-footer  {
 	place-content: center;
 }
 .copyright-footer
@@ -424,23 +422,23 @@
 	height: 326.858px;
 }
 .grid-blog-desktop
-.entry-title{
+.entry-title {
 	font-family: 'AvenirLTStd-Book' !important;
 }
 .carousel-blog-responsive
-.entry-title{
+.entry-title {
 	font-family: 'AvenirLTStd-Book' !important;
 }
 @media (min-width: 500px) and (max-width: 700px) {
     .curated-life-title
     .gb-headline-text {
-        font-size:85px;
+        font-size: 85px;
     }
 }
 @media (max-width: 500px) {
     .curated-life-title
     .gb-headline-text {
-        font-size:55px;
+        font-size: 55px;
     }
 	.carousel-blog-responsive
 	.kadence-post-image-inner-intrisic img {
@@ -483,7 +481,7 @@
 
 /* title page blog */
 @media (min-width:1400px){
-.title-page-blog{
+.title-page-blog {
 	font-size: 120px !important;
 }
 }
@@ -519,7 +517,7 @@
 }
 
 .carousel-magazine-home .slick-next,
-.carousel-magazine-home .slick-prev{
+.carousel-magazine-home .slick-prev {
 	width: 70px !important;
 	background-size: contain !important;
 	background-color: transparent !important;
@@ -530,10 +528,12 @@
 .carousel-magazine-home .slick-prev::before {
 	border:none !important;
 }
-.carousel-magazine-home .slick-next {
+.carousel-magazine-home
+.slick-next {
 	right: -45px !important;
 }
-.carousel-magazine-home .slick-prev {
+.carousel-magazine-home
+.slick-prev {
 	left: 10px !important;
 }
 
