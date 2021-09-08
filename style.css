@@ -189,22 +189,6 @@
 	.carousel-services .slick-next {
 		margin: 0 -77px;
 	}
-	.carousel-services .kt-blocks-carousel .kt-carousel-arrowstyle-outlineblack .slick-prev,
-	.carousel-services .kt-blocks-carousel .kt-carousel-arrowstyle-outlineblack .slick-next {
-		border: none;
-		color: #add6cc;
-	}
-	.carousel-services .kt-blocks-carousel .slick-next:before,
-	.carousel-services .kt-blocks-carousel .slick-prev:before {
-		border-width: 3px 3px 0 0 !important;
-		width: 30px !important;
-		height: 30px !important;
-	}
-	/* 
-	.carousel-services .kt-blocks-carousel .slick-prev, 
-	.carousel-services .kt-blocks-carousel .slick-next {
-		margin: 0 -35px;
-	}
 	.carousel-services .kt-gutter-default:not(.kt-mobile-layout-row)>.wp-block-kadence-column {
 		margin: 0 !important;
 	}
