@@ -403,8 +403,8 @@
 .button-meet-river:hover {
 	border-bottom: solid 1px #ffffff !important;
 }
-@media (max-width:800px){
-	.green-box-river{
+@media (max-width: 800px){
+	.green-box-river {
 		display: none;
 	}
 	.meet-rivers {
@@ -511,8 +511,7 @@
 @media (max-width: 543px) {
     .carousel-magazine-home
     .kb-gallery-image-contain {
-        padding-top: 85px !important;
-        padding-bottom: 85px !important;
+        padding: 85px 0 !important;
     }
 }
 
