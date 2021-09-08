@@ -34,7 +34,7 @@ add_action('wp_ajax_blog-list-byCategory', 'getBlogByCategory');
 function getBlogByCategory(){
 	$category_name=$_POST['category_name'];
     $argsPost = array(
-		'post_type'=> 'blog',
+		'post_type'=> 'blog_post',
 		'order'    => 'ASC',
 		'category_name'=> $category_name
 		);
@@ -62,7 +62,7 @@ add_action('wp_ajax_blog-list-bySearch', 'getBlogBySearch');
 function getBlogBySearch(){
 	$search_name=$_POST['search_name'];
     global $wpdb;
-    $query="SELECT ID FROM wp_posts WHERE post_type = 'blog' AND wp_posts.post_title LIKE '$search_name%'";
+    $query="SELECT ID FROM wp_posts WHERE post_type = 'blog_post' AND wp_posts.post_title LIKE '$search_name%'";
     $blogResults=$wpdb-> get_results($query);
     if($blogResults){
     foreach($blogResults as $blog){
