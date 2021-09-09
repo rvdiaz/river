@@ -530,8 +530,8 @@
 
 
 /*MAGAZINE BRAND CAROUSEL*/
-.carousel-magazine-home .gb-inside-container {
-    height: 215px;
+.carousel-magazine-home .gb-container-a251d38e {
+   height: 215px !important;
 }
 .carousel-magazine-home .kadence-blocks-gallery-intrinsic img {
 	height: auto !important;
