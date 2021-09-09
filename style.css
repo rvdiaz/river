@@ -558,6 +558,9 @@
 	.carousel-magazine-home .kb-gallery-image-contain {
 		padding: 85px 0 !important;
 	}
+	.carousel-magazine-home .kb-gallery-filter-none {
+		padding: 10px 40px !important;
+	}
 }
 
 .carousel-magazine-home .slick-next,
