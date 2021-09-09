@@ -78,6 +78,6 @@ function getBlogBySearch(){
             </div>
         </div>';
     }}else
-    echo '<h1>No results found for your search</h1>';
+    echo '<h1 class="notFoundText">No results found for your search</h1>';
     wp_die();
 }

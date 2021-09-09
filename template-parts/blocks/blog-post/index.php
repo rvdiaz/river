@@ -25,7 +25,7 @@
     <div class="topnav">
         <div class="container-icon">
   		    <a class="openNavButton" onclick="toggleNav()">
-    	        <svg width="35" height="23" id="icoOpen">
+    	        <svg width="40" height="23" id="icoOpen">
         		    <path d="M0,3 55,3" stroke="#666666" stroke-width="3"/>
         		    <path d="M0,12 55,12" stroke="#666666" stroke-width="3"/>
         		    <path d="M0,21 55,21" stroke="#666666" stroke-width="3"/>
@@ -36,10 +36,13 @@
             </p>
         </div>
         <div class="container-search">
-            <input type="search" oninput="filterByCharacter()" class="searchBlog" placeholder="SEARCH"/>
-            <button onclick="filterByCharacter()" class="buttonSearchBlog">
-            </button >
-		</div>
+            <div class="form-search">
+                <div class="input-group">
+                    <input class="searchBlog" oninput="filterByCharacter()" maxlength="128" placeholder="SEARCH" type="text" />
+                    <span class="input-group-btn"><button onclick="toggleSearch()" class="buttonSearchBlog"></button></span>
+                </div>
+            </div>
+        </div>
     </div>
 </div>   
 <div class="container-filter-blog">
@@ -47,7 +50,6 @@
 	    <div class="sidenavContainer">
             <?php for($i=0;$i<count($arrayCategoriesBlog);$i++){ ?>
 		    <button class="buttonCategoriesMenu" onclick="filterByCategory(event)"><?php echo $arrayCategoriesBlog[$i]->name ?>
-    
             </button>
             <?php } ?>
 	    </div>	

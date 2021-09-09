@@ -101,6 +101,14 @@ if ( ! defined( 'ABSPATH' ) ) {
                 background-image:url('<?php echo get_site_url(); ?>/wp-content/themes/generatepress_child/img/arrow-right-mobile.png') !important;
             }
         }
+        @media (max-width: 762px){
+            .carousel-follow-rivers .slick-prev {
+                background-image:url('<?php echo get_site_url(); ?>/wp-content/themes/generatepress_child/img/arrow-left-mobile.png') !important;
+            }
+            .carousel-follow-rivers .slick-next {
+                background-image:url('<?php echo get_site_url(); ?>/wp-content/themes/generatepress_child/img/arrow-right-mobile.png') !important;
+            }
+        }
         .first-blog-grid
         .kt-blocks-post-readmore,
         .second-blog-grid
@@ -113,6 +121,9 @@ if ( ! defined( 'ABSPATH' ) ) {
         }
         .title-background{
             background-image:url('<?php echo get_site_url(); ?>/wp-content/themes/generatepress_child/img/background-blog-title.png');
+        }
+        .loadingGift{
+            background-image:url('<?php echo get_site_url(); ?>/wp-content/themes/generatepress_child/img/loading-blogs.gif');
         }
     </style>
     <?php wp_head(); ?>
