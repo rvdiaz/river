@@ -1007,6 +1007,14 @@
     .carousel-follow-rivers {
         padding: 25px;
     }
+	.follow-rivers .gb-headline-text {
+		font-size: 85px !important;
+	}
+}
+@media (max-width: 500px) {
+	.follow-rivers .gb-headline-text {
+		font-size: 55px !important;
+	}
 }
 .carousel-follow-rivers .slick-next {
     right: -66px !important;
