@@ -106,6 +106,9 @@ if ( ! defined( 'ABSPATH' ) ) {
         .title-background{
             background-image:url('<?php echo get_site_url(); ?>/wp-content/themes/generatepress_child/img/background-blog-title.png');
         }
+        .loadingGift{
+            background-image:url('<?php echo get_site_url(); ?>/wp-content/themes/generatepress_child/img/loading-blogs.gif');
+        }
     </style>
     <?php wp_head(); ?>
 </head>

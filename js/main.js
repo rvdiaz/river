@@ -60,12 +60,29 @@ function getPostService() {
 /* menu filter blogs */
 function toggleNav() {
     const sideMenu= document.getElementById("sideNavigation");
-    if(sideMenu.style.width=="")
-    sideMenu.style.width="40%";
+    if(sideMenu.style.width==""){
+        if(window.screen.width < 1000)
+            sideMenu.style.width="105%";
+        else
+        sideMenu.style.width="45%";
+    }
     else 
     sideMenu.style.width="";
 }
- 
+/* form search blogs */
+function toggleSearch(){
+    if(window.screen.width < 1000){
+    const searchInput= document.getElementsByClassName("searchBlog")[0];
+    if(searchInput.style.display=="block"){
+    searchInput.style.display="none";
+    searchInput.focus();    
+}
+    else 
+    searchInput.style.display="block";
+}
+else
+filterByCharacter();
+}
 /* methods blog filters */
 function filterByCategory(event){
     toggleNav();
@@ -78,7 +95,10 @@ function filterByCategory(event){
             category_name:category_name
         },
         beforeSend:function(){
-            jQuery("#gridBlogs").html("<h1>Searching...</h1>");
+            jQuery("#gridBlogs").html(`
+            <div class="loadingContainer">
+                <div class="loadingGift"></div>
+            </div>`);
         },
         success:function(result){
             jQuery("#gridBlogs").html(result);
@@ -95,7 +115,10 @@ function filterByCharacter(){
             search_name:searchName
         },
         beforeSend:function(){
-            jQuery("#gridBlogs").html("<h1>Searching...</h1>");
+            jQuery("#gridBlogs").html(`
+            <div class="loadingContainer">
+                <div class="loadingGift"></div>
+            </div>`);
         },
         success:function(result){
             jQuery("#gridBlogs").html(result);

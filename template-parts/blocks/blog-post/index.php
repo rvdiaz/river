@@ -1,7 +1,7 @@
 <?php
     $arrayCategoriesBlog=array();
     $args=array(
-        'post_type'=>'blog_post',
+        'post_type'=>'blog',
         'order'=>'ASC'
     );
     $the_query=new WP_Query($args);
@@ -11,7 +11,7 @@
         ) );
     foreach( $categories as $category ) {
     $argsPost = array(
-		'post_type'=> 'blog_post',
+		'post_type'=> 'blog',
 		'order'    => 'ASC',
 		'category_name'=> $category->name
 		);
@@ -36,10 +36,13 @@
             </p>
         </div>
         <div class="container-search">
-            <input type="search" oninput="filterByCharacter()" class="searchBlog" placeholder="SEARCH"/>
-            <button onclick="filterByCharacter()" class="buttonSearchBlog">
-            </button >
-		</div>
+            <div class="form-search">
+                <div class="input-group">
+                    <input class="searchBlog" oninput="filterByCharacter()" maxlength="128" placeholder="SEARCH" type="text" />
+                    <span class="input-group-btn"><button onclick="toggleSearch()" class="buttonSearchBlog"></button></span>
+                </div>
+            </div>
+        </div>
     </div>
 </div>   
 <div class="container-filter-blog">
@@ -47,7 +50,6 @@
 	    <div class="sidenavContainer">
             <?php for($i=0;$i<count($arrayCategoriesBlog);$i++){ ?>
 		    <button class="buttonCategoriesMenu" onclick="filterByCategory(event)"><?php echo $arrayCategoriesBlog[$i]->name ?>
-    
             </button>
             <?php } ?>
 	    </div>	
