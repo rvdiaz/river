@@ -454,14 +454,13 @@
 }
 
 @media (min-width: 500px) and (max-width: 700px) {
-	.curated-life-title .gb-headline-text {
+	.grid-blog-title {
 		font-size: 85px;
-		margin-bottom: 45px !important;
 	}
 }
 
 @media (max-width: 500px) {
-	.curated-life-title .gb-headline-text {
+	.grid-blog-title {
 		font-size: 55px;
 	}
 	.carousel-blog-responsive .kadence-post-image-inner-intrisic img {
