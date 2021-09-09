@@ -658,6 +658,9 @@
 .form-blog .kadence-blocks-form-field {
 	margin-bottom: 0 !important;
 }
+.form-blog .kadence-blocks-form-field input{
+	font-family: "Gotham-Book";
+}
 
 .form-blog .kb-submit-field {
 	display: none !important;
@@ -860,12 +863,6 @@
 	margin-left: 100px;
 }
 
-.sidenavContainer button {
-	margin-bottom: 10px;
-	background-color: transparent !important;
-	color: #666666;
-}
-
 .sidenavContainer button:first-child {
 	margin-top: 30px;
 }
@@ -876,7 +873,6 @@
 	grid-auto-rows: 300px;
 	grid-auto-flow: row dense;
 	grid-gap: 73px;
-	width: 1400px;
 	min-height: 200px;
 }
 
@@ -930,6 +926,11 @@
 .buttonCategoriesMenu {
 	font-size: 29.3px;
 	font-family: 'Avenir-Black';
+	color: #808080;
+	margin-bottom: 10px;
+	background-color: transparent !important;
+}
+.buttonCategoriesMenu:hover{
 	color: #808080;
 }
 .container-search{
@@ -995,6 +996,7 @@
 	}
 	#gridBlogs {
 		padding: 73px 0;
+		width: 1400px;
 	}
 	.container-filter-blog {
 		display: flex;
@@ -1044,7 +1046,7 @@
 	.title-background {
 		width: 280px;
 	}
-	.title-background {
+	.title-background a{
 		font-size: 18px;
 	}
 	.buttonCategoriesMenu {

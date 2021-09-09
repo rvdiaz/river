@@ -25,7 +25,7 @@
     <div class="topnav">
         <div class="container-icon">
   		    <a class="openNavButton" onclick="toggleNav()">
-    	        <svg width="35" height="23" id="icoOpen">
+    	        <svg width="40" height="23" id="icoOpen">
         		    <path d="M0,3 55,3" stroke="#666666" stroke-width="3"/>
         		    <path d="M0,12 55,12" stroke="#666666" stroke-width="3"/>
         		    <path d="M0,21 55,21" stroke="#666666" stroke-width="3"/>
