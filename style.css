@@ -179,6 +179,7 @@
 @media (max-width:976px) {
 	.carousel-services {
 		padding: 0 30px;
+		overflow-x: hidden;
 	}
 	.carousel-services .kt-post-slider-item {
 		height: 143px !important;
@@ -455,6 +456,7 @@
 @media (max-width: 500px) {
 	.curated-life-title .gb-headline-text {
 		font-size: 55px;
+		margin-bottom: 25px;
 	}
 	.carousel-blog-responsive .kadence-post-image-inner-intrisic img {
 		height: 60vh !important;
