@@ -875,7 +875,7 @@
 	grid-auto-rows: 300px;
 	grid-auto-flow: row dense;
 	grid-gap: 73px;
-	max-width: 1400px;
+	width: 1400px;
 	min-height: 200px;
 }
 
