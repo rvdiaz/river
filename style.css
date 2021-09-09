@@ -461,6 +461,7 @@
 @media (max-width: 500px) {
 	.curated-life-title .gb-headline-text {
 		font-size: 55px;
+		margin-bottom: 18px !important;
 	}
 	.carousel-blog-responsive .kadence-post-image-inner-intrisic img {
 		height: 60vh !important;
