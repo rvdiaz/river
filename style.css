@@ -426,15 +426,18 @@
 	cursor: pointer;
 }
 .green-box-river {
+	visibility: hidden;
 	display: flex;
 	align-items: center;
 	width: 445px;
 	height: 197px;
 }
+.meet-rivers:hover .green-box-river {
+		visibility: visible;
+	}
 .button-meet-river:hover {
 	border-bottom: solid 1px #ffffff !important;
 }
-
 @media (max-width: 800px) {
 	.green-box-river {
 		display: none;
