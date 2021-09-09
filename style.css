@@ -990,3 +990,28 @@
 .follow-rivers .gb-grid-wrapper-e80c74cf {
 	align-items: center;
 }
+.carousel-follow-rivers .slick-next,
+.carousel-follow-rivers .slick-prev {
+    width: 70px !important;
+    background-size: contain !important;
+    background-color: transparent !important;
+    height: 40px !important;
+    background-repeat: no-repeat !important;
+}
+
+.carousel-follow-rivers .slick-next::before,
+.carousel-follow-rivers .slick-prev::before {
+    border: none !important;
+}
+@media (max-width: 762px) {
+    .carousel-follow-rivers {
+        padding: 25px;
+    }
+}
+.carousel-follow-rivers .slick-next {
+    right: -66px !important;
+}
+
+.carousel-follow-rivers .slick-prev {
+    left: -10px !important;
+}
