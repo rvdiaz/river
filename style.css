@@ -1084,6 +1084,10 @@
 .follow-rivers .gb-grid-wrapper-e80c74cf {
     align-items: center;
 }
+.carousel-follow-rivers .kadence-blocks-gallery-intrinsic img {
+    width: 294.004px !important;
+    height: 294.004px !important;
+}
 .carousel-follow-rivers .slick-next,
 .carousel-follow-rivers .slick-prev {
     width: 70px !important;
@@ -1100,6 +1104,10 @@
 @media (max-width: 762px) {
     .carousel-follow-rivers {
         padding: 0 25px;
+    }
+    .carousel-follow-rivers .kadence-blocks-gallery-intrinsic img {
+        width: 100% !important;
+        height: auto !important;
     }
     .follow-rivers .gb-headline-text {
         font-size: 85px !important;
