@@ -466,7 +466,7 @@
 
 @media (min-width: 500px) and (max-width: 700px) {
 	.grid-blog-title {
-		font-size: 85px !important;
+		font-size: 100px !important;
 	}
 }
 
@@ -474,6 +474,9 @@
 	.grid-blog-title {
 		font-size: 55px !important;
 	}
+    .subtitle-grid-post {
+        margin-top: 0 !important;
+    }
 	.carousel-blog-responsive .kadence-post-image-inner-intrisic img {
 		height: 60vh !important;
 	}
