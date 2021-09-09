@@ -270,7 +270,7 @@
 	transition: width .85s;
 }
 .slider-shop-product
-.kadence-post-image-inner-wrap{
+.kadence-post-image-inner-wrap img{
 	object-fit: contain !important;
 }
 .slider-shop-product .kt-blocks-post-grid-item-inner-wrap:hover {
