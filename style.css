@@ -425,14 +425,12 @@
 .meet-rivers:hover {
 	cursor: pointer;
 }
-
 .green-box-river {
 	display: flex;
 	align-items: center;
 	width: 445px;
 	height: 197px;
 }
-
 .button-meet-river:hover {
 	border-bottom: solid 1px #ffffff !important;
 }
@@ -467,15 +465,14 @@
 }
 
 @media (min-width: 500px) and (max-width: 700px) {
-	.curated-life-title .gb-headline-text {
-		font-size: 85px;
+	.grid-blog-title {
+		font-size: 85px !important;
 	}
 }
 
 @media (max-width: 500px) {
-	.curated-life-title .gb-headline-text {
-		font-size: 55px;
-		margin-bottom: 25px !important;
+	.grid-blog-title {
+		font-size: 55px !important;
 	}
 	.carousel-blog-responsive .kadence-post-image-inner-intrisic img {
 		height: 60vh !important;
