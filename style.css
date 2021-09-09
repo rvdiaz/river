@@ -44,7 +44,9 @@
 .slider-home .entry-title {
 	font-family: 'Avenir-Heavy' !important;
 }
-
+.slider-home .entry-content{
+	margin-top: 20px !important;
+}
 .slider-home .kt-blocks-post-readmore {
 	font-family: 'Avenir-Light' !important;
 }
