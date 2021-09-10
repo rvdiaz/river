@@ -143,8 +143,12 @@
 .design-packages h2 {
 	font-family: 'Bickham-Script-Pro';
 	font-size: 120px;
-	margin-bottom: 40px;
+	margin-bottom: 60px;
 }
+.design-packages p {
+	font-family: 'Avenir-Book';
+}
+
 @media (max-width:900px) {
 	.design-packages h2 {
 		font-size: 75px;
@@ -708,6 +712,11 @@
 	z-index: -1;
 }
 
+.service-post-separator .entry-title a {
+	font-family: 'Avenir-Heavy';
+}
+
+
 .service-post-separator .kadence-post-image-intrisic {
 	padding-bottom: 0 !important;
 }
@@ -732,10 +741,11 @@
 	border: none;
 	background: none;
 	display: unset;
+	font-family: 'Avenir-Light';
 }
 
 .service-post-separator .kt-blocks-post-grid-item-inner .kt-blocks-post-readmore-wrap a:hover {
-	border-bottom: solid 2px #fff;
+	border-bottom: solid 1px #fff;
 	margin: 0 !important;
 }
 .service-post-separator .entry-content:not(:first-child), 
@@ -1114,4 +1124,26 @@
 
 .carousel-follow-rivers .slick-prev {
     left: -10px !important;
+}
+
+/* single service */
+.single-service .kt-row-layout-inner > .kt-row-column-wrap > .kadence-column_9e6076-e0 > .kt-inside-inner-col {
+	display: flex;
+    align-items: center;
+	/* height: 100%;
+    width: 100%; */
+} 
+.single-service .text-single-service p{
+	margin-bottom: 0.5em !important;
+}
+
+.single-service .text-single-service .kt-inside-inner-col{
+	background-image: url(http://localhost/rivers/wp-content/uploads/2021/09/Asset-3services-interior-1.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    margin-right: 100px;
+    margin-left: -261px;
+    height: 84%;
 }
