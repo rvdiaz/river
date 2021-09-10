@@ -74,11 +74,12 @@ function toggleSearch(){
     if(window.screen.width < 1000){
     const searchInput= document.getElementsByClassName("searchBlog")[0];
     if(searchInput.style.display=="block"){
-    searchInput.style.display="none";
-    searchInput.focus();    
-}
-    else 
+    searchInput.style.display="none";  
+    }
+    else {
     searchInput.style.display="block";
+    searchInput.focus(); 
+    }
 }
 else
 filterByCharacter();

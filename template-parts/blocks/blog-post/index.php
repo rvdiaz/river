@@ -62,13 +62,17 @@
         ?>
             <div class="gridBlogItem">
                 <div class="image-blog-wrap">
-                    <?php echo the_post_thumbnail();?>
+                        <?php echo the_post_thumbnail();?>
                 </div>
                 <div class="title-blog-wrap">
                     <div class="title-background">
                         <a href="<?php echo the_permalink(); ?>"><?php echo get_the_title(); ?></a>
                     </div>
-                </div>       
+                </div>   
+                <div class="infoBlogMobile">
+                    <p class="blog-category"><?php echo get_the_category()[0]->name ?></p>
+                    <a href="<?php the_permalink(); ?>" class="title-description-blog"><?php echo get_the_title()?>/ <?php echo get_the_excerpt();?></a>
+                </div>    
             </div>
         <?php } ?>
     </div>
