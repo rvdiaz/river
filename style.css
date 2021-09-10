@@ -435,6 +435,9 @@
 .meet-rivers:hover .green-box-river {
 		visibility: visible;
 	}
+.green-box-river:hover {
+	cursor: default;
+}
 .button-meet-river:hover {
 	border-bottom: solid 1px #ffffff !important;
 }
