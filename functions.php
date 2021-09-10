@@ -48,9 +48,13 @@ function getBlogByCategory(){
             </div>
             <div class="title-blog-wrap">
                 <div class="title-background">
-                    <a href="'.get_the_permalink().'">'.get_the_title().'</a>
+                    <a href="'.get_the_permalink() .'">'. get_the_title() .'</a>
                 </div>
             </div>
+            <div class="infoBlogMobile">
+                <p class="blog-category">'. get_the_category()[0]->name .'</p>
+                <a href="'. get_the_permalink() .'" class="title-description-blog">'. get_the_title() .'/'. get_the_excerpt() .'</a>
+            </div>  
         </div>';
     }
     wp_die();
@@ -69,13 +73,17 @@ function getBlogBySearch(){
         echo 
         '<div class="gridBlogItem">
             <div class="image-blog-wrap">
-                '.get_the_post_thumbnail($blog->ID,'thumbnail',$attr='').'
+                '. get_the_post_thumbnail($blog->ID,'thumbnail',$attr='') .'
             </div>
             <div class="title-blog-wrap">
                 <div class="title-background">
-                    <a href="'.get_the_permalink($blog->ID).'">'.get_the_title($blog->ID).'</a>
+                    <a href="'. get_the_permalink($blog->ID) .'">'. get_the_title($blog->ID) .'</a>
                 </div>
             </div>
+            <div class="infoBlogMobile">
+                <p class="blog-category">'. get_the_category($blog->ID)[0]->name .'</p>
+                <a href="'. get_the_permalink($blog->ID) .'" class="title-description-blog">'. get_the_title($blog->ID) .'/'. get_the_excerpt($blog->ID) .'</a>
+            </div>   
         </div>';
     }}else
     echo '<h1 class="notFoundText">No results found for your search</h1>';

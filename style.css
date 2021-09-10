@@ -42,13 +42,13 @@
 }
 
 .slider-home .entry-title {
-	font-family: 'Avenir-Heavy' !important;
+	font-family: 'Avenir-Black' !important;
 }
 .slider-home .entry-content{
 	margin-top: 20px !important;
 }
 .slider-home .kt-blocks-post-readmore {
-	font-family: 'Avenir-Light' !important;
+	font-family: 'Gotham-Book' !important;
 }
 
 .slider-home .kt-blocks-post-readmore:hover {
@@ -151,7 +151,7 @@
 
 @media (max-width:900px) {
 	.design-packages h2 {
-		font-size: 75px;
+		font-size: 70px;
 		margin-bottom: 30px;
 	}
 } 
@@ -422,28 +422,42 @@
 .meet-rivers {
 	display: flex;
 	align-items: center;
+	position:sticky;
 	height: 80vh;
-	text-align: -webkit-center !important;
 }
-
+.meet-rivers-image{
+	position:absolute;
+	top: 0;
+	height: 80vh;
+	z-index: -1;
+}
 .meet-rivers:hover {
 	cursor: pointer;
 }
-.green-box-river {
+.meet-rivers:hover .green-box-river {
 	display: flex;
+	}
+.green-box-river {
+	display: none;
+	justify-content: center;
 	align-items: center;
 	width: 445px;
 	height: 197px;
 }
+.green-box-river:hover {
+	cursor: default;
+}
 .button-meet-river:hover {
 	border-bottom: solid 1px #ffffff !important;
 }
-
 @media (max-width: 800px) {
-	.green-box-river {
+	.meet-rivers:hover .green-box-river {
 		display: none;
-	}
+		}
 	.meet-rivers {
+		height: 60vh;
+	}
+	.meet-rivers-image{
 		height: 60vh;
 	}
 }
@@ -470,7 +484,7 @@
 
 @media (min-width: 500px) and (max-width: 700px) {
 	.grid-blog-title {
-		font-size: 85px !important;
+		font-size: 100px !important;
 	}
 }
 
@@ -478,6 +492,10 @@
 	.grid-blog-title {
 		font-size: 55px !important;
 	}
+    .subtitle-grid-post {
+		font-size: 12px !important;
+        margin-top: 0 !important;
+    }
 	.carousel-blog-responsive .kadence-post-image-inner-intrisic img {
 		height: 60vh !important;
 	}
@@ -527,7 +545,9 @@
 
 
 /*MAGAZINE BRAND CAROUSEL*/
-
+.carousel-magazine .gb-inside-container {
+   height: 215px !important;
+}
 .carousel-magazine-home .kadence-blocks-gallery-intrinsic img {
 	height: auto !important;
 	top: auto !important;
@@ -553,6 +573,9 @@
 	.carousel-magazine-home .kb-gallery-image-contain {
 		padding: 85px 0 !important;
 	}
+	.carousel-magazine-home .kb-gallery-filter-none {
+		padding: 10px 40px !important;
+	}
 }
 
 .carousel-magazine-home .slick-next,
@@ -577,10 +600,17 @@
 	left: 10px !important;
 }
 
+/* separator blog page */
+@media (max-width:768px){
+	.spacer-divider-blog .inner-column-3,
+	.spacer-divider-blog .inner-column-1{
+		display:none;
+}	
+}
 
 /* blog page first and second grid*/
 
-.first-blog-grid .kt-blocks-post-grid-item-inner-wrap {
+.first-blog-grid .kadence-post-image {
 	height: 70vh;
 }
 
@@ -614,7 +644,7 @@
 .second-blog-grid .kt-blocks-post-readmore {
 	color: white !important;
 	font-size: 16px;
-	font-family: 'Gotham-Medium';
+	font-family: 'Gotham-Book';
 	background-size: cover;
 	width: 156px;
 	height: 35px;
@@ -641,6 +671,7 @@
 		margin-top: 20px;
 		text-align: center;
 	}
+	.first-blog-grid .kadence-post-image,
 	.first-blog-grid .kadence-post-image-inner-intrisic {
 		height: auto;
 	}
@@ -648,9 +679,11 @@
 	.second-blog-grid .kt-blocks-post-grid-item-inner {
 		text-align: center;
 	}
-	.first-blog-grid .kt-blocks-post-grid-item-inner-wrap {
-		height: auto;
-	}
+
+	.first-blog-grid .kt-blocks-post-readmore-wrap,
+	.second-blog-grid .kt-blocks-post-readmore-wrap {
+		display: none;
+}
 }
 
 @media (min-width: 1400px) {
@@ -748,9 +781,8 @@
 	border-bottom: solid 1px #fff;
 	margin: 0 !important;
 }
-.service-post-separator .entry-content:not(:first-child), 
-.entry-summary:not(:first-child) {
-	margin: 0;
+.service-post-separator .entry-content {
+	margin-top: 20px;;
 }
 
 @media (max-width: 768px) {
@@ -791,7 +823,6 @@
 	}
 }
 
-
 /* service page separator */
 
 .service-post-separator .separator {
@@ -826,7 +857,6 @@
 		height: 125px;
 	}
 }
-
 
 /* menu filters blog */
 .wrapper-menu {
@@ -945,6 +975,7 @@
 	font-size: 24px;
 	font-family: "Avenir-Black";
 	color: white;
+	font-weight: bold;
 }
 
 .buttonCategoriesMenu {
@@ -953,6 +984,8 @@
 	color: #808080;
 	margin-bottom: 10px;
 	background-color: transparent !important;
+	font-weight: bold;
+	letter-spacing: 3px;
 }
 .buttonCategoriesMenu:hover{
 	color: #808080;
@@ -979,13 +1012,16 @@
 	border-color: #8fc6b9 !important;
 	padding: 10px 15px;
     width: 540px;
+	background-color: transparent !important;
 }
 
 .searchBlog::placeholder {
 	text-align: right;
 	font-family: "Gotham-Book";
 }
-
+.searchBlog:focus{
+	background-color: #FFFFFF !important;
+}
 .buttonSearchBlog {
 	padding:16px 12px;
     border-top-right-radius:4px;
@@ -1014,6 +1050,27 @@
 	font-family: "Avenir";
 	color:#666666;
 }
+.infoBlogMobile{
+	margin-bottom: 40px;
+}
+.blog-category{
+	font-family: 'Gotham-Medium';
+	margin: 10px 0;
+	color: #666666;
+	font-size: 14px;
+}
+.title-description-blog {
+	font-family: "Avenir-Black";
+	font-size: 16px;
+	font-weight: bold;
+	color: #808080;
+}
+.title-description-blog:hover {
+	color: #808080;
+}
+.infoBlogMobile{
+	display:none;
+}
 @media (min-width:1400px) {
 	.topnav {
 		padding: 0;
@@ -1039,9 +1096,6 @@
 	}
 	.searchBlog {
 		display: none;
-		-webkit-transition: display .45s;
-    	-moz-transition: display .45s;
-    	transition: display .45s;
 	}
 }
 @media (max-width:768px) {
@@ -1049,17 +1103,17 @@
 		display: flex;
 		flex-direction: column;
 		padding: 30px 5vw;
-		grid-gap:0;
+		grid-gap: 0;
 	}
 	.notFoundText{
-		font-size:16px;
+		font-size: 16px;
 	}
-	.gridBlogItem {
+	.image-blog-wrap {
 		height: 50vw;
-		margin-bottom: 15vw;
 	}
 	.searchBlog {
 		width: 55vw;
+		border: none;
 	}
 	.tittle-categories {
 		display: none;
@@ -1067,20 +1121,24 @@
 	.topnav {
 		padding: 0 15px;
 	}
-	.title-background {
-		width: 280px;
-	}
-	.title-background a{
-		font-size: 18px;
+	.title-blog-wrap{
+		display: none;
 	}
 	.buttonCategoriesMenu {
 		font-size: 18px;
+	}
+	.infoBlogMobile{
+		display: block;
 	}
 }
 
 /*FOLLOW RIVERS SECTION*/
 .follow-rivers .gb-grid-wrapper-e80c74cf {
     align-items: center;
+}
+.carousel-follow-rivers .kadence-blocks-gallery-intrinsic img {
+    width: 294.004px !important;
+    height: 294.004px !important;
 }
 .carousel-follow-rivers .slick-next,
 .carousel-follow-rivers .slick-prev {
@@ -1098,6 +1156,10 @@
 @media (max-width: 762px) {
     .carousel-follow-rivers {
         padding: 0 25px;
+    }
+    .carousel-follow-rivers .kadence-blocks-gallery-intrinsic img {
+        width: 100% !important;
+        height: auto !important;
     }
     .follow-rivers .gb-headline-text {
         font-size: 85px !important;
