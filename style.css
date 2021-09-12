@@ -411,9 +411,10 @@
 .hide{
 	display:none;
 }
-
+.copyright-footer .gb-button-text {
+    line-height: 18px;
+}
 /*MEET RIVERS-section from home-page*/
-
 .meet-rivers {
 	display: flex;
 	align-items: center;
