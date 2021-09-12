@@ -469,11 +469,11 @@
 }
 
 .grid-blog-desktop .entry-title {
-	font-family: 'AvenirLTStd-Book' !important;
+	font-family: 'Avenir-Book' !important;
 }
 
 .carousel-blog-responsive .entry-title {
-	font-family: 'AvenirLTStd-Book' !important;
+	font-family: 'Avenir-Book' !important;
 }
 
 @media (min-width: 500px) and (max-width: 700px) {
