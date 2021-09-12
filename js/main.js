@@ -67,7 +67,7 @@ function toggleNav() {
     const sideMenu= document.getElementById("sideNavigation");
     if(sideMenu.style.width==""){
         if(window.screen.width < 1000)
-            sideMenu.style.width="105%";
+            sideMenu.style.width="100%";
         else
         sideMenu.style.width="45%";
     }
