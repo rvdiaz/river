@@ -10,6 +10,7 @@
         <p class="single-blog-title-description"><?php echo get_the_title(); ?> / <?php echo get_the_excerpt(); ?></p>
     </div>
 </div>
+<div class="single-blog-container">
 <div class="single-blog-body">
     <div class="single-blog-menu">
         <div class="single-blog-menu-button">
@@ -23,7 +24,7 @@
 		        </a>
             </div>
         </div>
-        <div class="single-blog-menu">
+        <div class="single-blog-accordion-container">
             <ul class="single-blog-accordion">
                 <?php
                 $categories = get_categories( array(
@@ -32,7 +33,7 @@
                     ) );
                 foreach( $categories as $category ){ 
                 $argsPost = array(
-		            'post_type'=> 'blog_post',
+		            'post_type'=> 'blog',
 		            'order'    => 'ASC',
 		            'category_name'=> $category->name
 		        );
@@ -55,14 +56,15 @@
     </div>
     <div class="single-blog-body-info">
         <div class="single-blog-paragraph-container">
-            <p class="single-blog-paragraph"><?php echo get_post_meta($singleBlogId,'first_paragraph',true);  ?></p>
+            <p class="single-blog-paragraph"><?php echo get_post_meta($singleBlogId,'first_paragraph_design',true);  ?></p>
         </div>
         <div class="single-blog-body-image">
-            <?php $imageBodyBlog=get_post_meta($singleBlogId,'imagen_blog',true);?>
-            <img src="<?php echo wp_get_attachment_image_src($imageBodyBlog,'medium')[0];?>"/>
+            <?php $imageBodyBlog=get_post_meta($singleBlogId,'image_description',true);?>
+            <img src="<?php echo wp_get_attachment_image_src($imageBodyBlog,'full')[0];?>"/>
         </div>
         <div class="single-blog-paragraph-container">
-            <p class="single-blog-paragraph"><?php echo get_post_meta($singleBlogId,'second_paragraph',true);  ?></p>
+            <p class="single-blog-paragraph"><?php echo get_post_meta($singleBlogId,'second_paragraph_design',true);  ?></p>
         </div>
     </div>
+</div>
 </div>
