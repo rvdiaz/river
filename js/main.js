@@ -13,6 +13,11 @@ function findItemByTitle(title,array){
     return null;
 }
 
+/* image click meet rivers section */
+jQuery('.meet-rivers-image').click(function(){
+    window.open(jQuery('.link-button-meet-rivers a').prop('href'),'_blanck');
+});
+
 /* change view grid content page blog */
 if(document.getElementsByClassName("first-blog-grid")[0]){
 const firstBlogGridArticles=document.getElementsByClassName("first-blog-grid")[0].children[0].children[0];
@@ -62,7 +67,7 @@ function toggleNav() {
     const sideMenu= document.getElementById("sideNavigation");
     if(sideMenu.style.width==""){
         if(window.screen.width < 1000)
-            sideMenu.style.width="105%";
+            sideMenu.style.width="100%";
         else
         sideMenu.style.width="45%";
     }

@@ -397,13 +397,10 @@
 		padding: 0 0 40px 0 !important;
 	}
 	.btn-shop-slider {
-		margin-top: 18px;
+		display:none;
 	}
 }
-
-
 /* nav hover active */
-
 .main-navigation {
 	height: 60px;
 	display: flex;
@@ -434,23 +431,28 @@
 .copyright-footer .gb-button-wrapper-0a9f32c8 {
 	cursor: pointer;
 }
-
-
+.hide{
+	display:none;
+}
+.copyright-footer .gb-button-text {
+    line-height: 18px;
+}
 /*MEET RIVERS-section from home-page*/
-
 .meet-rivers {
 	display: flex;
 	align-items: center;
-	position:sticky;
+	position: sticky;
 	height: 80vh;
 }
 .meet-rivers-image{
-	position:absolute;
+	position: absolute;
 	top: 0;
+	left: 0;
 	height: 80vh;
 	z-index: -1;
+	width:100vw;
 }
-.meet-rivers:hover {
+.meet-rivers-image:hover{
 	cursor: pointer;
 }
 .meet-rivers:hover .green-box-river {
@@ -463,13 +465,11 @@
 	width: 445px;
 	height: 197px;
 }
-.green-box-river:hover {
-	cursor: default;
-}
+
 .button-meet-river:hover {
 	border-bottom: solid 1px #ffffff !important;
 }
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
 	.meet-rivers:hover .green-box-river {
 		display: none;
 		}
@@ -480,8 +480,6 @@
 		height: 60vh;
 	}
 }
-
-
 /*Grid-blog-river*/
 
 .grid-blog-desktop .kt-blocks-post-grid-item {
@@ -494,11 +492,11 @@
 }
 
 .grid-blog-desktop .entry-title {
-	font-family: 'AvenirLTStd-Book' !important;
+	font-family: 'Avenir-Book' !important;
 }
 
 .carousel-blog-responsive .entry-title {
-	font-family: 'AvenirLTStd-Book' !important;
+	font-family: 'Avenir-Book' !important;
 }
 
 @media (min-width: 500px) and (max-width: 700px) {
@@ -555,7 +553,6 @@
 
 
 /* title page blog */
-
 @media (min-width:1400px) {
 	.title-page-blog {
 		font-size: 120px !important;
@@ -662,7 +659,7 @@
 .first-blog-grid .kt-blocks-post-readmore,
 .second-blog-grid .kt-blocks-post-readmore {
 	color: white !important;
-	font-size: 16px;
+	font-size: 14px;
 	font-family: 'Gotham-Book';
 	background-size: cover;
 	width: 156px;
@@ -698,11 +695,6 @@
 	.second-blog-grid .kt-blocks-post-grid-item-inner {
 		text-align: center;
 	}
-
-	.first-blog-grid .kt-blocks-post-readmore-wrap,
-	.second-blog-grid .kt-blocks-post-readmore-wrap {
-		display: none;
-}
 }
 
 @media (min-width: 1400px) {
@@ -710,11 +702,12 @@
 		padding: 40px 0 !important;
 	}
 }
-
-
 /* form blog page */
 .form-blog {
 	width: 540px;
+}
+.form-blog input::placeholder{
+	font-size: 14px;
 }
 .form-blog-wrapper {
 	display: flex;
@@ -943,19 +936,15 @@
 #gridBlogs {
 	padding: 73px 73px;
 	display: grid;
-	grid-auto-rows: 300px;
+	grid-auto-rows: 350px;
 	grid-auto-flow: row dense;
+	grid-template-columns: 1fr 1fr;
 	grid-gap: 73px;
 	min-height: 200px;
 }
 
-#gridBlogs div:nth-child(6n+1) {
-	grid-column-end: 1;
-	grid-row: span 2;
-}
-
+#gridBlogs div:nth-child(6n+1),
 #gridBlogs div:nth-child(6n-1) {
-	grid-column-start: 1;
 	grid-row: span 2;
 }
 
@@ -995,6 +984,7 @@
 	font-family: "Avenir-Black";
 	color: white;
 	font-weight: bold;
+	text-transform: uppercase;
 }
 
 .buttonCategoriesMenu {
@@ -1005,6 +995,7 @@
 	background-color: transparent !important;
 	font-weight: bold;
 	letter-spacing: 3px;
+	text-transform: uppercase;
 }
 .buttonCategoriesMenu:hover{
 	color: #808080;
@@ -1037,6 +1028,7 @@
 .searchBlog::placeholder {
 	text-align: right;
 	font-family: "Gotham-Book";
+	font-size: 14px;
 }
 .searchBlog:focus{
 	background-color: #FFFFFF !important;
@@ -1056,7 +1048,8 @@
 	height: 100px;
 	display: flex;
 	align-items: center;
-	justify-content: center
+	justify-content: center;
+	grid-column: 1/3;
 }
 .loadingGift {
 	width: 100px;
