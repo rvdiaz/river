@@ -131,3 +131,8 @@ function filterByCharacter(){
         }
     });
 }    
+
+/* open accordion menu single */
+function openAccord(event){
+    console.log(event.currentTarget.parentElement.children[1].style.maxHeight="300px");
+}
