@@ -108,8 +108,10 @@
 		width: 3em;
 		fill: #add6cc;
 	}
+	.site-logo img {
+		width: 200px !important;
+	}
 }
-
 
 /* spacer-divider */
 
@@ -313,9 +315,7 @@
 .slider-shop-product .kt-blocks-post-grid-item-inner-wrap:hover {
 	border: 1px solid #ADD6CC;
 	position: absolute;
-	width: 204px;
 	z-index: 99;
-	top: -30px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -332,30 +332,14 @@
 }
 
 @media (min-width:1400px) {
-	.slider-shop-product .kt-blocks-post-grid-item-inner-wrap:hover {
-		width: 404px;
-		height: 484px;
-	}
 	.slider-shop-product .slick-list {
 		height: 554px;
-	}
-}
-
-@media (min-width:992px) and (max-width:1300px) {
-	.slider-shop-product .kt-blocks-post-grid-item-inner-wrap:hover {
-		width: 284px;
 	}
 }
 
 @media (min-width:768px) and (max-width:992px) {
 	.slider-shop-product .slick-list {
 		height: 354px;
-	}
-	.slider-shop-product .kt-blocks-post-grid-item-inner-wrap:hover {
-		width: 204px;
-		top: -60px;
-		left: 0px;
-		height: 300px;
 	}
 }
 
@@ -723,6 +707,11 @@
 
 .form-blog .kb-submit-field {
 	display: none !important;
+}
+
+/* divider blog page */
+.divider-separator hr{
+	background: none;
 }
 
 @media (max-width:768px){
