@@ -313,11 +313,9 @@
 .slider-shop-product .kt-blocks-post-grid-item-inner-wrap:hover {
 	border: 1px solid #ADD6CC;
 	position: absolute;
-	width: 304px;
+	width: 204px;
 	z-index: 99;
-	left: -25px;
-	top: -90px;
-	height: 400px;
+	top: -30px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
