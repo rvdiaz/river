@@ -51,10 +51,6 @@ if ( ! defined( 'ABSPATH' ) ) {
             font-family:'Gotham-Book';
             src:url('<?php echo get_site_url();?>/wp-content/uploads/fonts/Gotham-Book.otf') format('truetype');
         }
-        @font-face{
-            font-family:'Gotham-Medium';
-            src:url('<?php echo get_site_url();?>/wp-content/uploads/fonts/Gotham-Medium.otf') format('truetype');
-        }
         .slider-home .kt-blocks-post-grid-item-inner{
             background-image:url('<?php echo get_site_url(); ?>/wp-content/themes/generatepress_child/img/popup-slider-home.png');
         }
@@ -78,6 +74,9 @@ if ( ! defined( 'ABSPATH' ) ) {
         }
         .single-service .text-single-service {
             background-image:url('<?php echo get_site_url(); ?>/wp-content/themes/generatepress_child/img/background-single-services.png');
+        }    
+        .portfolio-grid .kt-blocks-post-grid-item header {
+            background-image:url('<?php echo get_site_url(); ?>/wp-content/themes/generatepress_child/img/portfolio box.png');
         }
         @media (max-width:768px){
             .slider-shop-product .slick-prev{
