@@ -637,7 +637,7 @@
 
 .first-blog-grid .kt-blocks-above-categories,
 .second-blog-grid .kt-blocks-above-categories {
-	font-family: 'Gotham-Light';
+	font-family: 'Avenir';
 	margin-bottom: 20px;
 }
 
@@ -1067,16 +1067,19 @@
 	margin-bottom: 40px;
 }
 .blog-category{
-	font-family: 'Gotham-Light';
+	font-family: 'Avenir';
 	margin: 10px 0;
 	color: #666666;
 	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
 }
 .title-description-blog {
 	font-family: "Avenir-Black";
 	font-size: 16px;
 	font-weight: bold;
 	color: #808080;
+	text-transform: uppercase;
 }
 .title-description-blog:hover {
 	color: #808080;
@@ -1123,6 +1126,9 @@
 		flex-direction: column;
 		padding: 30px 5vw;
 		grid-gap: 0;
+	}
+	.blog-category{
+		font-size: 12px;
 	}
 	.notFoundText{
 		font-size: 16px;
@@ -1231,7 +1237,7 @@
 	align-items: flex-start;
 	justify-content: center;
 	flex-direction: column;
-	padding: 20px 0 0 62px;
+	padding: 0 5% 0 10%;
 }
 .single-blog-category {
 	font-size: 18px;

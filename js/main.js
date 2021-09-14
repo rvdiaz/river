@@ -139,8 +139,7 @@ function openAccord(event){
 
 /* see more button blog landing */
 jQuery('.see-more-button').click(()=>{
-    const sliderShop=jQuery('.form-blog-wrapper')[0];
-    console.log(sliderShop);
+    const sliderShop=jQuery('.slider-shop-title')[0];
     sliderShop.scrollIntoView({
         behavior: "smooth"
     });
