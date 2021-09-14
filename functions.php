@@ -34,7 +34,7 @@ add_action('wp_ajax_blog-list-byCategory', 'getBlogByCategory');
 function getBlogByCategory(){
 	$category_name=$_POST['category_name'];
     $argsPost = array(
-		'post_type'=> 'blog_post',
+		'post_type'=> 'blog',
 		'order'    => 'ASC',
 		'category_name'=> $category_name
 		);
@@ -44,7 +44,7 @@ function getBlogByCategory(){
         echo 
         '<div class="gridBlogItem">
             <div class="image-blog-wrap">
-                '.get_the_post_thumbnail(get_the_ID(),'thumbnail',$attr='').'
+                '.get_the_post_thumbnail(get_the_ID(),'full',$attr='').'
             </div>
             <div class="title-blog-wrap">
                 <div class="title-background">
@@ -66,14 +66,14 @@ add_action('wp_ajax_blog-list-bySearch', 'getBlogBySearch');
 function getBlogBySearch(){
 	$search_name=$_POST['search_name'];
     global $wpdb;
-    $query="SELECT ID FROM wp_posts WHERE post_type = 'blog_post' AND wp_posts.post_title LIKE '$search_name%'";
+    $query="SELECT ID FROM wp_posts WHERE post_type = 'blog' AND wp_posts.post_title LIKE '$search_name%'";
     $blogResults=$wpdb-> get_results($query);
     if($blogResults){
     foreach($blogResults as $blog){
         echo 
         '<div class="gridBlogItem">
             <div class="image-blog-wrap">
-                '. get_the_post_thumbnail($blog->ID,'thumbnail',$attr='') .'
+                '. get_the_post_thumbnail($blog->ID,'full',$attr='') .'
             </div>
             <div class="title-blog-wrap">
                 <div class="title-background">
