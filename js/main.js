@@ -62,6 +62,7 @@ function getPostService() {
    separator.appendChild(line2);
    return separator;
 }
+
 /* menu filter blogs */
 function toggleNav() {
     const sideMenu= document.getElementById("sideNavigation");
