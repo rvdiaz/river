@@ -1492,7 +1492,7 @@
 }
 .portfolio-grid .entry-title {
 	padding: 0 !important;
-	font-family: Avenir-Black !important;
+	font-family: Avenir !important;
 }
 @media (min-width: 991px) and (max-width: 1200px) {
 	.portfolio-grid .kt-blocks-post-grid-item header {
