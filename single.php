@@ -24,12 +24,14 @@ get_header(); ?>
 			if ( generate_has_default_loop() ) {
 				while ( have_posts() ) :
 					the_post();
-					if('blog_post'=== get_post_type())
-					get_template_part( 'template-parts/single_blog', get_post_type() );
-					
 					if ( 'post' === get_post_type() )
 					get_template_part( 'template-parts/content', get_post_type() );
 					
+					if('blog_post'=== get_post_type())
+					get_template_part( 'template-parts/single_blog', get_post_type() );
+					
+					generate_do_template_part( 'single' );
+
 				endwhile;
 			}
 

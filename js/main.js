@@ -134,5 +134,14 @@ function filterByCharacter(){
 
 /* open accordion menu single */
 function openAccord(event){
-    console.log(event.currentTarget.parentElement.children[1].style.maxHeight="300px");
+    event.currentTarget.parentElement.children[1].style.maxHeight="300px";
 }
+
+/* see more button blog landing */
+jQuery('.see-more-button').click(()=>{
+    const sliderShop=jQuery('.form-blog-wrapper')[0];
+    console.log(sliderShop);
+    sliderShop.scrollIntoView({
+        behavior: "smooth"
+    });
+})
