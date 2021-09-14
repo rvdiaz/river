@@ -72,6 +72,9 @@ if ( ! defined( 'ABSPATH' ) ) {
         .service-post-separator .separator .logo {
             background-image:url('<?php echo get_site_url(); ?>/wp-content/themes/generatepress_child/img/logo_mark.png');
         }
+        .single-service .text-single-service {
+            background-image:url('<?php echo get_site_url(); ?>/wp-content/themes/generatepress_child/img/background-single-services.png');
+        }    
         .portfolio-grid .kt-blocks-post-grid-item header {
             background-image:url('<?php echo get_site_url(); ?>/wp-content/themes/generatepress_child/img/portfolio box.png');
         }

@@ -1378,10 +1378,6 @@
 	}
 }
 /* single service */
-.single-service {
-	display: flex;
-	flex-direction: column;
-}
 
 .single-service .kt-inside-inner-col {
 	height: 1000px;
@@ -1397,12 +1393,11 @@
 .single-service .text-single-service {
 	position: absolute;
 	justify-content: center !important;
-	background-image: url(http://localhost/rivers/wp-content/uploads/2021/09/Asset-3services-interior-1.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	width: 50% !important;
 	height: 87.9%;
-	left: 35%;
+	left: 39%;
 	margin-top: 80px;
 	margin-bottom: 30px;
 
@@ -1416,8 +1411,20 @@
 .single-service .text-single-service .wp-block-post-content {
 	align-self: center;
 }
+.single-services-form button { 
+	text-transform: uppercase;
+} 
 
- @media (max-width: 900px) {
+ @media (max-width: 1350px) {
+	.single-service .kt-mobile-layout-row.kt-v-gutter-default>.wp-block-kadence-column {
+		margin: 0 !important;
+	}
+	.single-service .text-single-service .kt-inside-inner-col {
+		padding: 0 25px !important;
+	}
+	.single-service .text-single-service .wp-block-post-content {
+		align-self: center;
+	}
 	.single-service .kt-inside-inner-col {
 		height: auto;
 	}
@@ -1432,19 +1439,20 @@
 		position: relative;
 		width: 100% !important;
 		margin: 0;
-		padding: 0;
+		padding: 0 !important;
 		left: 0;
 		background-image: none;
 	}
 	.single-services-form {
 		background-color: #ADD6CC;
 	}
-	.single-services-form .kadence-form-_4339a9-98 .kb-form .kadence-blocks-form-field .kb-text-style-field, .kadence-form-_4339a9-98 .kb-form .kadence-blocks-form-field .kb-select-style-field {
+	.single-services-form input, 
+	.single-services-form textarea {
 		background: white !important;
 	}
-	.single-services-form .kadence-form-_4339a9-98 .kb-form .kadence-blocks-form-field .kb-forms-submit {
-		background-color: #fff;
-		color: #ADD6CC;
+	.single-services-form button {
+		background-color: #fff !important;
+		color: #808080 !important;
 	}
 	.service-post-separator.single-service-post {
 		padding: 0 !important;
@@ -1485,7 +1493,7 @@
 }
 .portfolio-grid .entry-title {
 	padding: 0 !important;
-	font-family: Avenir-Black !important;
+	font-family: Avenir !important;
 }
 @media (min-width: 991px) and (max-width: 1200px) {
 	.portfolio-grid .kt-blocks-post-grid-item header {
