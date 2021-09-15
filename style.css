@@ -1422,8 +1422,12 @@
 .single-service .text-single-service .entry-content {
 	margin-top: 0.5em !important;
 } 
+.single-service .text-single-service .entry-content p {
+	margin-bottom: 1em;
+	text-align: justify;
+}
 
- @media (max-width: 1350px) {
+ @media (max-width: 1020px) {
 	.single-service .kt-mobile-layout-row.kt-v-gutter-default>.wp-block-kadence-column {
 		margin: 0 !important;
 	}
