@@ -78,6 +78,9 @@ if ( ! defined( 'ABSPATH' ) ) {
         .portfolio-grid .kt-blocks-post-grid-item header {
             background-image:url('<?php echo get_site_url(); ?>/wp-content/themes/generatepress_child/img/portfolio box.png');
         }
+        .main-navigation .menu-toggle {
+            background-image:url('<?php echo get_site_url(); ?>/wp-content/themes/generatepress_child/img/menu-toggle.png');
+        } 
         @media (max-width:768px){
             .slider-shop-product .slick-prev{
                 background-image:url('<?php echo get_site_url(); ?>/wp-content/themes/generatepress_child/img/arrow-left-mobile.png') !important;
