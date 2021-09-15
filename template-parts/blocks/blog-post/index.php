@@ -5,7 +5,7 @@
     $arrayCategoriesBlog=array();
     $the_query="";
     $args=array(
-        'post_type'=>'blog_post',
+        'post_type'=>'blog',
         'order'=>'ASC'
     );
     $argsByCategory=array(
@@ -93,8 +93,6 @@
 <script>
     <?php if(isset($_GET["category"])){?>
         const wrapperMenu=jQuery('.wrapper-menu')[0];
-        wrapperMenu.scrollIntoView({
-        behavior: "smooth"
-    });
+        wrapperMenu.scrollIntoView(true);
     <?php } ?>
 </script>

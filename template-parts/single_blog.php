@@ -39,7 +39,7 @@
 		        );
                 $the_query_post = new WP_Query( $argsPost );
 	            if($the_query_post->have_posts()){ ?>  
-                    <li><a href="<?php get_site_url();?>/river/blog/?category=<?php echo $category->cat_ID; ?>"><?php echo $category->name; ?></a></li>
+                    <li><a href="<?php get_site_url();?>/our-blog/?category=<?php echo $category->cat_ID; ?>"><?php echo $category->name; ?></a></li>
                 <?php }} ?>
             </ul>
         </div>

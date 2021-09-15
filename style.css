@@ -1267,15 +1267,16 @@
 	width: 40%;
 	border-right: 2px solid #8FC6B9;
 }
-.single-blog-menu-button{
+.single-blog-menu-button {
 	display: none;
 }
-.single-blog-accordion{
+.single-blog-accordion {
 	padding-top: 100px;
 	margin: 0;
 	text-align: center;
+	list-style: none;
 }
-.single-blog-accordion li{
+.single-blog-accordion li {
 	margin: 24px 0;
 }
 .single-blog-accordion a{
