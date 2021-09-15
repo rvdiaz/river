@@ -62,6 +62,11 @@ function getPostService() {
    separator.appendChild(line2);
    return separator;
 }
+//titulo single service 
+var title = document.querySelector(".title-single-service");
+console.log(title);
+
+
 
 /* menu filter blogs */
 function toggleNav() {

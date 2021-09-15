@@ -113,6 +113,18 @@
 	}
 }
 
+/* menu toggle */ 
+.main-navigation .menu-toggle {
+	width: 45px !important;
+	height: 45px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.menu-toggle:before {
+	color: transparent;
+}
+
+
 /* spacer-divider */
 
 @media (max-width:900px) {
