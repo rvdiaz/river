@@ -828,7 +828,8 @@
 		background: none;
 		position: relative;
 		justify-content: center;
-		padding-top: 32vh !important;
+		padding-top: 32vh;
+		margin-bottom: 15px;
 	}
 	.service-post-separator .kt-blocks-post-grid-item-inner .kt-blocks-post-readmore-wrap {
 		display: none;
@@ -1424,13 +1425,30 @@
 }
 .single-service .text-single-service .entry-content {
 	margin-top: 0.5em !important;
+	color: #666666;
+	font-family:'Gotham-Book';
+
 } 
 .single-service .text-single-service .entry-content p {
-	margin-bottom: 1em;
+	margin-bottom: 0.5em;
 	text-align: justify;
 }
+.single-service .text-single-service .entry-content li::marker {
+	font-size: 10px;
+}
 
- @media (max-width: 1020px) {
+.single-service .title-single-service-movil {
+	display: none;
+}
+
+
+ @media (max-width: 1024px) {
+	.single-service .title-single-service-movil {
+		display: block;
+	}
+	.single-service .title-single-service {
+		display: none;
+	}
 	.single-service .kt-mobile-layout-row.kt-v-gutter-default>.wp-block-kadence-column {
 		margin: 0 !important;
 	}
@@ -1467,17 +1485,18 @@
 	}
 	.single-services-form button {
 		background-color: #fff !important;
-		color: #808080 !important;
 	}
 	.service-post-separator.single-service-post {
 		padding: 0 !important;
 	}
 	.service-post-separator.single-service-post .kt-blocks-post-grid-item-inner-wrap {
 		height: auto;
+		padding-top: 31vh !important;
+		margin-bottom: 15px;
 	}
 }
 
-@media (min-width: 900px) {
+@media (min-width: 768px) {
 	.service-post-separator.single-service-post {
 		display: none !important;
 	}
