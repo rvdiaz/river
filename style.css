@@ -1467,28 +1467,23 @@
 	}
 }
 
-
 /*PORTFOLIO-PAGE-GRID-*/
-.portfolio-grid .kt-blocks-post-grid-item {
+.portfolio-grid .kt-blocks-post-grid-item-inner-wrap {
 	position: relative;
 }
 .portfolio-grid .kt-blocks-post-grid-item-inner {
-	width: 100%;
-	height: 45px;
+	position: absolute;
 	display: flex;
-	align-items: center !important;
 	justify-content: center !important;
+	width: 100%;
 }
 .portfolio-grid .kt-blocks-post-grid-item header {
-	position: absolute;
-	width: 413px;
-	height: 45px;
-	background-repeat: no-repeat;
 	display: flex !important;
 	align-items: center;
 	justify-content: center;
-	flex-direction: column;
-	margin-top: -30px !important;
+	background-repeat: no-repeat;
+	height: 45px;
+	width: 413px;
 }
 .portfolio-grid .entry-title {
 	padding: 0 !important;
