@@ -66,8 +66,6 @@ function getPostService() {
 var title = document.querySelector(".title-single-service");
 console.log(title);
 
-
-
 /* menu filter blogs */
 function toggleNav() {
     const sideMenu= document.getElementById("sideNavigation");
@@ -137,11 +135,6 @@ function filterByCharacter(){
         }
     });
 }    
-
-/* open accordion menu single */
-function openAccord(event){
-    event.currentTarget.parentElement.children[1].style.maxHeight="300px";
-}
 
 /* see more button blog landing */
 jQuery('.see-more-button').click(()=>{
