@@ -690,6 +690,10 @@
 	.second-blog-grid .kt-blocks-post-grid-item-inner {
 		text-align: center;
 	}
+	.first-blog-grid .kt-blocks-above-categories,
+.second-blog-grid .kt-blocks-above-categories {
+	margin-bottom: 10px;
+}
 }
 
 @media (min-width: 1400px) {
@@ -715,10 +719,6 @@
 }
 .form-blog .kadence-blocks-form-field input{
 	font-family: "Gotham-Book";
-}
-
-.form-blog .kb-submit-field {
-	display: none !important;
 }
 
 /* divider blog page */
@@ -1077,7 +1077,7 @@
 }
 .title-description-blog {
 	font-family: "Avenir-Black";
-	font-size: 16px;
+	font-size: 20px;
 	font-weight: bold;
 	color: #808080;
 	text-transform: uppercase;
@@ -1127,9 +1127,6 @@
 		flex-direction: column;
 		padding: 30px 5vw 0 5vw;
 		grid-gap: 0;
-	}
-	.blog-category{
-		font-size: 12px;
 	}
 	.notFoundText{
 		font-size: 16px;
@@ -1502,28 +1499,25 @@
 	}
 }
 
-
 /*PORTFOLIO-PAGE-GRID-*/
-.portfolio-grid .kt-blocks-post-grid-item {
+.portfolio-grid .kt-blocks-post-grid-item-inner-wrap {
 	position: relative;
 }
 .portfolio-grid .kt-blocks-post-grid-item-inner {
-	width: 100%;
-	height: 45px;
+	position: absolute;
 	display: flex;
-	align-items: center !important;
 	justify-content: center !important;
+	width: 100%;
+	top: 95%;
 }
 .portfolio-grid .kt-blocks-post-grid-item header {
-	position: absolute;
-	width: 413px;
-	height: 45px;
-	background-repeat: no-repeat;
 	display: flex !important;
 	align-items: center;
 	justify-content: center;
-	flex-direction: column;
-	margin-top: -30px !important;
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 45px;
+	width: 413px;
 }
 .portfolio-grid .entry-title {
 	padding: 0 !important;
@@ -1532,39 +1526,20 @@
 @media (min-width: 991px) and (max-width: 1200px) {
 	.portfolio-grid .kt-blocks-post-grid-item header {
 		width: 350px;
-		background-size: contain;
-	}
-	.portfolio-grid .entry-title {
-		font-size: 20px !important;
-		padding-bottom: 10px !important;
+		height: 35px;
 	}
 }
-@media (min-width: 450px) and (max-width: 650px) {
-	.portfolio-grid .kt-blocks-post-grid-item header {
-		width: 300px;
-		background-size: contain;
-		margin-top: -20px !important;
-	}
-	.portfolio-grid .entry-title {
-		font-size: 20px !important;
-		padding-bottom: 13px !important;
-	}
-}
+
 @media (max-width: 450px) {
 	.portfolio-grid .kt-blocks-post-grid-item header {
 		width: 230px;
-		background-size: contain;
-		margin-top: -16px !important;
-	}
-	.portfolio-grid .entry-title {
-		font-size: 16px !important;
-		padding-bottom: 20px !important;
+		height: auto;
 	}
 	.grid-portfolio-container .gb-inside-container {
 		padding-right: 20px !important;
 		padding-left: 20px !important;
 	}
 	.portfolio-grid .kt-post-grid-wrap {
-		grid-gap: 20px 40px !important;
+		grid-gap: 30px 40px !important;
 	}
 }
