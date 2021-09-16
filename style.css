@@ -705,6 +705,10 @@
 .form-blog {
 	width: 540px;
 }
+.form-blog input,
+.form-blog button {
+	border-radius: unset !important;
+}
 .form-blog input::placeholder{
 	font-size: 14px;
 }
@@ -716,8 +720,9 @@
 
 .form-blog .kadence-blocks-form-field {
 	margin-bottom: 0 !important;
+	padding: 0 !important;
 }
-.form-blog .kadence-blocks-form-field input{
+.form-blog .kadence-blocks-form-field input {
 	font-family: "Gotham-Book";
 }
 
@@ -729,6 +734,9 @@
 @media (max-width:768px){
 	.form-blog{
 		width:100%;
+	}
+	.form-blog input::placeholder{
+		font-size: 10px;
 	}
 }
 
@@ -971,18 +979,21 @@
 	width: 100%;
 	display: flex;
 	justify-content: center;
+	height: 45px;
 }
 
 .title-background {
 	width: 412px;
-	text-align: center;
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .title-background a {
-	font-size: 24px;
+	font-size: 18px;
 	font-family: "Avenir-Black";
 	color: white;
 	font-weight: bold;
@@ -996,7 +1007,7 @@
 	margin-bottom: 10px;
 	background-color: transparent !important;
 	font-weight: bold;
-	letter-spacing: 3px;
+	letter-spacing: 1px;
 	text-transform: uppercase;
 	width: max-content;
 }
@@ -1149,7 +1160,7 @@
 		display: none;
 	}
 	.buttonCategoriesMenu {
-		font-size: 18px;
+		font-size: 14px;
 	}
 	.infoBlogMobile{
 		display: block;
@@ -1438,7 +1449,7 @@
  @media (max-width: 1024px) {
 	.single-service .title-single-service-movil {
 		display: block;
-	}titulo-single-service
+	}
 	.single-service .title-single-service {
 		display: none;
 	}
