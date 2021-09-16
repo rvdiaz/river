@@ -5,16 +5,17 @@
     $arrayCategoriesBlog=array();
     $the_query="";
     $args=array(
-        'post_type'=>'blog',
+        'post_type'=>'blog_post',
         'order'=>'ASC'
     );
-    $argsByCategory=array(
-        'post_type'=>'blog',
-        'order'=>'ASC',
-        'cat'=> $cat_id
-    );
-    if(isset($_GET["category"]))
+    if(isset($_GET["category"])){
+        $argsByCategory=array(
+            'post_type'=>'blog_post',
+            'order'=>'ASC',
+            'cat'=> $cat_id
+        ); 
         $the_query=new WP_Query($argsByCategory);
+    }
     else
         $the_query=new WP_Query($args);
 
@@ -24,7 +25,7 @@
         ) );
     foreach( $categories as $category ) {
     $argsPost = array(
-		'post_type'=> 'blog',
+		'post_type'=> 'blog_post',
 		'order'    => 'ASC',
 		'category_name'=> $category->name
 		);
