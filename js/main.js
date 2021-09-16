@@ -38,8 +38,8 @@ function changeGridContentView(gridObject){
 }
 
 // Service Post
-if(document.getElementsByClassName("service-post-separator")[0]){
-const forPost = document.getElementsByClassName("service-post-separator")[0].children[0].children[0].children[0].children;
+if(document.getElementsByClassName("post-service-js")[0]){
+const forPost = document.getElementsByClassName("post-service-js")[0].children[0].children[0].children[0].children;
 
 let last = forPost.length - 1;
     if (forPost) {    

@@ -1466,6 +1466,7 @@
 	}
 	.single-services-form {
 		background-color: #D6EBE5;
+		padding-bottom: 25px;
 	}
 	.single-services-form input, 
 	.single-services-form textarea {
@@ -1482,6 +1483,12 @@
 		padding-top: 31vh !important;
 		margin-bottom: 20px;
 	}
+	.title-single-service-mobil {
+		display: block;
+	}
+	.titulo-single-service {
+		display: none;
+	}
 }
 
 @media (min-width: 768px) {
@@ -1489,6 +1496,10 @@
 		display: none !important;
 	}
 }
+.title-single-service-mobil {
+	display: none;
+}
+
 
 /*PORTFOLIO-PAGE-GRID-*/
 .portfolio-grid .kt-blocks-post-grid-item-inner-wrap {
