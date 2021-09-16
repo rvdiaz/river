@@ -140,3 +140,14 @@ jQuery('.see-more-button').click(()=>{
         behavior: "smooth"
     });
 })
+
+jQuery(document).ready(function(){
+    if(window.screen.width < 1000){
+        if(document.getElementsByClassName("title-single-service-movil")[0]){
+            const movilTitleServices=document.getElementsByClassName("title-single-service-movil")[0].children[0];
+            if(document.getElementsByClassName('titulo-single-service')[0]){
+            const titleServices=document.getElementsByClassName('titulo-single-service')[0];
+            movilTitleServices.appendChild(titleServices);}
+        }
+    }
+});

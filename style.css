@@ -1432,11 +1432,13 @@
 .single-service-titulo-form {
 	font-family:'Avenir-Book';
 }
-
+.title-single-service-movil{
+	display: none;
+}
  @media (max-width: 1024px) {
 	.single-service .title-single-service-movil {
 		display: block;
-	}
+	}titulo-single-service
 	.single-service .title-single-service {
 		display: none;
 	}
@@ -1487,6 +1489,9 @@
 @media (min-width: 768px) {
 	.service-post-separator.single-service-post {
 		display: none !important;
+	}
+	.title-single-service-movil{
+		display: block;
 	}
 }
 
