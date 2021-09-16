@@ -1375,7 +1375,7 @@
 	justify-content: center !important;
 	background-size: cover;
 	background-repeat: no-repeat;
-	width: 674.5 !important;
+	width: 674.5px !important;
 	height: 87.9%;
 	left: 39%;
 	margin-top: 80px;
@@ -1442,9 +1442,6 @@
 	}
 	.single-service .kt-mobile-layout-row.kt-v-gutter-default>.wp-block-kadence-column {
 		margin: 0 !important;
-	}
-	.single-service .text-single-service .kt-inside-inner-col {
-		padding: 0 25px !important;
 	}
 	.single-service .text-single-service .wp-block-post-content {
 		align-self: center;
