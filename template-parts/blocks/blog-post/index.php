@@ -1,17 +1,30 @@
 <?php
+    if(isset($_GET["category"]))
+    $cat_id=$_GET["category"];
+
     $arrayCategoriesBlog=array();
+    $the_query="";
     $args=array(
-        'post_type'=>'blog_post',
+        'post_type'=>'blog',
         'order'=>'ASC'
     );
-    $the_query=new WP_Query($args);
+    $argsByCategory=array(
+        'post_type'=>'blog',
+        'order'=>'ASC',
+        'cat'=> $cat_id
+    );
+    if(isset($_GET["category"]))
+        $the_query=new WP_Query($argsByCategory);
+    else
+        $the_query=new WP_Query($args);
+
     $categories = get_categories( array(
         'orderby' => 'name',
         'order'   => 'DESC'
         ) );
     foreach( $categories as $category ) {
     $argsPost = array(
-		'post_type'=> 'blog_post',
+		'post_type'=> 'blog',
 		'order'    => 'ASC',
 		'category_name'=> $category->name
 		);
@@ -77,3 +90,9 @@
         <?php } ?>
     </div>
 </div>
+<script>
+    <?php if(isset($_GET["category"])){?>
+        const wrapperMenu=jQuery('.wrapper-menu')[0];
+        wrapperMenu.scrollIntoView(true);
+    <?php } ?>
+</script>

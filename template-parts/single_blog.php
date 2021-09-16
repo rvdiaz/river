@@ -38,19 +38,9 @@
 		            'category_name'=> $category->name
 		        );
                 $the_query_post = new WP_Query( $argsPost );
-	            if($the_query_post->have_posts()){ ?> 
-                <li><span onclick="openAccord(event)"><?php echo $category->name; ?></span>
-                    <ul>
-                        <?php 
-                            while($the_query_post->have_posts()){ 
-                            $the_query_post->the_post();
-                        ?>
-                        <li><a href="<?php echo get_the_permalink(); ?>"><?php echo get_the_title();?></a></li>
-                        <?php } ?>
-                    </ul>
-                <?php } ?>
-                </li>  
-                <?php } ?>
+	            if($the_query_post->have_posts()){ ?>  
+                    <li><a href="<?php get_site_url();?>/our-blog/?category=<?php echo $category->cat_ID; ?>"><?php echo $category->name; ?></a></li>
+                <?php }} ?>
             </ul>
         </div>
     </div>
