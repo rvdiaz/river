@@ -36,6 +36,10 @@ if ( ! defined( 'ABSPATH' ) ) {
             src:url('<?php echo get_site_url();?>/wp-content/uploads/fonts/AvenirLTStd-Light.otf') format('truetype');
         }
         @font-face{
+            font-family:'bickham-font';
+            src:url('<?php echo get_site_url();?>/wp-content/uploads/fonts/bickham-font.otf') format('truetype');
+        }
+        @font-face{
             font-family:'Bickham-Script-Pro';
             src:url('<?php echo get_site_url();?>/wp-content/uploads/fonts/BickhamScriptPro-Regular.otf') format('truetype');
         }
