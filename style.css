@@ -303,12 +303,11 @@
 .slider-shop-product .slick-list {
 	margin: 0 100px !important;
 	height: 430px;
-	display: flex !important;
-	align-items: center;
 }
 
 .slider-shop-product .slick-track {
 	display: flex !important;
+	margin-top: 40px;
 }
 
 .slider-shop-product .kt-blocks-post-grid-item {
@@ -355,15 +354,16 @@
 	transition: all 200ms ease-in;
 }
 
-@media (min-width:1400px) {
+@media (min-width:1100px) and (max-width:1300px) {
 	.slider-shop-product .slick-list {
-		height: 480px;
+		height: 360px;
+		margin-top: 60px;
 	}
 }
-
-@media (min-width:768px) and (max-width:992px) {
+@media (min-width:768px) and (max-width:1100px) {
 	.slider-shop-product .slick-list {
-		height: 354px;
+		height: 330px;
+		margin-top: 60px;
 	}
 }
 
@@ -375,6 +375,9 @@
 		height: fit-content;
 		margin: 0 40px !important;
 	}
+	.slider-shop-product .slick-track{
+		margin-top: 0;
+	}
 	.slider-shop-product .kt-blocks-post-grid-item-inner-wrap:hover {
 		border: none;
 		background: none;
@@ -385,8 +388,7 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		left: 0;
-		top: 0;
+		transform: none;
 	}
 	.slider-shop-product .slick-next,
 	.slider-shop-product .slick-prev {
@@ -727,6 +729,15 @@
 .form-blog .kadence-blocks-form-field input {
 	font-family: "Gotham-Book";
 }
+.form-blog .kb-form-error-msg{
+	background: none;
+	margin-top: 0;
+	border: 0;
+	font-size: 14px;
+}
+.form-blog .kadence-blocks-form-message {
+	display: none;
+}
 
 /* divider blog page */
 .divider-separator hr{
@@ -797,14 +808,21 @@
 	background: none;
 	display: unset;
 	font-family:'Gotham-Book';
-}
-
-.service-post-separator .kt-blocks-post-grid-item-inner .kt-blocks-post-readmore-wrap a{
-	border-bottom: solid 1px #fff;
+	border-bottom: solid 1px #fff !important;
 	margin: 0 !important;
 }
+
 .service-post-separator .entry-content {
 	margin-top: 20px;;
+}
+.services-single-form .kb-form-error-msg{
+	background: none;
+	margin-top: 0;
+	border: 0;
+	font-size: 14px;
+}
+.services-single-form .kadence-blocks-form-message {
+	display: none;
 }
 
 @media (max-width: 768px) {
@@ -1497,9 +1515,6 @@
 	}
 	.title-single-service-mobil {
 		display: block;
-	}
-	.titulo-single-service {
-		display: none;
 	}
 }
 
