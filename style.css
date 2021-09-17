@@ -49,9 +49,6 @@
 }
 .slider-home .kt-blocks-post-readmore {
 	font-family: 'Gotham-Book' !important;
-}
-
-.slider-home .kt-blocks-post-readmore:hover {
 	border-bottom: solid 1px #ffffff !important;
 }
 
@@ -208,9 +205,9 @@
 	margin-top: 20px !important;
 }
 
-.carousel-services .kt-blocks-post-readmore-wrap a:hover {
+.carousel-services .kt-blocks-post-readmore-wrap a {
 	margin: 0;
-	border-bottom: solid 2px #fff !important;
+	border-bottom: solid 1px #fff !important;
 }
 
 .carousel-services .kt-blocks-post-grid-item .kt-blocks-post-readmore {
@@ -467,7 +464,7 @@
 	height: 197px;
 }
 
-.button-meet-river:hover {
+.button-meet-river {
 	border-bottom: solid 1px #ffffff !important;
 }
 @media (max-width: 1000px) {
@@ -793,7 +790,7 @@
 	font-family:'Gotham-Book';
 }
 
-.service-post-separator .kt-blocks-post-grid-item-inner .kt-blocks-post-readmore-wrap a:hover {
+.service-post-separator .kt-blocks-post-grid-item-inner .kt-blocks-post-readmore-wrap a{
 	border-bottom: solid 1px #fff;
 	margin: 0 !important;
 }
