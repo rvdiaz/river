@@ -171,7 +171,7 @@
 
 @media (max-width:900px) {
 	.design-packages h2 {
-		font-size: 70px;
+		font-size: 70px !important;
 		margin-bottom: 30px;
 	}
 } 
@@ -790,7 +790,7 @@
 	border: none;
 	background: none;
 	display: unset;
-	font-family: 'Avenir-Light';
+	font-family:'Gotham-Black';
 }
 
 .service-post-separator .kt-blocks-post-grid-item-inner .kt-blocks-post-readmore-wrap a:hover {
