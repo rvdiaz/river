@@ -494,7 +494,7 @@
 	font-family: 'Avenir-Book' !important;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 750px) {
     .subtitle-grid-post {
         margin-top: 0 !important;
     }
