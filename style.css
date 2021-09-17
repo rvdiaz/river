@@ -157,7 +157,7 @@
 .design-packages h2 {
 	font-family: 'Bickham-Script-Pro';
 	font-size: 120px;
-	margin-bottom: 60px;
+	margin-bottom: 50px;
 }
 .design-packages p {
 	font-family: 'Avenir-Book';
@@ -212,7 +212,7 @@
 }
 
 .carousel-services .entry-content {
-	font-family: 'Avenir-Light';
+	font-family:'Gotham-Book';
 }
 
 .carousel-services .slick-slider .slick-track,
