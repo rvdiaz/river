@@ -500,18 +500,8 @@
 	font-family: 'Avenir-Book' !important;
 }
 
-@media (min-width: 500px) and (max-width: 700px) {
-	.grid-blog-title {
-		font-size: 100px !important;
-	}
-}
-
-@media (max-width: 500px) {
-	.grid-blog-title {
-		font-size: 55px !important;
-	}
+@media (max-width: 750px) {
     .subtitle-grid-post {
-		font-size: 12px !important;
         margin-top: 0 !important;
     }
 	.carousel-blog-responsive .kadence-post-image-inner-intrisic img {
@@ -1213,9 +1203,6 @@
     }
 }
 @media (max-width: 500px) {
-    .follow-rivers .gb-headline-text {
-        font-size: 55px !important;
-    }
     .follow-social-media {
         margin: -30px 0 0 !important;
     }
