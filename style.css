@@ -45,7 +45,7 @@
 	font-family: 'Avenir-Black' !important;
 }
 .slider-home .entry-content{
-	margin-top: 20px !important;
+	margin-top: 0px !important;
 }
 .slider-home .kt-blocks-post-readmore {
 	font-family: 'Gotham-Book' !important;
@@ -351,7 +351,7 @@
 
 @media (min-width:1400px) {
 	.slider-shop-product .slick-list {
-		height: 554px;
+		height: 480px;
 	}
 }
 
