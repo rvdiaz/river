@@ -9,3 +9,13 @@ acf_register_block_type(array(
     'category' => 'widgets'
 ));
 
+acf_register_block_type(array(
+    'name'              => 'modal-suscribe',
+    'title'             => __('modal suscribe'),
+    'description'       => __('modal'),
+    'render_template'   => 'template-parts/blocks/modal-suscribe/index.php',
+    'icon'              => 'admin-page',
+    'keywords'          => array('suscribe'),
+    'category' => 'widgets'
+));
+

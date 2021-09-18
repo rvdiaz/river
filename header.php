@@ -8,6 +8,15 @@
 if ( ! defined( 'ABSPATH' ) ) {
     exit; // Exit if accessed directly.
 }
+if(!get_option('visited')){
+    add_option('visited','');
+} 
+if(!isset($_COOKIE["visited"])){
+    update_option('visited','0');
+    setcookie('visited',true);
+} else {
+    update_option('visited','1');
+} 
 
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -54,6 +63,10 @@ if ( ! defined( 'ABSPATH' ) ) {
         @font-face{
             font-family:'Gotham-Book';
             src:url('<?php echo get_site_url();?>/wp-content/uploads/fonts/Gotham-Book.otf') format('truetype');
+        }
+        @font-face{
+            font-family:'Gotham-Medium';
+            src:url('<?php echo get_site_url();?>/wp-content/uploads/fonts/Gotham-Medium.otf') format('truetype');
         }
         .slider-home .kt-blocks-post-grid-item-inner{
             background-image:url('<?php echo get_site_url(); ?>/wp-content/themes/generatepress_child/img/popup-slider-home.png');
@@ -135,11 +148,14 @@ if ( ! defined( 'ABSPATH' ) ) {
             background-image:url('<?php echo get_site_url(); ?>/wp-content/themes/generatepress_child/img/loading-blogs.gif');
         }
     </style>
-    <?php wp_head(); ?>
+    <?php 
+    wp_head(); 
+    ?>
 </head>
 
 <body <?php body_class(); ?> <?php generate_do_microdata( 'body' ); ?>>
 <?php
+
 /**
  * wp_body_open hook.
  *

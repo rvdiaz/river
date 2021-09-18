@@ -151,3 +151,8 @@ jQuery(document).ready(function(){
         }
     }
 });
+
+/* hide modal suscribe */
+function hideModal(){
+    document.getElementById("openModal").classList.add("hideModal");
+}
