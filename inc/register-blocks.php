@@ -8,6 +8,15 @@ acf_register_block_type(array(
     'keywords'          => array('blog'),
     'category' => 'widgets'
 ));
+acf_register_block_type(array(
+    'name'              => 'portfolio-block',
+    'title'             => __('portfolio'),
+    'description'       => __('portfolio block page'),
+    'render_template'   => 'template-parts/blocks/portfolio/index.php',
+    'icon'              => 'admin-comments',
+    'keywords'          => array('portfolio'),
+    'category' => 'widgets'
+));
 
 acf_register_block_type(array(
     'name'              => 'modal-suscribe',

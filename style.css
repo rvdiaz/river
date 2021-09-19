@@ -1531,52 +1531,52 @@
 }
 
 
-/*PORTFOLIO-PAGE-GRID-*/
-.portfolio-grid .kt-blocks-post-grid-item-inner-wrap {
-	position: relative;
-}
-.portfolio-grid .kt-blocks-post-grid-item-inner {
-	position: absolute;
-	display: flex;
-	justify-content: center !important;
-	width: 100%;
-	top: 95%;
-}
-.portfolio-grid .kt-blocks-post-grid-item header {
-	display: flex !important;
-	align-items: center;
-	justify-content: center;
-	background-repeat: no-repeat;
-	background-size: contain;
-	height: 45px;
-	width: 413px;
-}
-.portfolio-grid .entry-title {
-	padding: 0 !important;
-	font-family: Avenir !important;
-}
-@media (min-width: 991px) and (max-width: 1200px) {
-	.portfolio-grid .kt-blocks-post-grid-item header {
-		width: 350px;
-		height: 35px;
-	}
-}
+/*!*PORTFOLIO-PAGE-GRID-*!*/
+/*.portfolio-grid .kt-blocks-post-grid-item-inner-wrap {*/
+	/*position: relative;*/
+/*}*/
+/*.portfolio-grid .kt-blocks-post-grid-item-inner {*/
+	/*position: absolute;*/
+	/*display: flex;*/
+	/*justify-content: center !important;*/
+	/*width: 100%;*/
+	/*top: 95%;*/
+/*}*/
+/*.portfolio-grid .kt-blocks-post-grid-item header {*/
+	/*display: flex !important;*/
+	/*align-items: center;*/
+	/*justify-content: center;*/
+	/*background-repeat: no-repeat;*/
+	/*background-size: contain;*/
+	/*height: 45px;*/
+	/*width: 413px;*/
+/*}*/
+/*.portfolio-grid .entry-title {*/
+	/*padding: 0 !important;*/
+	/*font-family: Avenir !important;*/
+/*}*/
+/*@media (min-width: 991px) and (max-width: 1200px) {*/
+	/*.portfolio-grid .kt-blocks-post-grid-item header {*/
+		/*width: 350px;*/
+		/*height: 35px;*/
+	/*}*/
+/*}*/
 
-@media (max-width: 450px) {
-	.portfolio-grid .kt-blocks-post-grid-item header {
-		width: 230px;
-		height: auto;
-	}
+/*@media (max-width: 450px) {*/
+	/*.portfolio-grid .kt-blocks-post-grid-item header {*/
+		/*width: 230px;*/
+		/*height: auto;*/
+	/*}*/
 
-	.grid-portfolio-container .gb-inside-container {
-		padding-right: 20px !important;
-		padding-left: 20px !important;
-	}
+	/*.grid-portfolio-container .gb-inside-container {*/
+		/*padding-right: 20px !important;*/
+		/*padding-left: 20px !important;*/
+	/*}*/
 
-	.portfolio-grid .kt-post-grid-wrap {
-		grid-gap: 30px 40px !important;
-	}
-}
+	/*.portfolio-grid .kt-post-grid-wrap {*/
+		/*grid-gap: 30px 40px !important;*/
+	/*}*/
+/*}*/
 
 /* modal suscribe */
 .modalDialog {
@@ -1620,7 +1620,7 @@ transition: opacity 400ms ease-in;
 }
 .modalContainer h1{
 	font-family: "Avenir-Black";
-	font-size: 22px; 
+	font-size: 22px;
 	color: #999999;
 	text-transform: uppercase;
 	font-weight: bold;
@@ -1629,7 +1629,7 @@ transition: opacity 400ms ease-in;
 }
 .modalContainer h2{
 	font-family: "Gotham-Medium";
-	font-size: 12px; 
+	font-size: 12px;
 	color: #808080c7;
 	text-transform: uppercase;
 	letter-spacing: 0.5px;
@@ -1652,7 +1652,7 @@ transition: opacity 400ms ease-in;
 	font-size: 12px;
 	background-color: #808080;
 	text-transform: uppercase;
-}	
+}
 .modalContainer .form-button:hover{
 	background-color: #6f6c6c;
 }
@@ -1699,7 +1699,7 @@ transition: opacity 400ms ease-in;
 	.modalContainer .form-button{
 		font-size: 10px;
 		padding: auto;
-	}	
+	}
 }
 @media (max-width:400px){
 	.modalDialog{
@@ -1724,5 +1724,80 @@ transition: opacity 400ms ease-in;
 		display: flex;
 		justify-content: center;
 	}
-	
+
+}
+
+/*PORTFOLIO GRID CODE*/
+.portfolio-page {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1em;
+	max-width: 1400px;
+}
+.portfolio-page > div {
+	padding: 1rem;
+}
+.grid-portfolio {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	text-align: -webkit-center;
+}
+.img-portfolio img {
+	height: 100% !important;
+}
+.portfolio-inner {
+	width: 100%;
+	position: absolute;
+	top: 90%;
+}
+.title-portfolio {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	width: 413px;
+	height: 45px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.title-port {
+	margin: 0 !important;
+	text-transform: uppercase;
+	font-size: 24px;
+	color: white;
+	font-family: Avenir;
+}
+.title-port:hover {
+	text-decoration: none;
+	color: white;
+	cursor: pointer;
+}
+@media (max-width: 940px) {
+	.portfolio-page {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+@media (min-width: 530px) and (max-width: 1100px) {
+	.title-portfolio {
+		width: 355px;
+	}
+}
+@media (min-width: 400px) and (max-width: 530px) {
+	.title-portfolio {
+		width: 250px;
+		height: 30px;
+	}
+	.title-port {
+		font-size: 18px;
+	}
+}
+@media (max-width: 400px) {
+	.title-portfolio {
+		height: 100%;
+		width: 230px;
+	}
+	.title-port {
+		font-size: 16px;
+	}
 }
