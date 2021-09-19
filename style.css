@@ -1531,52 +1531,52 @@
 }
 
 
-/*!*PORTFOLIO-PAGE-GRID-*!*/
-/*.portfolio-grid .kt-blocks-post-grid-item-inner-wrap {*/
-	/*position: relative;*/
-/*}*/
-/*.portfolio-grid .kt-blocks-post-grid-item-inner {*/
-	/*position: absolute;*/
-	/*display: flex;*/
-	/*justify-content: center !important;*/
-	/*width: 100%;*/
-	/*top: 95%;*/
-/*}*/
-/*.portfolio-grid .kt-blocks-post-grid-item header {*/
-	/*display: flex !important;*/
-	/*align-items: center;*/
-	/*justify-content: center;*/
-	/*background-repeat: no-repeat;*/
-	/*background-size: contain;*/
-	/*height: 45px;*/
-	/*width: 413px;*/
-/*}*/
-/*.portfolio-grid .entry-title {*/
-	/*padding: 0 !important;*/
-	/*font-family: Avenir !important;*/
-/*}*/
-/*@media (min-width: 991px) and (max-width: 1200px) {*/
-	/*.portfolio-grid .kt-blocks-post-grid-item header {*/
-		/*width: 350px;*/
-		/*height: 35px;*/
-	/*}*/
-/*}*/
+/*PORTFOLIO-PAGE-GRID-*/
+.portfolio-grid .kt-blocks-post-grid-item-inner-wrap {
+	position: relative;
+}
+.portfolio-grid .kt-blocks-post-grid-item-inner {
+	position: absolute;
+	display: flex;
+	justify-content: center !important;
+	width: 100%;
+	top: 95%;
+}
+.portfolio-grid .kt-blocks-post-grid-item header {
+	display: flex !important;
+	align-items: center;
+	justify-content: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 45px;
+	width: 413px;
+}
+.portfolio-grid .entry-title {
+	padding: 0 !important;
+	font-family: Avenir !important;
+}
+@media (min-width: 991px) and (max-width: 1200px) {
+	.portfolio-grid .kt-blocks-post-grid-item header {
+		width: 350px;
+		height: 35px;
+	}
+}
 
-/*@media (max-width: 450px) {*/
-	/*.portfolio-grid .kt-blocks-post-grid-item header {*/
-		/*width: 230px;*/
-		/*height: auto;*/
-	/*}*/
+@media (max-width: 450px) {
+	.portfolio-grid .kt-blocks-post-grid-item header {
+		width: 230px;
+		height: auto;
+	}
 
-	/*.grid-portfolio-container .gb-inside-container {*/
-		/*padding-right: 20px !important;*/
-		/*padding-left: 20px !important;*/
-	/*}*/
+	.grid-portfolio-container .gb-inside-container {
+		padding-right: 20px !important;
+		padding-left: 20px !important;
+	}
 
-	/*.portfolio-grid .kt-post-grid-wrap {*/
-		/*grid-gap: 30px 40px !important;*/
-	/*}*/
-/*}*/
+	.portfolio-grid .kt-post-grid-wrap {
+		grid-gap: 30px 40px !important;
+	}
+}
 
 /* modal suscribe */
 .modalDialog {
@@ -1727,7 +1727,7 @@ transition: opacity 400ms ease-in;
 
 }
 
-/*PORTFOLIO GRID CODE*/
+/* test PORTFOLIO GRID CODE*/
 .portfolio-page {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
