@@ -19,3 +19,12 @@ acf_register_block_type(array(
     'category' => 'widgets'
 ));
 
+acf_register_block_type(array(
+    'name'              => 'prueba',
+    'title'             => __('prueba'),
+    'description'       => __('prueba'),
+    'render_template'   => 'template-parts/blocks/prueba/index.php',
+    'icon'              => 'admin-page',
+    'keywords'          => array('suscribe'),
+    'category' => 'widgets'
+));

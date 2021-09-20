@@ -91,5 +91,6 @@ if(document.getElementsByClassName("slider-shop-product")[0]){
 	 <?php }}
 	 ?>}
 </script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 </html>

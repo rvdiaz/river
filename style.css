@@ -1294,20 +1294,31 @@
 .single-blog-menu{
 	width: 40%;
 	border-right: 2px solid #8FC6B9;
+	position: relative;
 }
 .single-blog-menu-button {
 	display: none;
+	width: 100%;
+	height: 100px;
 }
-.single-blog-accordion {
+.container-icon{
+	margin-left: 5%;
+}
+.single-cat-menu {
 	padding-top: 100px;
 	margin: 0;
 	text-align: center;
-	list-style: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
-.single-blog-accordion li {
+.single-cat-menu button {
 	margin: 24px 0;
+	background: none;
+	padding: 0;
+	width: max-content;
 }
-.single-blog-accordion a{
+.single-cat-menu a{
 	font-size: 18px;
 	font-family: "Gotham-Book";
 	color: #4D4D4D;
@@ -1340,8 +1351,28 @@
 	height:100%;
 	object-fit: cover;
 }
-
-@media(max-width:1000px) {
+.openCategoriesButton{
+	cursor: pointer;
+}
+.single-blog-title-menu-cat{
+	font-size: 18px;
+	font-family: "Gotham-Book";
+	color: #666666;
+	text-transform: uppercase;
+	margin-left: 30%;
+	margin-bottom: 0;
+}
+.single-cat-menu-container{
+	position: absolute;
+	z-index: 1;
+	top: 102px;
+	left: 0;
+	width: 0;
+	background-color: #f7f8f9;
+	overflow-y: hidden;
+	transition: 0.5s;
+}
+@media(max-width:1100px) {
 	.single-blog-container{
 		display: flex;
 		justify-content: center;
@@ -1367,7 +1398,7 @@
 	}
 	.single-blog-body {
 		display: flex;
-		flex-direction: column;
+		flex-direction: column-reverse;
 	}
 	.single-blog-body-image{
 		width:100%;
@@ -1382,8 +1413,20 @@
 	.single-blog-paragraph{
 		font-size: 16px;
 	}
+	.single-blog-menu{
+		width: 100%;
+		border-right: none;
+		border-top: 2px solid #8FC6B9;
+		border-bottom: 2px solid #8FC6B9;
+	}
+	.single-blog-menu-button{
+		display: flex;
+		align-items: center;
+	}
+	.single-cat-menu{
+		padding: 0;
+	}
 }
-
 
 /* single service */
 
@@ -1640,6 +1683,7 @@ transition: opacity 400ms ease-in;
 	font-family: "Gotham-Book";
 	font-size: 12px;
 	color: #808080;
+	border: none;
 }
 .modalContainer .form-container{
 	display: flex;
@@ -1652,6 +1696,8 @@ transition: opacity 400ms ease-in;
 	font-size: 12px;
 	background-color: #808080;
 	text-transform: uppercase;
+	border: none;
+	border-radius: 0;
 }	
 .modalContainer .form-button:hover{
 	background-color: #6f6c6c;
@@ -1667,6 +1713,7 @@ transition: opacity 400ms ease-in;
 	text-decoration: none;
 	font-weight: bold;
 	cursor: pointer;
+	font-size: 16px;
 }
 
 @media (max-width:983px){
@@ -1700,6 +1747,10 @@ transition: opacity 400ms ease-in;
 		font-size: 10px;
 		padding: auto;
 	}	
+	.modalContainer .close{
+		font-size: 12px;
+		right: -5px;
+	}
 }
 @media (max-width:400px){
 	.modalDialog{
@@ -1717,12 +1768,15 @@ transition: opacity 400ms ease-in;
 	.modalContainer h2{
 		font-size: 10px;
 	}
-	.modalContainer .close{
-		top: 10px;
-	}
 	.modalContainer .mc4wp-form-526{
 		display: flex;
 		justify-content: center;
 	}
 	
+}
+
+/* galeria prueba  */
+.item{
+	width: 25%;
+	height:200px;
 }

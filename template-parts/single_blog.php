@@ -15,7 +15,7 @@
     <div class="single-blog-menu">
         <div class="single-blog-menu-button">
             <div class="container-icon">
-  		        <a class="openNavButton" onclick="">
+  		        <a class="openCategoriesButton" onclick="openCategories()">
     	            <svg width="40" height="23" id="icoOpen">
         		        <path d="M0,3 55,3" stroke="#666666" stroke-width="3"/>
         		        <path d="M0,12 55,12" stroke="#666666" stroke-width="3"/>
@@ -23,9 +23,10 @@
 			        </svg>
 		        </a>
             </div>
+            <h1 class="single-blog-title-menu-cat">View more</h1>
         </div>
-        <div class="single-blog-accordion-container">
-            <ul class="single-blog-accordion">
+        <div id="single-blog-cat-menu" class="single-cat-menu-container">
+            <ul class="single-cat-menu">
                 <?php
                 $categories = get_categories( array(
                     'orderby' => 'name',
@@ -33,13 +34,13 @@
                     ) );
                 foreach( $categories as $category ){ 
                 $argsPost = array(
-		            'post_type'=> 'blog',
+		            'post_type'=> 'blog_post',
 		            'order'    => 'ASC',
 		            'category_name'=> $category->name
 		        );
                 $the_query_post = new WP_Query( $argsPost );
 	            if($the_query_post->have_posts()){ ?>  
-                    <li><a href="<?php get_site_url();?>/our-blog/?category=<?php echo $category->cat_ID; ?>"><?php echo $category->name; ?></a></li>
+                    <button><a href="<?php get_site_url();?>/our-blog/?category=<?php echo $category->cat_ID; ?>"><?php echo $category->name; ?></a></button>
                 <?php }} ?>
             </ul>
         </div>

@@ -75,6 +75,18 @@ function toggleNav() {
     else 
     sideMenu.style.width="";
 }
+
+/* menu categories single blog */
+function openCategories(){
+    const catMenu=document.getElementById("single-blog-cat-menu");
+    if(catMenu.style.width==""){
+        catMenu.style.width="100%";
+    }
+    else{
+        catMenu.style.width="";
+    }
+}
+
 /* form search blogs */
 function toggleSearch(){
     if(window.screen.width < 1000){
@@ -87,9 +99,9 @@ function toggleSearch(){
     searchInput.focus(); 
     }
 }
-else
-filterByCharacter();
+else filterByCharacter();
 }
+
 /* methods blog filters */
 function filterByCategory(event){
     toggleNav();
@@ -156,3 +168,5 @@ jQuery(document).ready(function(){
 function hideModal(){
     document.getElementById("openModal").classList.add("hideModal");
 }
+
+/* galeria prueba */
