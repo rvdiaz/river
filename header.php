@@ -93,7 +93,7 @@ if(!isset($_COOKIE["visited"])){
             background-image:url('<?php echo get_site_url(); ?>/wp-content/themes/generatepress_child/img/background-single-services.png');
         }    
         .grid-portfolio .title-portfolio {
-            background-image:url('<?php echo get_site_url(); ?>/wp-content/themes/generatepress_child/img/portfolio box.png');
+            background-image:url('<?php echo get_site_url(); ?>/wp-content/themes/generatepress_child/img/background-blog-title.png');
         }
         .main-navigation .menu-toggle {
             background-image:url('<?php echo get_site_url(); ?>/wp-content/themes/generatepress_child/img/menu-toggle.png');

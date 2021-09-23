@@ -23,7 +23,7 @@
 			        </svg>
 		        </a>
             </div>
-            <h1 class="single-blog-title-menu-cat">View more</h1>
+            <a class="single-blog-title-menu-cat" href="<?php get_site_url();?>/our-blog">View more</a>
         </div>
         <div id="single-blog-cat-menu" class="single-cat-menu-container">
             <ul class="single-cat-menu">

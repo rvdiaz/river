@@ -169,4 +169,46 @@ function hideModal(){
     document.getElementById("openModal").classList.add("hideModal");
 }
 
-/* galeria prueba */
+/* popup portfolio*/
+function show_portfolio_popup(event){
+    let html='';
+    const portfolio_id= event.currentTarget.parentElement.children[1].value;
+    jQuery.ajax({
+        type:"post",
+        url:ajax_var.url,
+        data:{
+            action:"show_portfolio_popup",
+            portfolio_id:portfolio_id
+        },
+        beforeSend:function(){
+            jQuery("#portfolio_modal").html(`
+            <div id="openModal" class="modalDialog modalPorftolio">
+                <div class="loadingContainerPortfolioGalery">
+                    <div class="loadingGift"></div>
+                </div>
+            </div>`);
+        },
+        success:function(result){
+            html+=`<div id="openModal" class="modalDialog modalPorftolio">
+                <a onClick="hideModal()" class="closePortfolioModal">X</a>
+                <div class="modalPortfolioGalery">
+                <div class="main_portfolio_image">`+eval(result)[0]+`</div>
+                <div class="carousel carouselPortfolio">`+eval(result)[1]+`</div></div>
+            </div>`; 
+            jQuery("#portfolio_modal").html(html);
+            jQuery(".carousel").flickity({
+                cellAlign:'left',
+                contain: true,
+                wrapAround: false,
+                freeScroll: true,
+                prevNextButtons: false,
+                pageDots: false
+            });
+        }
+    });
+}
+
+function update_portfolio_image(event){
+    jQuery("#principal_portfolio_img").attr("src",event.currentTarget.children[0].src);
+}
+

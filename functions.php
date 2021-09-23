@@ -89,3 +89,24 @@ function getBlogBySearch(){
     echo '<h1 class="notFoundText">No results found for your search</h1>';
     wp_die();
 }
+
+add_action('wp_ajax_nopriv_show_portfolio_popup', 'show_portfolio_popup');
+add_action('wp_ajax_show_portfolio_popup', 'show_portfolio_popup');
+
+function show_portfolio_popup(){
+	$portfolio_id=$_POST['portfolio_id'];
+    $list_images=get_post_meta($portfolio_id,'list_images',true);
+    $first=0;
+    $firstImage=get_post_meta($portfolio_id,'list_images_'.$first.'_image',true);
+    $items='';
+    for($i=0;$i<$list_images;$i++){
+        $image_id=get_post_meta($portfolio_id,'list_images_'.$i.'_image',true);
+        $items.='<div class="item image_portfolio_item" onclick="update_portfolio_image(event)"><img src="'.wp_get_attachment_image_src($image_id,'full')[0].'"/></div>';
+    }
+    $result=array(
+        '<img id="principal_portfolio_img" src="'.wp_get_attachment_image_src($firstImage,'full')[0].'"/>',
+        $items,
+    );
+    echo json_encode( $result);
+    wp_die();
+}

@@ -1281,11 +1281,13 @@
 	font-weight: bold;
 	word-wrap: break-word;
 	margin-bottom: 0;
+	text-align: center;
 }
 .single-blog-container{
 	display:flex;
 	justify-content: center;
 	margin: 0;
+	background-color: #ffffff;
 }
 .single-blog-body {
 	display: flex;
@@ -1300,9 +1302,6 @@
 	display: none;
 	width: 100%;
 	height: 100px;
-}
-.container-icon{
-	margin-left: 5%;
 }
 .single-cat-menu {
 	padding-top: 100px;
@@ -1359,20 +1358,22 @@
 	font-family: "Gotham-Book";
 	color: #666666;
 	text-transform: uppercase;
-	margin-left: 30%;
 	margin-bottom: 0;
 }
-.single-cat-menu-container{
-	position: absolute;
-	z-index: 1;
-	top: 102px;
-	left: 0;
-	width: 0;
-	background-color: #f7f8f9;
-	overflow-y: hidden;
-	transition: 0.5s;
-}
+.blog .entry-content{
+	margin-top: 0px !important;
+} 
 @media(max-width:1100px) {
+	.single-cat-menu-container{
+		position: absolute;
+		z-index: 1;
+		top: 102px;
+		left: 0;
+		width: 0;
+		background-color: #ffffff;
+		overflow-y: hidden;
+		transition: 0.5s;
+	}
 	.single-blog-container{
 		display: flex;
 		justify-content: center;
@@ -1386,7 +1387,7 @@
 		height:50%;
 	}
 	.single-blog-info{
-		padding: 25px 10px 0 10px;
+		padding: 25px 30px 0 30px;
 		width: 100%;
 		align-items: center;
 	}
@@ -1403,9 +1404,10 @@
 	.single-blog-body-image{
 		width:100%;
 		padding:30px 0;
+		height: 70vh;
 	}
 	.single-blog-body-info{
-		padding:10px;
+		padding: 30px;
 	}
 	.single-blog-paragraph-container{
 		width:100%;
@@ -1421,7 +1423,9 @@
 	}
 	.single-blog-menu-button{
 		display: flex;
+		justify-content: space-between;
 		align-items: center;
+		padding: 0 30px;
 	}
 	.single-cat-menu{
 		padding: 0;
@@ -1573,54 +1577,6 @@
 	display: none;
 }
 
-
-/*PORTFOLIO-PAGE-GRID-*/
-.portfolio-grid .kt-blocks-post-grid-item-inner-wrap {
-	position: relative;
-}
-.portfolio-grid .kt-blocks-post-grid-item-inner {
-	position: absolute;
-	display: flex;
-	justify-content: center !important;
-	width: 100%;
-	top: 95%;
-}
-.portfolio-grid .kt-blocks-post-grid-item header {
-	display: flex !important;
-	align-items: center;
-	justify-content: center;
-	background-repeat: no-repeat;
-	background-size: contain;
-	height: 45px;
-	width: 413px;
-}
-.portfolio-grid .entry-title {
-	padding: 0 !important;
-	font-family: Avenir !important;
-}
-@media (min-width: 991px) and (max-width: 1200px) {
-	.portfolio-grid .kt-blocks-post-grid-item header {
-		width: 350px;
-		height: 35px;
-	}
-}
-
-@media (max-width: 450px) {
-	.portfolio-grid .kt-blocks-post-grid-item header {
-		width: 230px;
-		height: auto;
-	}
-
-	.grid-portfolio-container .gb-inside-container {
-		padding-right: 20px !important;
-		padding-left: 20px !important;
-	}
-
-	.portfolio-grid .kt-post-grid-wrap {
-		grid-gap: 30px 40px !important;
-	}
-}
-
 /* modal suscribe */
 .modalDialog {
 	position: fixed;
@@ -1662,7 +1618,7 @@ transition: opacity 400ms ease-in;
 	text-align: center;
 }
 .modalContainer h1{
-	font-family: "Avenir-Black";
+	font-family: "Avenir-Heavy";
 	font-size: 22px;
 	color: #999999;
 	text-transform: uppercase;
@@ -1690,6 +1646,7 @@ transition: opacity 400ms ease-in;
 }
 .modalContainer .form-email::placeholder{
 	text-transform: uppercase;
+	color: #808080c7;
 }
 .modalContainer .form-button{
 	font-family: "Gotham-Book";
@@ -1704,17 +1661,17 @@ transition: opacity 400ms ease-in;
 	background-color: #6f6c6c;
 }
 .modalContainer .close {
-	color: #808080;
+	color: #80808075;
 	line-height: 25px;
 	position: absolute;
-	right: 2px;
+	right: 10px;
 	text-align: center;
-	top: 2px;
+	top: 10px;
 	width: 24px;
 	text-decoration: none;
 	font-weight: bold;
 	cursor: pointer;
-	font-size: 16px;
+	font-size: 18px;
 }
 
 @media (max-width:983px){
@@ -1728,6 +1685,11 @@ transition: opacity 400ms ease-in;
 	}
 	.modalContainer .form-email{
 		width: 100%;
+	}
+	.modalContainer .close{
+		font-size: 16px;
+		top: 0;
+		right: 0;
 	}
 }
 @media (max-width:500px){
@@ -1747,6 +1709,14 @@ transition: opacity 400ms ease-in;
 	.modalContainer .form-button{
 		font-size: 10px;
 		padding: auto;
+	}
+	.modalContainer .close{
+		font-size: 12px;
+		top: -2px;
+		right: -4px;
+	}
+	.modalContainer .form-container{
+		padding: 0 10px;
 	}
 }
 @media (max-width:400px){
@@ -1769,25 +1739,20 @@ transition: opacity 400ms ease-in;
 		display: flex;
 		justify-content: center;
 	}
-	
+	.modalContainer .close{
+		top: 1px;
+	}
 }
 
-/* galeria prueba  */
-.item{
-	width: 25%;
-	height:200px;
-}
-
-
-/* test PORTFOLIO GRID CODE*/
+/* PORTFOLIO GRID CODE*/
 .portfolio-page {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	gap: 1em;
+	grid-column-gap: 40px;
+	grid-row-gap: 32px; 
 	max-width: 1400px;
-}
-.portfolio-page > div {
-	padding: 1rem;
+	margin: 0 auto;
+	padding :50px 0;
 }
 .grid-portfolio {
 	position: relative;
@@ -1801,7 +1766,7 @@ transition: opacity 400ms ease-in;
 .portfolio-inner {
 	width: 100%;
 	position: absolute;
-	top: 90%;
+	top: 95%;
 }
 .title-portfolio {
 	align-items: center;
@@ -1851,5 +1816,82 @@ transition: opacity 400ms ease-in;
 	}
 	.title-port {
 		font-size: 16px;
+	}
+}
+
+/* modal portfolio galery */
+
+.modalPorftolio{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.modalPortfolioGalery{
+	width: 90%;
+	margin: 0 auto;
+}
+.main_portfolio_image{
+	height: 50vh;
+	max-width: 1400px;
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+}
+.main_portfolio_image img{
+	object-fit: cover;
+	height: inherit;
+	width: 50%;
+}
+.closePortfolioModal{
+	position: absolute;
+	top: 5px;
+	right: 10px;
+	font-size: 30px;
+	color:#666666;
+	cursor: pointer;
+}
+.closePortfolioModal:hover {
+	color:#666666;
+}
+.loadingContainerPortfolioGalery{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+.loadingContainerPortfolioGalery > div{
+	height: 100px;
+}
+.carouselPortfolio {
+	margin-top: 10px;
+	overflow-x: hidden;
+}
+.image_portfolio_item{
+	cursor: pointer;
+	height: 200px;
+	width: 23%;
+}
+.image_portfolio_item img{
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+@media (max-width: 768px) {
+	.main_portfolio_image{
+		height: 50vh;
+	}
+	.main_portfolio_image img{
+		width: 90%;
+	}
+	.image_portfolio_item{
+		height: 150px; 
+	}
+}
+@media (max-width: 500px) {
+	.image_portfolio_item{
+		height: 100px; 
+	}
+	.main_portfolio_image{
+		height: 50vh;
 	}
 }
