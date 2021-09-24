@@ -167,10 +167,12 @@ jQuery(document).ready(function(){
 /* hide modal suscribe */
 function hideModal(){
     document.getElementById("openModal").classList.add("hideModal");
+    jQuery('body').css('overflow','scroll');
 }
 
 /* popup portfolio*/
 function show_portfolio_popup(event){
+    jQuery('body').css('overflow','hidden');
     let html='';
     const portfolio_id= event.currentTarget.parentElement.children[1].value;
     jQuery.ajax({
@@ -189,6 +191,7 @@ function show_portfolio_popup(event){
             </div>`);
         },
         success:function(result){
+            if(eval(result)[1]!=""){
             html+=`<div id="openModal" class="modalDialog modalPorftolio">
                 <a onClick="hideModal()" class="closePortfolioModal">X</a>
                 <div class="modalPortfolioGalery">
@@ -204,6 +207,13 @@ function show_portfolio_popup(event){
                 prevNextButtons: false,
                 pageDots: false
             });
+        }else{
+        html+=`<div id="openModal" class="modalDialog modalPorftolio">
+        <a onClick="hideModal()" class="closePortfolioModal">X</a>
+        <h1 class="notFoundPorfolio">Not found porftolio images </h1>
+        </div>`;
+        jQuery("#portfolio_modal").html(html);
+        }
         }
     });
 }

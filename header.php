@@ -48,10 +48,7 @@ if(!isset($_COOKIE["visited"])){
             font-family:'bickham-font';
             src:url('<?php echo get_site_url();?>/wp-content/uploads/fonts/bickham-font.otf') format('truetype');
         }
-        @font-face{
-            font-family:'Bickham-Script-Pro';
-            src:url('<?php echo get_site_url();?>/wp-content/uploads/fonts/BickhamScriptPro-Regular.otf') format('truetype');
-        }
+        
         @font-face{
             font-family:'AvenirNextW06Bold';
             src:url('<?php echo get_site_url();?>/wp-content/uploads/fonts/AvenirNextW06Bold.otf') format('truetype');

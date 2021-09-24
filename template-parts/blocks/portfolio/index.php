@@ -9,7 +9,7 @@
 <?php
 $args = array(
     'post_type'=> 'portfolio',
-    'order'    => 'ASC'
+    'order'    => 'DESC'
 );
 $the_query = new WP_Query( $args );
 ?>
@@ -29,7 +29,7 @@ $the_query = new WP_Query( $args );
             </div>
             <div class="portfolio-inner">
                 <header class="title-portfolio">
-                    <a oncLick="show_portfolio_popup(event)" class="title-port"><?php echo get_the_title(); ?></a>
+                    <button onclick="show_portfolio_popup(event)" class="title-port"><?php echo get_the_title(); ?></button>
                     <input type="hidden" value="<?php echo get_the_ID(); ?>">
                 </header>
             </div>
