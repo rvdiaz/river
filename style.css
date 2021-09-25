@@ -94,7 +94,7 @@
 }
 
 .header-widget span {
-	font-size: "Avenir-Book";
+	font-family: "Avenir-Book";
 	color: #808080;
 	font-size: 14px;
 	letter-spacing: 1px;
@@ -1832,6 +1832,7 @@ transition: opacity 400ms ease-in;
 		height: 30px;
 	}
 	.title-port {
+		letter-spacing: 0;
 		font-size: 16px;
 	}
 }
@@ -1841,6 +1842,7 @@ transition: opacity 400ms ease-in;
 		width: 230px;
 	}
 	.title-port {
+		letter-spacing: 0;
 		font-size: 14px;
 	}
 }
