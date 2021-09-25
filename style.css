@@ -1827,6 +1827,7 @@ transition: opacity 400ms ease-in;
 		height: 30px;
 	}
 	.title-port {
+		letter-spacing: 0;
 		font-size: 16px;
 	}
 }
