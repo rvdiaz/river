@@ -30,40 +30,31 @@ if(!isset($_COOKIE["visited"])){
         }
         @font-face{
             font-family:'Avenir-Book';
-            src:url('<?php echo get_site_url();?>/wp-content/uploads/fonts/AvenirLTStd-Book.otf') format('truetype');
+            src:url('<?php echo get_site_url();?>/wp-content/uploads/fonts/Avenir-Book.woff') format('truetype');
         }
         @font-face{
             font-family:'Avenir-Black';
-            src:url('<?php echo get_site_url();?>/wp-content/uploads/fonts/AvenirLTStd-Book.otf') format('truetype');
+            src:url('<?php echo get_site_url();?>/wp-content/uploads/fonts/Avenir-Black.woff') format('truetype');
         }
         @font-face{
             font-family:'Avenir-Heavy';
-            src:url('<?php echo get_site_url();?>/wp-content/uploads/fonts/AvenirLTStd-Heavy.otf') format('truetype');
+            src:url('<?php echo get_site_url();?>/wp-content/uploads/fonts/Avenir-Heavy.woff') format('truetype');
         }
         @font-face{
             font-family:'Avenir-Light';
-            src:url('<?php echo get_site_url();?>/wp-content/uploads/fonts/AvenirLTStd-Light.otf') format('truetype');
+            src:url('<?php echo get_site_url();?>/wp-content/uploads/fonts/Avenir-Light.woff') format('truetype');
         }
         @font-face{
-            font-family:'bickham-font';
-            src:url('<?php echo get_site_url();?>/wp-content/uploads/fonts/bickham-font.otf') format('truetype');
-        }
-        
-        @font-face{
-            font-family:'AvenirNextW06Bold';
-            src:url('<?php echo get_site_url();?>/wp-content/uploads/fonts/AvenirNextW06Bold.otf') format('truetype');
-        }
-        @font-face{
-            font-family:'Gotham-Black';
-            src:url('<?php echo get_site_url();?>/wp-content/uploads/fonts/Gotham-Black.otf') format('truetype');
+            font-family:'Bickham-Script-Pro';
+            src:url('<?php echo get_site_url();?>/wp-content/uploads/fonts/BickhamScriptPro-Regular.woff') format('truetype');
         }
         @font-face{
             font-family:'Gotham-Book';
-            src:url('<?php echo get_site_url();?>/wp-content/uploads/fonts/Gotham-Book.otf') format('truetype');
+            src:url('<?php echo get_site_url();?>/wp-content/uploads/fonts/Gotham-Book.woff') format('truetype');
         }
         @font-face{
             font-family:'Gotham-Medium';
-            src:url('<?php echo get_site_url();?>/wp-content/uploads/fonts/Gotham-Medium.otf') format('truetype');
+            src:url('<?php echo get_site_url();?>/wp-content/uploads/fonts/Gotham-Medium.woff') format('truetype');
         }
         .slider-home .kt-blocks-post-grid-item-inner{
             background-image:url('<?php echo get_site_url(); ?>/wp-content/themes/generatepress_child/img/popup-slider-home.png');
