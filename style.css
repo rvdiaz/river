@@ -1789,8 +1789,8 @@ transition: opacity 400ms ease-in;
 	text-transform: uppercase;
 	font-size: 18px;
 	color: white;
-	letter-spacing: 0.1em;
-	font-family: Avenir;
+	letter-spacing: 0.125em;
+	font-family: Avenir-Black;
 	background: none;
 	padding: 0;
 }
