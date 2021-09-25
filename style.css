@@ -48,7 +48,7 @@
 	margin-top: 0px !important;
 }
 .slider-home .kt-blocks-post-readmore {
-	font-family: 'Avenir' !important;
+	font-family: 'Avenir-Light' !important;
 	border-bottom: solid 1px #ffffff !important;
 }
 
@@ -273,7 +273,7 @@
 }
 
 .slider-shop-product .entry-content {
-	font-family: 'Avenir-Book' !important;
+	font-family: 'Gotham-Book' !important;
 }
 
 .btn-shop-slider {
@@ -635,7 +635,7 @@
 
 .first-blog-grid .kt-blocks-above-categories,
 .second-blog-grid .kt-blocks-above-categories {
-	font-family: 'Avenir';
+	font-family: 'Gotham-Book';
 	margin-bottom: 20px;
 }
 
@@ -1022,12 +1022,11 @@
 }
 
 .buttonCategoriesMenu {
-	font-size: 20px;
-	font-family: 'AvenirNextW06Bold';
+	font-size: 22px;
+	font-family: 'Avenir-Black';
 	color: #808080;
 	margin-bottom: 10px;
 	background-color: transparent !important;
-	font-weight: bold;
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	width: max-content;
@@ -1268,20 +1267,19 @@
 }
 
 .single-blog-category {
-	font-size: 18px;
+	font-size: 14px;
 	font-family: "Gotham-Book";
 	color:#666666;
 	text-transform: uppercase;
 }
 .single-blog-title-description {
-	font-size: 29px;
+	font-size: 22px;
 	font-family: "Avenir-Black";
 	color:#666666;
 	text-transform: uppercase;
 	font-weight: bold;
 	word-wrap: break-word;
 	margin-bottom: 0;
-	text-align: center;
 }
 .single-blog-container{
 	display:flex;
@@ -1318,7 +1316,7 @@
 	width: max-content;
 }
 .single-cat-menu a{
-	font-size: 18px;
+	font-size: 14px;
 	font-family: "Gotham-Book";
 	color: #4D4D4D;
 	text-transform: uppercase;
@@ -1335,7 +1333,7 @@
 	width: 500px;
 }
 .single-blog-paragraph {
-	font-size: 21px;
+	font-size: 16px;
 	font-family: "Gotham-Book";
 	color: #666666;
 	margin-bottom: 0;
@@ -1380,7 +1378,7 @@
 	}
 	.single-blog-header {
 		flex-direction: column;
-		background:none;
+		background-color: #ffffff;
 	}
 	.single-blog-featureImage{
 		width: 100%;
@@ -1396,6 +1394,7 @@
 	}
 	.single-blog-title-description{
 		font-size: 24px;
+		text-align: center;
 	}
 	.single-blog-body {
 		display: flex;
