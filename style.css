@@ -1787,7 +1787,7 @@ transition: opacity 400ms ease-in;
 .title-port {
 	margin: 0 !important;
 	text-transform: uppercase;
-	font-size: 24px;
+	font-size: 18px;
 	color: white;
 	letter-spacing: 0.1em;
 	font-family: Avenir;
