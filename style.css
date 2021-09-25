@@ -139,7 +139,7 @@
 
 /* two-typography */
 
-.two-typography .alignfull .kt-row-column-wrap {
+.two-typography .kt-row-column-wrap {
 	padding: 0 !important;
 }
 
@@ -165,6 +165,12 @@
 		margin-left: 15px;
 	}
 }
+/* about content */
+.about-content p {
+	font-family:'Gotham-Book';
+}
+
+
 /* design-packages */
 .design-packages h2 {
 	font-family: 'Bickham-Script-Pro';
@@ -224,7 +230,7 @@
 }
 
 .carousel-services .entry-content {
-	font-family:'Gotham-Book';
+	font-family:'Avenir-Medium';
 }
 
 .carousel-services .slick-slider .slick-track,
@@ -779,7 +785,7 @@
 }
 
 .service-post-separator .entry-title a {
-	font-family: 'Avenir-Heavy';
+	font-family:'Avenir-Black';
 }
 
 
@@ -807,7 +813,7 @@
 	border: none;
 	background: none;
 	display: unset;
-	font-family:'Gotham-Book';
+	font-family:'Avenir-Medium';
 	border-bottom: solid 1px #fff !important;
 	margin: 0 !important;
 }
@@ -838,11 +844,10 @@
 		z-index: 999;
 		height: auto;
 	}
-	.service-post-separator .kt-blocks-post-grid-item-inner h3 {
+	.service-post-separator .kt-blocks-post-grid-item-inner h3 a {
 		color: #808080 !important;
 		text-align: center;
 		font-family: 'Avenir-Black';
-		font-size: 29px;
 		font-weight: bold;
 	}
 	.service-post-separator .kt-blocks-post-grid-item-inner-wrap {
