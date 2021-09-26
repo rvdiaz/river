@@ -146,7 +146,7 @@
 .two-typography span {
 	font-family:'Avenir-Heavy';
 	color: #add6cc;
-	font-size: 25px;
+	font-size: 22px;
 	margin-left: 5px;
 	letter-spacing: 3px;
 }
@@ -168,6 +168,7 @@
 /* about content */
 .about-content p {
 	font-family:'Gotham-Book';
+	letter-spacing: 1px;
 }
 
 
@@ -1490,6 +1491,10 @@
 	margin-bottom: 0.5em;
 	text-align: justify;
 }
+.single-service .text-single-service .entry-content p:first-child {
+	font-family:'Gotham-Medium';
+}
+
 .single-service .text-single-service .entry-content li::marker {
 	font-size: 10px;
 }
@@ -1502,17 +1507,28 @@
 	margin-bottom: 0 !important;
 	font-family:'Avenir-Heavy';
 	letter-spacing: 3px;
+	font-size: 16px;
 }
 
 .title-single-service span {
  	font-family:'Bickham-Script-Pro';
-	font-size: 50px;
+	font-size: 46px;
 	letter-spacing: 0;
 }
 
 .single-service-title-form {
 	font-family:'Avenir-Book';
+	letter-spacing: 2px;
 }
+
+.services-single-form input::placeholder {
+	letter-spacing: 2px;
+}
+
+.services-single-form textarea::placeholder {
+	letter-spacing: 2px;
+}
+
 .title-single-service-movil{
 	display: none;
 }
@@ -1935,7 +1951,7 @@ transition: opacity 400ms ease-in;
 		height: 100px; 
 	}
 	.main_portfolio_image{
-		height: 30vh;
+		height: 30vh;-
 	}
 	.notFoundPorfolio{
 		font-size: 16px;
