@@ -148,7 +148,7 @@
 	color: #add6cc;
 	font-size: 25px;
 	margin-left: 5px;
-	letter-spacing: 1px;
+	letter-spacing: 3px;
 }
 
 
@@ -1498,17 +1498,19 @@
 	display: none;
 }
 
-.titulo-single-service {
+.title-single-service {
 	margin-bottom: 0 !important;
 	font-family:'Avenir-Heavy';
+	letter-spacing: 3px;
 }
 
-.titulo-single-service span {
+.title-single-service span {
  	font-family:'Bickham-Script-Pro';
 	font-size: 50px;
+	letter-spacing: 0;
 }
 
-.single-service-titulo-form {
+.single-service-title-form {
 	font-family:'Avenir-Book';
 }
 .title-single-service-movil{
