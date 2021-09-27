@@ -666,10 +666,12 @@
 .second-blog-grid .kt-blocks-post-readmore {
 	color: white !important;
 	font-family: 'Gotham-Book';
+	font-size: 12px;
 	background-size: cover;
 	width: 156px;
 	height: 35px;
-	padding: 6px 2px 2px 10px;
+	padding: 8px 2px 2px 10px;
+	letter-spacing: 1.5px;
 }
 
 .first-blog-grid .kt-blocks-post-readmore-wrap,
@@ -937,6 +939,7 @@
 	margin-left: 30px;
 	margin-bottom: 0 !important;
 	padding-top: 3px;
+	letter-spacing: 2px;
 }
 
 .container-filter-blog {
@@ -1024,6 +1027,7 @@
 	color: white;
 	font-weight: bold;
 	text-transform: uppercase;
+	letter-spacing: 2px;
 }
 
 .buttonCategoriesMenu {
@@ -1032,7 +1036,7 @@
 	color: #808080;
 	margin-bottom: 10px;
 	background-color: transparent !important;
-	letter-spacing: 1px;
+	letter-spacing: 2px;
 	text-transform: uppercase;
 	width: max-content;
 }
@@ -1272,10 +1276,11 @@
 }
 
 .single-blog-category {
-	font-size: 14px;
+	font-size: 12px;
 	font-family: "Gotham-Book";
 	color:#666666;
 	text-transform: uppercase;
+	letter-spacing: 1px;
 }
 .single-blog-title-description {
 	font-size: 22px;
@@ -1285,6 +1290,7 @@
 	font-weight: bold;
 	word-wrap: break-word;
 	margin-bottom: 0;
+	letter-spacing: 2px;
 }
 .single-blog-container{
 	display:flex;
@@ -1307,7 +1313,7 @@
 	height: 100px;
 }
 .single-cat-menu {
-	padding-top: 100px;
+	padding: 100px 10px;
 	margin: 0;
 	text-align: center;
 	display: flex;
@@ -1325,6 +1331,7 @@
 	font-family: "Gotham-Book";
 	color: #4D4D4D;
 	text-transform: uppercase;
+	letter-spacing: 1px;
 }
 .single-blog-body-info{
 	display: flex;
@@ -1342,6 +1349,7 @@
 	font-family: "Gotham-Book";
 	color: #666666;
 	margin-bottom: 0;
+	letter-spacing: 1px;
 }
 .single-blog-body-image {
 	width: 684px;
@@ -1433,6 +1441,9 @@
 	}
 	.single-cat-menu{
 		padding: 0;
+	}
+	.single-cat-menu button {
+		margin: 14px 0;
 	}
 }
 
@@ -1633,15 +1644,22 @@
 	background: -moz-linear-gradient(#fff, #999);
 	background: -webkit-linear-gradient(#fff, #999);
 	background: -o-linear-gradient(#fff, #999);
-  -webkit-transition: opacity 400ms ease-in;
--moz-transition: opacity 400ms ease-in;
-transition: opacity 400ms ease-in;
+  	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+}
+.modalContainer .form-popup-suscribe{
+	display: flex;
+	justify-content: center;
+}
+.modalContainer .form-popup-suscribe p {
+	margin: 0;
 }
 .modalContainer > div{
 	text-align: center;
 }
 .modalContainer h1{
-	font-family: "Avenir-Heavy";
+	font-family: "Avenir-Black";
 	font-size: 22px;
 	color: #999999;
 	text-transform: uppercase;
@@ -1656,7 +1674,7 @@ transition: opacity 400ms ease-in;
 	text-transform: uppercase;
 	letter-spacing: 0.5px;
 }
-.modalContainer .form-email{
+.modalContainer .ctct-email{
 	width: 540px;
 	background-color: #E6E6E6;
 	font-family: "Gotham-Book";
@@ -1664,23 +1682,21 @@ transition: opacity 400ms ease-in;
 	color: #808080;
 	border: none;
 }
-.modalContainer .form-container{
-	display: flex;
-}
-.modalContainer .form-email::placeholder{
+.modalContainer .ctct-email::placeholder{
 	text-transform: uppercase;
 	color: #808080c7;
 }
-.modalContainer .form-button{
+.modalContainer .ctct-submitted{
 	font-family: "Gotham-Book";
 	font-size: 12px;
 	background-color: #808080;
 	text-transform: uppercase;
 	border: none;
 	border-radius: 0;
+	color: white;
 }	
 
-.modalContainer .form-button:hover{
+.modalContainer .ctct-submitted:hover{
 	background-color: #6f6c6c;
 }
 .modalContainer .close {
@@ -1706,8 +1722,8 @@ transition: opacity 400ms ease-in;
 		background-position: center;
 		margin: 30% auto;
 	}
-	.modalContainer .form-email{
-		width: 100%;
+	.modalContainer .ctct-email{
+		width: 280px;
 	}
 	.modalContainer .close{
 		font-size: 16px;
@@ -1716,9 +1732,12 @@ transition: opacity 400ms ease-in;
 	}
 }
 @media (max-width:500px){
-	.modalContainer{
+	.modalContainer {
 		width: 400px;
 		height: 180px;
+	}
+	.modalContainer .ctct-email{
+		width: 100%;
 	}
 	.modalContainer h1{
 		font-size: 16px;
@@ -1726,10 +1745,10 @@ transition: opacity 400ms ease-in;
 	.modalContainer h2{
 		font-size: 10px;
 	}
-	.modalContainer .form-email{
+	.modalContainer .ctct-email{
 		font-size: 10px;
 	}
-	.modalContainer .form-button{
+	.modalContainer .ctct-submitted{
 		font-size: 10px;
 		padding: auto;
 	}
@@ -1757,10 +1776,6 @@ transition: opacity 400ms ease-in;
 	}
 	.modalContainer h2{
 		font-size: 10px;
-	}
-	.modalContainer .mc4wp-form-526{
-		display: flex;
-		justify-content: center;
 	}
 	.modalContainer .close{
 		top: 1px;
@@ -1946,13 +1961,13 @@ transition: opacity 400ms ease-in;
 	}
 }
 @media (max-width: 500px) {
-	.image_portfolio_item{
+	.image_portfolio_item {
 		height: 100px; 
 	}
-	.main_portfolio_image{
-		height: 30vh;-
+	.main_portfolio_image {
+		height: 30vh;
 	}
-	.notFoundPorfolio{
+	.notFoundPorfolio {
 		font-size: 16px;
 	}
 }
