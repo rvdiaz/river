@@ -1,3 +1,3 @@
 <?php
-    Echo do_shortcode ("[mc4wp_form id=1550]");
+  Echo do_shortcode ("[ctct form=1550 show_title=false]");
 ?> 

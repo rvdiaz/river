@@ -714,53 +714,50 @@
 	}
 }
 /* form blog page */
-.form-blog {
-	width: 540px;
-}
-.form-blog input,
-.form-blog button {
-	border-radius: unset !important;
-}
-.form-blog input::placeholder{
-	font-size: 12px;
-}
+
 .form-blog-wrapper {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
-
-.form-blog .kadence-blocks-form-field {
-	margin-bottom: 0 !important;
-	padding: 0 !important;
+.form-blog {
+	display: flex;
+	justify-content: center;
+	padding: 0 10px;
 }
-.form-blog .kadence-blocks-form-field input {
+.form-blog .ctct-email {
+	width: 540px;
 	font-family: "Gotham-Book";
 }
-.form-blog .kb-form-error-msg{
-	background: none;
-	margin-top: 0;
-	border: 0;
-	font-size: 14px;
+.form-blog .ctct-email::placeholder {
+	width: 540px;
 }
-.form-blog .kadence-blocks-form-message {
-	display: none;
-}
-
-/* divider blog page */
-.divider-separator hr{
-	background: none;
+.form-blog .ctct-email,
+.form-blog .ctct-submit {
+	height: 49px;
 }
 
 @media (max-width:768px){
-	.form-blog{
-		width:100%;
+	.form-blog .ctct-email{
+		width: 280px;
+	}
+}
+@media (max-width:400px){
+	.form-blog .ctct-email,
+	.form-blog .ctct-submit {
+		height: 32px;
+	}
+	.form-blog .ctct-email{
+		width: 180px;
+	}
+	.form-blog .ctct-submit {
+		font-size: 14px;
+		padding: 0 10px !important;
 	}
 	.form-blog input::placeholder{
 		font-size: 10px;
 	}
 }
-
 /* service post */
 
 .service-post-separator .gb-inside-container {
@@ -1692,7 +1689,7 @@
 	border: none;
 	border-radius: 0;
 	color: white;
-	height: 49px
+	height: 49px;
 }	
 
 .modalContainer .ctct-submitted:hover {
