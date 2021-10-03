@@ -1320,18 +1320,14 @@
 	flex-direction: column;
 	align-items: center;
 }
-.single-cat-menu button {
-	margin: 24px 0;
-	background: none;
-	padding: 0;
-	width: max-content;
-}
 .single-cat-menu a{
 	font-size: 14px;
 	font-family: "Gotham-Book";
 	color: #4D4D4D;
 	text-transform: uppercase;
 	letter-spacing: 1px;
+	margin: 24px 0;
+	width: max-content;
 }
 .single-blog-body-info{
 	display: flex;
@@ -1618,7 +1614,6 @@
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background: rgba(0,0,0,0.8);
 	z-index: 99999;
 	opacity:1;
 	-webkit-transition: opacity 400ms ease-in;
@@ -1665,39 +1660,43 @@
 	text-transform: uppercase;
 	font-weight: bold;
 	letter-spacing: 2px;
-	margin-bottom: 18px ;
+	margin-bottom: 12px;
 }
 .modalContainer h2{
 	font-family: "Gotham-Medium";
 	font-size: 12px;
 	color: #808080c7;
 	text-transform: uppercase;
-	letter-spacing: 0.5px;
+	letter-spacing: 1px;
+	margin-bottom: 28px;
 }
 .modalContainer .ctct-email{
 	width: 540px;
 	background-color: #E6E6E6;
-	font-family: "Gotham-Book";
+	font-family: 'Avenir-Book';
 	font-size: 12px;
 	color: #808080;
 	border: none;
+	height: 49px;
+	outline: none;
 }
 .modalContainer .ctct-email::placeholder{
 	text-transform: uppercase;
 	color: #808080c7;
 }
 .modalContainer .ctct-submitted{
-	font-family: "Gotham-Book";
+	font-family: "Avenir-Book";
 	font-size: 12px;
 	background-color: #808080;
 	text-transform: uppercase;
 	border: none;
 	border-radius: 0;
 	color: white;
+	height: 49px
 }	
 
-.modalContainer .ctct-submitted:hover{
-	background-color: #6f6c6c;
+.modalContainer .ctct-submitted:hover {
+	background-color: #6f6c6c !important;
 }
 .modalContainer .close {
 	color: #80808075;
@@ -1732,12 +1731,17 @@
 	}
 }
 @media (max-width:500px){
+	.modalContainer .ctct-email,
+	.modalContainer .ctct-submitted {
+		height: 32px;
+	}
 	.modalContainer {
 		width: 400px;
 		height: 180px;
 	}
 	.modalContainer .ctct-email{
-		width: 100%;
+		width: 180px;
+		font-size: 10px;
 	}
 	.modalContainer h1{
 		font-size: 16px;
@@ -1745,12 +1749,9 @@
 	.modalContainer h2{
 		font-size: 10px;
 	}
-	.modalContainer .ctct-email{
-		font-size: 10px;
-	}
 	.modalContainer .ctct-submitted{
-		font-size: 10px;
-		padding: auto;
+		font-size: 10px !important;
+		padding: 0 10px !important;
 	}
 	.modalContainer .close{
 		font-size: 12px;
@@ -1773,9 +1774,11 @@
 	}
 	.modalContainer h1{
 		font-size: 14px;
+		margin-bottom: 8px;
 	}
 	.modalContainer h2{
-		font-size: 10px;
+		font-size: 8px;
+		margin-bottom: 10px;
 	}
 	.modalContainer .close{
 		top: 1px;

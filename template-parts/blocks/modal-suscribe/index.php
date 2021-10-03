@@ -9,7 +9,6 @@ if($visited=='0') {
 		    <h1><?php echo get_field("modal_title"); ?></h1>
             <h2><?php echo get_field("modal_description"); ?></h2>
             <?php Echo do_shortcode ("[mc4wp_form id=526]");?>
-            <?php Echo do_shortcode ("[mc4wp_form id=526]");?>
         </div>
     </div>
 </div>

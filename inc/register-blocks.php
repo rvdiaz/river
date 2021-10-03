@@ -27,4 +27,12 @@ acf_register_block_type(array(
     'keywords'          => array('suscribe'),
     'category' => 'widgets'
 ));
-
+acf_register_block_type(array(
+    'name'              => 'form-blog-suscribe',
+    'title'             => __('form blog suscribe'),
+    'description'       => __('form blog suscribe'),
+    'render_template'   => 'template-parts/blocks/blog-form/index.php',
+    'icon'              => 'admin-page',
+    'keywords'          => array('suscribe'),
+    'category' => 'widgets'
+));
