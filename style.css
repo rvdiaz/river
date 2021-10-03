@@ -218,7 +218,7 @@
 .carousel-services .entry-content:not(:first-child),
 .carousel-services .entry-summary:not(:first-child),
 .carousel-services .page-content:not(:first-child) {
-	margin-top: 20px !important;
+	margin-top: 5px !important;
 }
 
 .carousel-services .kt-blocks-post-readmore-wrap a {
@@ -588,7 +588,7 @@
 }
 
 .carousel-magazine-home .kb-gallery-filter-none {
-	padding: 40px !important;
+	padding: 50px !important;
 }
 
 @media (max-width: 543px) {
@@ -818,7 +818,7 @@
 }
 
 .service-post-separator .entry-content {
-	margin-top: 20px;;
+	margin-top: 10px;;
 }
 .services-single-form .kb-form-error-msg{
 	background: none;
