@@ -176,7 +176,7 @@
 .design-packages h2 {
 	font-family: 'Bickham-Script-Pro';
 	font-size: 92px;
-	margin-bottom: 35px;
+	margin-bottom: 33px;
 }
 .design-packages p {
 	font-family: 'Avenir-Book';
@@ -823,15 +823,7 @@
 .service-post-separator .entry-content {
 	margin-top: 10px;;
 }
-.services-single-form .kb-form-error-msg{
-	background: none;
-	margin-top: 0;
-	border: 0;
-	font-size: 14px;
-}
-.services-single-form .kadence-blocks-form-message {
-	display: none;
-}
+
 
 @media (max-width: 768px) {
 	.service-post-separator {
@@ -1465,8 +1457,8 @@
 	justify-content: center !important;
 	background-size: cover;
 	background-repeat: no-repeat;
-	width: 674.5px !important;
-	height: 87.9%;
+	width: 690px !important;
+	height: 89.9%;
 	left: 39%;
 	margin-top: 80px;
 	margin-bottom: 30px;
@@ -1479,9 +1471,7 @@
 .single-service .text-single-service .wp-block-post-content {
 	align-self: center;
 }
-.single-services-form button {
-	text-transform: uppercase;
-}
+
 
 .single-service .text-single-service .kt-inside-inner-col {
 	flex-direction: column;
@@ -1498,11 +1488,19 @@
 
 }
 .single-service .text-single-service .entry-content p {
-	margin-bottom: 0.5em;
+	margin-bottom: 1em;
 	text-align: justify;
 }
-.single-service .text-single-service .entry-content p:first-child {
+.single-service .text-single-service .entry-content .title-content-single {
 	font-family:'Gotham-Medium';
+}
+.single-service .text-single-service .entry-content .list-single-services {
+	margin-left: 1em;
+}
+.single-service .text-single-service .entry-content .list-single-services li>ol, 
+.single-service .text-single-service .entry-content .list-single-services li>ul {
+	margin-left: 3.5em;
+	
 }
 
 .single-service .text-single-service .entry-content li::marker {
@@ -1529,15 +1527,48 @@
 .single-service-title-form {
 	font-family:'Avenir-Book';
 	letter-spacing: 2px;
+	line-height: 15px;
 }
 
-.services-single-form input::placeholder {
+.contact-form-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.contact-form-wrapper input, textarea {
+	width: 100%;
+	border: none;
+	background: #d6ebe5;
+	line-height: 35px;
+	font-size: 13px;
 	letter-spacing: 2px;
+}
+.contact-form-wrapper input:focus,
+.contact-form-wrapper textarea:focus {
+	background: #d6ebe5;
+	border: none;
+}
+.contact-form-wrapper input[type="submit"] {
+	width: 100px;
+	background: #d6ebe5;
+	color: #666666;
+	line-height: 25px;
+	margin-top: 15px;
+}
+.contact-form-wrapper p {
+	margin: 0 ;
+	line-height: 17px;
+}
+.contact-form-wrapper .single-row {
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
 }
 
-.services-single-form textarea::placeholder {
-	letter-spacing: 2px;
+.contact-form-wrapper .single-column {
+    width: 49%;
 }
+
+
 
 .title-single-service-movil{
 	display: none;
@@ -1573,17 +1604,6 @@
 		left: 0;
 		background-image: none;
 	}
-	.single-services-form {
-		background-color: #D6EBE5;
-		padding-bottom: 25px;
-	}
-	.single-services-form input,
-	.single-services-form textarea {
-		background: white !important;
-	}
-	.single-services-form button {
-		background-color: #fff !important;
-	}
 	.service-post-separator.single-service-post {
 		padding: 0 !important;
 	}
@@ -1603,6 +1623,13 @@
 	}
 	.title-single-service-movil{
 		display: block;
+	}
+	
+}
+
+@media (max-width: 768px) {
+	.contact-form-wrapper .single-column {
+		width: 47%;
 	}
 }
 .title-single-service-mobil {
