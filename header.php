@@ -54,7 +54,7 @@ if(!isset($_COOKIE["visited"])){
         }
         @font-face{
             font-family:'Gotham-Book';
-            src:url('<?php echo get_site_url();?>/wp-content/uploads/fonts/Gotham-Book.woff') format('truetype');
+            src:url('<?php echo get_site_url();?>/wp-content/uploads/fonts/Gotham-Book.woff2') format('truetype');
         }
         @font-face{
             font-family:'Gotham-Medium';
