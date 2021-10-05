@@ -184,7 +184,7 @@ function show_portfolio_popup(event){
         },
         beforeSend:function(){
             jQuery("#portfolio_modal").html(`
-            <div id="openModal" class="modalDialog modalPorftolio">
+            <div id="openModal" class="modalPorftolio">
                 <div class="loadingContainerPortfolioGalery">
                     <div class="loadingGift"></div>
                 </div>
@@ -192,7 +192,7 @@ function show_portfolio_popup(event){
         },
         success:function(result){
             if(eval(result)[1]!=""){
-            html+=`<div id="openModal" class="modalDialog modalPorftolio">
+            html+=`<div id="openModal" class="modalPorftolio">
                 <a onClick="hideModal()" class="closePortfolioModal">X</a>
                 <div class="modalPortfolioGalery">
                 <div class="main_portfolio_image">`+eval(result)[0]+`</div>
