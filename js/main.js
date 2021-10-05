@@ -12,12 +12,15 @@ function findItemByTitle(title,array){
     }
     return null;
 }
+// footer date years
+    var date = new Date();
+    var year = date.getFullYear()
+    document.getElementsByClassName('copy-right-footer')[0].innerHTML = "©"+" "+ year +" "+"Rivers Spencer";
 
 /* image click meet rivers section */
 jQuery('.meet-rivers-image').click(function(){
     window.open(jQuery('.link-button-meet-rivers a').prop('href'),'_blanck');
 });
-
 /* change view grid content page blog */
 if(document.getElementsByClassName("first-blog-grid")[0]){
 const firstBlogGridArticles=document.getElementsByClassName("first-blog-grid")[0].children[0].children[0];
