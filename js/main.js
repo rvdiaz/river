@@ -208,7 +208,7 @@ function show_portfolio_popup(event){
                 pageDots: false
             });
         }else{
-        html+=`<div id="openModal" class="modalDialog modalPorftolio">
+        html+=`<div id="openModal" class="modalPorftolio">
         <a onClick="hideModal()" class="closePortfolioModal">X</a>
         <h1 class="notFoundPorfolio">Not found porftolio images </h1>
         </div>`;
