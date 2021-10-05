@@ -1497,9 +1497,12 @@
 .single-service .text-single-service .entry-content .list-single-services {
 	margin-left: 1em;
 }
+.single-service .text-single-service .entry-content .list-single-services li {
+	padding-left: 0.5em;
+}
 .single-service .text-single-service .entry-content .list-single-services li>ol, 
 .single-service .text-single-service .entry-content .list-single-services li>ul {
-	margin-left: 3.5em;
+	margin-left: 3.8em;
 	
 }
 
@@ -1535,6 +1538,7 @@
 .contact-form-wrapper {
     display: flex;
     flex-direction: column;
+	font-family:'Avenir-Black';
 }
 .contact-form-wrapper input, textarea {
 	width: 100%;
