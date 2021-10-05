@@ -13,6 +13,13 @@ function findItemByTitle(title,array){
     return null;
 }
 
+// footer date years
+var date = new Date();
+var year = date.getFullYear()
+if(document.getElementsByClassName("copy-right-footer")[0]){
+document.getElementsByClassName('copy-right-footer')[0].innerHTML = "©"+" "+ year +" "+"Rivers Spencer";
+}
+
 /* image click meet rivers section */
 jQuery('.meet-rivers-image').click(function(){
     window.open(jQuery('.link-button-meet-rivers a').prop('href'),'_blanck');

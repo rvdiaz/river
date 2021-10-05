@@ -1643,7 +1643,6 @@
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background: rgba(0,0,0,0.8);
 	z-index: 99999;
 	opacity:1;
 	-webkit-transition: opacity 400ms ease-in;
@@ -1653,8 +1652,8 @@
 }
 
 .hideModal{
-	opacity:0;
-	pointer-events: none;
+	opacity: 0 !important;
+	pointer-events: none !important;
 }
 .modalContainer {
 	display: flex;
@@ -1916,6 +1915,7 @@
 /* modal portfolio galery */
 .modalPorftolio{
 	position: fixed;
+	background: rgba(0,0,0,0.8);
 	top: 0;
 	right: 0;
 	bottom: 0;
