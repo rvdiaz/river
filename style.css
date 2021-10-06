@@ -1538,6 +1538,8 @@
 .contact-form-wrapper {
     display: flex;
     flex-direction: column;
+	max-width: 920px;
+	margin: auto;
 }
 .contact-form-wrapper input, textarea {
 	width: 100%;
