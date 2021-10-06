@@ -170,6 +170,12 @@
 	letter-spacing: 1px;
 }
 
+@media (min-width:768px) and (max-width:1150px) {
+	.about-content .kt-inside-inner-col{
+		padding: 0 30px 0 0 !important;
+	}	
+}
+
 
 /* design-packages */
 .design-packages h2 {
@@ -186,7 +192,8 @@
 		font-size: 70px !important;
 		margin-bottom: 30px;
 	}
-} 
+}
+
 
 /* carousel-services */
 
@@ -1568,7 +1575,7 @@
 	width: 100px;
 	background: #d6ebe5;
 	color: #666666;
-	line-height: 25px;
+	height: 50px;
 }
 .contact-form-wrapper p {
 	margin-bottom: 25px !important;
