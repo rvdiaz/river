@@ -1544,9 +1544,9 @@
 	width: 100%;
 	border: none;
 	background: #d6ebe5;
-	font-family:'Avenir-Black';
-	line-height: 35px;
-	font-size: 13px;
+	font-family:'Avenir-Book';
+	line-height: 40px;
+	font-size: 14px;
 	letter-spacing: 2px;
 }
 .contact-form-wrapper .ctct-textarea-warning-label{
@@ -1564,12 +1564,12 @@
 }
 .contact-form-wrapper .first_name___4150fd09b6c463d530926a16360685d5 {
 	float: left;
-	width: 49.3%;
-	margin-bottom: 1em;
+	width: 48.7%;
+	margin-bottom: 25px;
 }
 .contact-form-wrapper .last_name___ee05ded45be3ca3dae302afcd8a254aa {
 	float: right;
-	width: 49.3%;
+	width: 48.7%;
 }
 .contact-form-wrapper input:focus,
 .contact-form-wrapper textarea:focus {
@@ -1583,9 +1583,10 @@
 	line-height: 25px;
 }
 .contact-form-wrapper p {
-	margin: 0 ;
+	margin-bottom: 25px !important;
 	line-height: 17px;
 }
+
 
 .contact-form-wrapper .ctct-button {
 	display: none;
