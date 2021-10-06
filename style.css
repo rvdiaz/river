@@ -136,7 +136,6 @@
 	}
 }
 
-
 /* two-typography */
 
 .two-typography .kt-row-column-wrap {
@@ -284,8 +283,8 @@
 }
 
 .btn-shop-slider {
-	border-bottom: solid 2px #8FC6B9 !important;
-	border-top: solid 2px #8FC6B9 !important;
+	border-bottom: solid 1.5px #8FC6B9 !important;
+	border-top: solid 1.5px #8FC6B9 !important;
 	width: 115px;
 	height: 44px;
 }
@@ -714,47 +713,40 @@
 	}
 }
 /* form blog page */
-.form-blog {
-	width: 540px;
-}
-.form-blog input,
-.form-blog button {
-	border-radius: unset !important;
-}
-.form-blog input::placeholder{
-	font-size: 12px;
-}
 .form-blog-wrapper {
 	display: flex;
-	align-items: center;
 	justify-content: center;
+	align-items: center;
+}
+.form-blog {
+	display: flex;
+	
 }
 
-.form-blog .kadence-blocks-form-field {
-	margin-bottom: 0 !important;
-	padding: 0 !important;
-}
-.form-blog .kadence-blocks-form-field input {
-	font-family: "Gotham-Book";
-}
-.form-blog .kb-form-error-msg{
-	background: none;
-	margin-top: 0;
-	border: 0;
-	font-size: 14px;
-}
-.form-blog .kadence-blocks-form-message {
-	display: none;
+.form-blog .ctct-email {
+	width: 540px;
 }
 
-/* divider blog page */
-.divider-separator hr{
-	background: none;
+.form-blog .ctct-submit,
+.form-blog .ctct-email::placeholder {
+	text-transform: uppercase;
 }
-
 @media (max-width:768px){
-	.form-blog{
-		width:100%;
+	.form-blog .ctct-email{
+		width: 280px;
+	}
+}
+@media (max-width: 400px){
+	.form-blog .ctct-email,
+	.form-blog .ctct-submit {
+		height: 32px;
+	}
+	.form-blog .ctct-email{
+		width: 180px;
+	}
+	.form-blog .ctct-submit {
+		font-size: 14px;
+		padding: 0 10px !important;
 	}
 	.form-blog input::placeholder{
 		font-size: 10px;
@@ -1653,7 +1645,6 @@
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background: rgba(0,0,0,0.8);
 	z-index: 99999;
 	opacity:1;
 	-webkit-transition: opacity 400ms ease-in;
@@ -1663,8 +1654,8 @@
 }
 
 .hideModal{
-	opacity:0;
-	pointer-events: none;
+	opacity: 0 !important;
+	pointer-events: none !important;
 }
 .modalContainer {
 	display: flex;
@@ -1700,7 +1691,7 @@
 	text-transform: uppercase;
 	font-weight: bold;
 	letter-spacing: 2px;
-	margin-bottom: 18px ;
+	margin-bottom: 10px;
 }
 .modalContainer h2{
 	font-family: "Gotham-Medium";
@@ -1708,6 +1699,7 @@
 	color: #808080c7;
 	text-transform: uppercase;
 	letter-spacing: 0.5px;
+	margin-bottom: 28px;
 }
 .modalContainer .ctct-email{
 	width: 540px;
@@ -1716,6 +1708,8 @@
 	font-size: 12px;
 	color: #808080;
 	border: none;
+	height: 49px;
+    outline: none;
 }
 .modalContainer .ctct-email::placeholder{
 	text-transform: uppercase;
@@ -1724,15 +1718,15 @@
 .modalContainer .ctct-submitted{
 	font-family: "Gotham-Book";
 	font-size: 12px;
-	background-color: #808080;
 	text-transform: uppercase;
 	border: none;
 	border-radius: 0;
 	color: white;
+	height: 49px;
 }	
 
-.modalContainer .ctct-submitted:hover{
-	background-color: #6f6c6c;
+.modalContainer .ctct-submitted:hover {
+	background-color: #82c7b7 !important;
 }
 .modalContainer .close {
 	color: #80808075;
@@ -1767,6 +1761,10 @@
 	}
 }
 @media (max-width:500px){
+	.modalContainer .ctct-email,
+	.modalContainer .ctct-submitted {
+		height: 32px;
+	}
 	.modalContainer {
 		width: 400px;
 		height: 180px;
@@ -1784,8 +1782,8 @@
 		font-size: 10px;
 	}
 	.modalContainer .ctct-submitted{
-		font-size: 10px;
-		padding: auto;
+		font-size: 10px !important;
+		padding: 0 10px !important;
 	}
 	.modalContainer .close{
 		font-size: 12px;
@@ -1808,9 +1806,11 @@
 	}
 	.modalContainer h1{
 		font-size: 14px;
+		margin-bottom: 8px;
 	}
 	.modalContainer h2{
-		font-size: 10px;
+		font-size: 8px;
+		margin-bottom: 10px;
 	}
 	.modalContainer .close{
 		top: 1px;
@@ -1916,6 +1916,18 @@
 
 /* modal portfolio galery */
 .modalPorftolio{
+	position: fixed;
+	background: rgba(0,0,0,0.8);
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 99999;
+	opacity:1;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: auto;
 	display: flex;
 	align-items: center;
 	justify-content: center;

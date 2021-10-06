@@ -12,15 +12,19 @@ function findItemByTitle(title,array){
     }
     return null;
 }
+
 // footer date years
-    var date = new Date();
-    var year = date.getFullYear()
-    document.getElementsByClassName('copy-right-footer')[0].innerHTML = "©"+" "+ year +" "+"Rivers Spencer";
+var date = new Date();
+var year = date.getFullYear()
+if(document.getElementsByClassName("copy-right-footer")[0]){
+document.getElementsByClassName('copy-right-footer')[0].innerHTML = "©"+" "+ year +" "+"Rivers Spencer";
+}
 
 /* image click meet rivers section */
 jQuery('.meet-rivers-image').click(function(){
     window.open(jQuery('.link-button-meet-rivers a').prop('href'),'_blanck');
 });
+
 /* change view grid content page blog */
 if(document.getElementsByClassName("first-blog-grid")[0]){
 const firstBlogGridArticles=document.getElementsByClassName("first-blog-grid")[0].children[0].children[0];
@@ -187,7 +191,7 @@ function show_portfolio_popup(event){
         },
         beforeSend:function(){
             jQuery("#portfolio_modal").html(`
-            <div id="openModal" class="modalDialog modalPorftolio">
+            <div id="openModal" class="modalPorftolio">
                 <div class="loadingContainerPortfolioGalery">
                     <div class="loadingGift"></div>
                 </div>
@@ -195,7 +199,7 @@ function show_portfolio_popup(event){
         },
         success:function(result){
             if(eval(result)[1]!=""){
-            html+=`<div id="openModal" class="modalDialog modalPorftolio">
+            html+=`<div id="openModal" class="modalPorftolio">
                 <a onClick="hideModal()" class="closePortfolioModal">X</a>
                 <div class="modalPortfolioGalery">
                 <div class="main_portfolio_image">`+eval(result)[0]+`</div>
@@ -211,7 +215,7 @@ function show_portfolio_popup(event){
                 pageDots: false
             });
         }else{
-        html+=`<div id="openModal" class="modalDialog modalPorftolio">
+        html+=`<div id="openModal" class="modalPorftolio">
         <a onClick="hideModal()" class="closePortfolioModal">X</a>
         <h1 class="notFoundPorfolio">Not found porftolio images </h1>
         </div>`;
