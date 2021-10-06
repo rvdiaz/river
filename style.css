@@ -1454,7 +1454,6 @@
 	left: 39%;
 	margin-top: 80px;
 	margin-bottom: 30px;
-
 }
 
 .single-service .text-single-service .kt-inside-inner-col {
@@ -1463,7 +1462,6 @@
 .single-service .text-single-service .wp-block-post-content {
 	align-self: center;
 }
-
 
 .single-service .text-single-service .kt-inside-inner-col {
 	flex-direction: column;
@@ -1495,7 +1493,6 @@
 .single-service .text-single-service .entry-content .list-single-services li>ol, 
 .single-service .text-single-service .entry-content .list-single-services li>ul {
 	margin-left: 3.8em;
-	
 }
 
 .single-service .text-single-service .entry-content li::marker {
@@ -1533,7 +1530,8 @@
 	max-width: 920px;
 	margin: auto;
 }
-.contact-form-wrapper input, textarea {
+.contact-form-wrapper input,
+.contact-form-wrapper textarea {
 	width: 100%;
 	border: none;
 	background: #d6ebe5;
@@ -1542,6 +1540,10 @@
 	font-size: 13px;
 	letter-spacing: 2px;
 }
+.contact-form-wrapper .ctct-textarea-warning-label{
+	display: none;
+}
+
 .contact-form-wrapper input:focus,
 .contact-form-wrapper textarea:focus {
 	background: #d6ebe5;
