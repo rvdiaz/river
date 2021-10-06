@@ -40,7 +40,9 @@
 		        );
                 $the_query_post = new WP_Query( $argsPost );
 	            if($the_query_post->have_posts()){ ?>  
-                    <button><a href="<?php get_site_url();?>/our-blog/?category=<?php echo $category->cat_ID; ?>"><?php echo $category->name; ?></a></button>
+                <p>
+                    <a href="<?php get_site_url();?>/our-blog/?category=<?php echo $category->cat_ID; ?>"><?php echo $category->name; ?></a>
+                </p>
                 <?php }} ?>
             </ul>
         </div>

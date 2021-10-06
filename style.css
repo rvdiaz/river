@@ -720,13 +720,19 @@
 }
 .form-blog {
 	display: flex;
-	
+	justify-content: center;
 }
-
+.form-blog .ctct-form-field{
+	height: 49px;
+}
 .form-blog .ctct-email {
 	width: 540px;
+	font-size: 12px;
+	height: 100%;
 }
-
+.form-blog .ctct-submit {
+	height: 100%;
+}
 .form-blog .ctct-submit,
 .form-blog .ctct-email::placeholder {
 	text-transform: uppercase;
@@ -1308,6 +1314,11 @@
 	margin: 24px 0;
 	background: none;
 	padding: 0;
+	width: max-content;
+}
+.single-cat-menu p{
+	display: flex;
+	margin-bottom: 12px;
 	width: max-content;
 }
 .single-cat-menu a{
