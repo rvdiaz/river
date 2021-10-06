@@ -732,6 +732,7 @@
 }
 .form-blog .ctct-submit {
 	height: 100%;
+	border-radius: 0;
 }
 .form-blog .ctct-submit,
 .form-blog .ctct-email::placeholder {
@@ -1377,8 +1378,9 @@
 		left: 0;
 		width: 0;
 		background-color: #ffffff;
-		overflow-y: hidden;
+		overflow: hidden;
 		transition: 0.5s;
+		padding: 20px 5px;
 	}
 	.single-blog-container{
 		display: flex;
@@ -1498,8 +1500,10 @@
 .single-service .text-single-service .entry-content .list-single-services {
 	margin-left: 1em;
 }
+
 .single-service .text-single-service .entry-content .list-single-services li {
 	padding-left: 0.5em;
+	margin-bottom: 5px;
 }
 .single-service .text-single-service .entry-content .list-single-services li>ol, 
 .single-service .text-single-service .entry-content .list-single-services li>ul {
