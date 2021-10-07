@@ -1503,7 +1503,6 @@
 
 .single-service .text-single-service .entry-content .list-single-services li {
 	padding-left: 0.5em;
-	margin-bottom: 5px;
 }
 .single-service .text-single-service .entry-content .list-single-services li>ol, 
 .single-service .text-single-service .entry-content .list-single-services li>ul {
@@ -1587,7 +1586,7 @@
 	line-height: 25px;
 }
 .contact-form-wrapper p {
-	margin-bottom: 25px !important;
+	margin-bottom: 26px !important;
 	line-height: 17px;
 }
 
