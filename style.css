@@ -701,7 +701,9 @@
 	align-items: center;
 	flex-direction: column;
 }
-
+.first-blog-grid header {
+	padding: 0 10px;
+}
 @media (max-width: 768px) {
 	.first-blog-grid .kt-blocks-post-grid-item {
 		background-color: transparent !important;
@@ -746,10 +748,12 @@
 	width: 540px;
 	font-size: 12px;
 	height: 100%;
+	letter-spacing: 1px;
 }
 .form-blog .ctct-submit {
 	height: 100%;
 	border-radius: 0;
+	letter-spacing: 1px;
 }
 .form-blog .ctct-submit,
 .form-blog .ctct-email::placeholder {
@@ -1261,54 +1265,39 @@
 }
 
 /* single blog */
-.single-blog-header {
-	display: flex;
-	margin-bottom: 0;
-	background-color: #E6E6E6;
-}
-.single-blog-featureImage {
-	width:60%;
-	height: 80vh;
-}
-.single-blog-featureImage img{
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-}
-.single-blog-info {
-	display: flex;
-	align-items: flex-start;
-	justify-content: center;
-	flex-direction: column;
-	padding: 0 5% 0 10%;
-}
-
-.single-blog-category {
-	font-size: 12px;
-	font-family: "Gotham-Book";
-	color:#666666;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-}
-.single-blog-title-description {
-	font-size: 22px;
-	font-family: "Avenir-Black";
-	color:#666666;
-	text-transform: uppercase;
-	font-weight: bold;
-	word-wrap: break-word;
-	margin-bottom: 0;
-	letter-spacing: 2px;
-}
-.single-blog-container{
-	display:flex;
-	justify-content: center;
-	margin: 0;
+.content-area {
 	background-color: #ffffff;
 }
-.single-blog-body {
+.site-main {
+	margin: 0 !important;
+}
+.post .entry-header,
+.post .entry-meta {
+	display: none;
+}
+.post .inside-article{
+	padding: 0;
+}
+.grid-post .kadence-post-image,
+.grid-post .kadence-post-image-inner-intrisic
+{
+	height: 90vh !important;
+}
+.container-single-post {
+	max-width: 1400px;
+	margin: 0 auto;
+}
+.container-single-post .gb-inside-container{
 	display: flex;
-	width: 1400px;
+	justify-content: center;}
+
+.single-post-content .gb-inside-container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.single-post-content p{
+	padding: 15px 15%;
 }
 .single-blog-menu{
 	width: 40%;
@@ -1388,6 +1377,9 @@
 	margin-top: 0px !important;
 } 
 @media(max-width:1100px) {
+	.container-single-post .gb-inside-container {
+		flex-direction: column-reverse;
+	}
 	.single-cat-menu-container{
 		position: absolute;
 		z-index: 1;
@@ -1397,49 +1389,7 @@
 		background-color: #ffffff;
 		overflow: hidden;
 		transition: 0.5s;
-		padding: 20px 5px;
-	}
-	.single-blog-container{
-		display: flex;
-		justify-content: center;
-	}
-	.single-blog-header {
-		flex-direction: column;
-		background-color: #ffffff;
-	}
-	.single-blog-featureImage{
-		width: 100%;
-		height:50%;
-	}
-	.single-blog-info{
-		padding: 25px 30px 0 30px;
-		width: 100%;
-		align-items: center;
-	}
-	.single-blog-category{
-		font-size: 16px;
-	}
-	.single-blog-title-description{
-		font-size: 24px;
-		text-align: center;
-	}
-	.single-blog-body {
-		display: flex;
-		flex-direction: column-reverse;
-	}
-	.single-blog-body-image{
-		width:100%;
-		padding:30px 0;
-		height: 70vh;
-	}
-	.single-blog-body-info{
-		padding: 30px;
-	}
-	.single-blog-paragraph-container{
-		width:100%;
-	}
-	.single-blog-paragraph{
-		font-size: 16px;
+		padding: 20px 0;
 	}
 	.single-blog-menu{
 		width: 100%;
@@ -1458,6 +1408,9 @@
 	}
 	.single-cat-menu button {
 		margin: 14px 0;
+	}
+	.single-post-content p{
+		padding: 15px 0;
 	}
 }
 
@@ -1521,6 +1474,12 @@
 .single-service .text-single-service .entry-content .list-single-services li {
 	padding-left: 0.5em;
 }
+.single-service .text-single-service .entry-content .list-single-services > li,
+.single-service .text-single-service .entry-content .list-single-services li>ul li ul
+{
+	margin-bottom: 5px;
+}
+
 .single-service .text-single-service .entry-content .list-single-services li>ol, 
 .single-service .text-single-service .entry-content .list-single-services li>ul {
 	margin-left: 3.8em;
@@ -1585,7 +1544,7 @@
 .contact-form-wrapper .first_name___4150fd09b6c463d530926a16360685d5 {
 	float: left;
 	width: 48.7%;
-	margin-bottom: 25px;
+	margin-bottom: 26.3px;
 }
 .contact-form-wrapper .last_name___ee05ded45be3ca3dae302afcd8a254aa {
 	float: right;
@@ -1603,17 +1562,13 @@
 	height: 50px;
 }
 .contact-form-wrapper p {
-	margin-bottom: 26px !important;
+	margin-bottom: 26.3px !important;
 	line-height: 17px;
 }
-
 
 .contact-form-wrapper .ctct-button {
 	display: none;
 }
-
-
-
 
 .title-single-service-movil{
 	display: none;
@@ -1695,8 +1650,6 @@
 .title-single-service-mobil {
 	display: none;
 }
-
-
 
 /* modal suscribe */
 .modalDialog {

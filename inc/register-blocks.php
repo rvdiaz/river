@@ -36,3 +36,12 @@ acf_register_block_type(array(
     'keywords'          => array('suscribe'),
     'category' => 'widgets'
 ));
+acf_register_block_type(array(
+    'name'              => 'menu-single-post',
+    'title'             => __('menu category single post'),
+    'description'       => __('menu category single post'),
+    'render_template'   => 'template-parts/blocks/menu-single-post/index.php',
+    'icon'              => 'admin-page',
+    'keywords'          => array('menu','single post'),
+    'category' => 'widgets'
+));

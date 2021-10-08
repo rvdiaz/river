@@ -1,8 +1,8 @@
 /* change link slider shop title */
 if(document.getElementsByClassName("slider-shop-product")[0]){
-const slider=document.getElementsByClassName("slider-shop-product")[0];
-slider.children[0].setAttribute("data-columns-xs",1);
-slider.children[0].setAttribute("data-columns-ss",1);
+const slider=jQuery('.slider-shop-product .kt-post-grid-layout-carousel-wrap')
+slider.attr("data-columns-xs",1);
+slider.attr("data-columns-ss",1);
 }
 
 function findItemByTitle(title,array){
@@ -27,21 +27,23 @@ jQuery('.meet-rivers-image').click(function(){
 
 /* change view grid content page blog */
 if(document.getElementsByClassName("first-blog-grid")[0]){
-const firstBlogGridArticles=document.getElementsByClassName("first-blog-grid")[0].children[0].children[0];
-changeGridContentView(firstBlogGridArticles);
+const firstBlogGridArticles=jQuery('.first-blog-grid .kt-blocks-post-grid-item');
+changeGridContentView(firstBlogGridArticles); 
 }
 if(document.getElementsByClassName("second-blog-grid")[0]){
-const secondBlogGridArticles=document.getElementsByClassName("second-blog-grid")[0].children[0].children;
-for(let i=0;i<secondBlogGridArticles.length;i++)
-changeGridContentView(secondBlogGridArticles[i]);
+    const secondBlogGridArticles=jQuery('.second-blog-grid .kt-blocks-post-grid-item');
+    secondBlogGridArticles.each(function(){
+        changeGridContentView(jQuery(this));
+    }
+);
 }
 function changeGridContentView(gridObject){
-    const contentInfo=gridObject.children[0].children[1].children[1];
-    const title=gridObject.children[0].children[1].children[0].children[1].children[0];
-    gridObject.children[0].children[1].children[0].appendChild(contentInfo.children[0]);
-    gridObject.children[0].children[1].children[0].children[0].children[0].removeAttribute('href');
-    title.innerHTML=title.innerHTML+"/"+contentInfo.innerHTML;
-    gridObject.children[0].children[1].removeChild(contentInfo);
+    const contentInfo=gridObject.find('.entry-content');
+    const title=gridObject.find('.entry-title');
+    gridObject.find('header').append(gridObject.find('.kt-blocks-post-readmore-wrap'));
+    gridObject.find('header .kt-blocks-above-categories a').removeAttr('href');
+    title.find('a').text(title.find('a').text()+"/"+contentInfo.text());
+    contentInfo.remove();
 }
 
 // Service Post
